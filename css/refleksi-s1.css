@@ -83,9 +83,11 @@ button {
 .text-lime {
   color: var(--neon-lime) !important;
 }
+
 .text-lilac {
   color: var(--pastel-lilac) !important;
 }
+
 .font-hand {
   font-family: var(--font-hand) !important;
 }
@@ -196,11 +198,13 @@ button {
 }
 
 @keyframes pulseSparkle {
+
   0%,
   100% {
     transform: scale(1);
     opacity: 0.8;
   }
+
   50% {
     transform: scale(1.3);
     opacity: 1;
@@ -274,6 +278,7 @@ button {
 .nav-links li a:hover {
   color: var(--text-white);
 }
+
 .nav-links li a.active {
   background: var(--neon-lime);
   color: var(--text-dark);
@@ -400,16 +405,19 @@ button {
   z-index: 2;
   pointer-events: none;
 }
+
 .worm-svg-canvas {
   width: 100%;
   height: 100%;
 }
+
 .worm-faint-track {
   fill: none;
   stroke: rgba(255, 255, 255, 0.05);
   stroke-width: 3px;
   stroke-linecap: round;
 }
+
 .worm-slither-body {
   fill: none;
   stroke: var(--neon-lime);
@@ -425,9 +433,11 @@ button {
   0% {
     stroke-dashoffset: 460;
   }
+
   75% {
     stroke-dashoffset: -1750;
   }
+
   100% {
     stroke-dashoffset: -1750;
   }
@@ -443,6 +453,7 @@ button {
   opacity: 0.45;
   animation: floatDeco 8s ease-in-out infinite alternate;
 }
+
 .deco-floating-smiley {
   position: absolute;
   top: 22%;
@@ -452,6 +463,7 @@ button {
   opacity: 0.4;
   animation: floatDeco 9s ease-in-out 1.5s infinite alternate;
 }
+
 .deco-sparkle-1 {
   position: absolute;
   top: 28%;
@@ -461,6 +473,7 @@ button {
   opacity: 0.55;
   animation: pulseDeco 4s ease-in-out infinite alternate;
 }
+
 .deco-sparkle-2 {
   position: absolute;
   bottom: 30%;
@@ -475,22 +488,27 @@ button {
   0% {
     transform: translateY(0) rotate(0deg);
   }
+
   50% {
     transform: translateY(-14px) rotate(6deg);
   }
+
   100% {
     transform: translateY(8px) rotate(-5deg);
   }
 }
+
 @keyframes pulseDeco {
   0% {
     transform: scale(0.85);
     opacity: 0.25;
   }
+
   50% {
     transform: scale(1.2);
     opacity: 0.7;
   }
+
   100% {
     transform: scale(0.9);
     opacity: 0.35;
@@ -646,23 +664,28 @@ button {
   background: #ffd4e5;
   color: #09090b;
 }
+
 .course-lime {
   background: #d4ff32;
   color: #09090b;
 }
+
 .course-lilac {
   background: #bfb5ff;
   color: #09090b;
 }
+
 .course-dark {
   background: #18181c;
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
+
 .course-peach {
   background: #ffd0a8;
   color: #09090b;
 }
+
 .course-mint {
   background: #9df0d0;
   color: #09090b;
@@ -684,6 +707,7 @@ button {
   border-radius: 20px;
   text-transform: uppercase;
 }
+
 .course-dark .course-step-num {
   background: var(--neon-lime);
   color: #09090b;
@@ -700,6 +724,7 @@ button {
   font-size: 18px;
   color: #09090b;
 }
+
 .course-dark .course-icon-round {
   background: rgba(255, 255, 255, 0.1);
   color: var(--neon-lime);
@@ -728,6 +753,7 @@ button {
   padding-top: 14px;
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
+
 .course-dark .course-bottom-row {
   border-top-color: rgba(255, 255, 255, 0.1);
 }
@@ -741,6 +767,7 @@ button {
   border-radius: 20px;
   letter-spacing: 0.5px;
 }
+
 .course-dark .course-badge-pill {
   background: var(--neon-lime);
   color: #09090b;
@@ -758,10 +785,12 @@ button {
   font-size: 13px;
   transition: var(--transition);
 }
+
 .course-dark .course-arrow-btn {
   background: var(--neon-lime);
   color: #09090b;
 }
+
 .course-card-editorial:hover .course-arrow-btn {
   transform: rotate(45deg) scale(1.1);
 }
@@ -931,9 +960,17 @@ button {
 }
 
 /* Backwards compatibility aliases */
-.pill-blue { composes: pill-lime; }
-.pill-purple { composes: pill-lilac; }
-.pill-cyan { composes: pill-pink; }
+.pill-blue {
+  composes: pill-lime;
+}
+
+.pill-purple {
+  composes: pill-lilac;
+}
+
+.pill-cyan {
+  composes: pill-pink;
+}
 
 .pill-icon-top {
   width: 48px;
@@ -1011,14 +1048,17 @@ button {
     height: 340px;
     gap: 12px;
   }
+
   .action-expand-pill {
     padding: 20px 16px;
     border-radius: 22px;
     min-width: 75px;
   }
+
   .pill-title {
     font-size: 22px;
   }
+
   .pill-desc {
     font-size: 13.5px;
   }
@@ -1030,15 +1070,18 @@ button {
     height: 560px;
     gap: 12px;
   }
+
   .action-expand-pill {
     min-width: 100%;
     min-height: 65px;
     flex: 1;
   }
+
   .action-expand-pill.active {
     flex: 3.5;
     min-height: 250px;
   }
+
   .pill-vertical-label {
     writing-mode: horizontal-tb;
     transform: none;
@@ -1129,6 +1172,7 @@ button {
   letter-spacing: -0.5px;
   color: #ffffff;
 }
+
 .modal-title-wrap p {
   font-size: 12px;
   color: var(--text-gray-light);
@@ -1147,6 +1191,7 @@ button {
   cursor: pointer;
   transition: var(--transition);
 }
+
 .modal-close-btn:hover {
   background: #ef4444;
   transform: rotate(90deg);
@@ -1179,9 +1224,11 @@ button {
   text-transform: uppercase;
   transition: var(--transition);
 }
+
 .modal-tab-btn:hover {
   color: #ffffff;
 }
+
 .modal-tab-btn.active {
   background: var(--neon-lime);
   color: #09090b;
@@ -1191,6 +1238,7 @@ button {
   display: none;
   animation: fadeIn 0.3s ease;
 }
+
 .tab-pane.active {
   display: block;
 }
@@ -1200,6 +1248,7 @@ button {
     opacity: 0;
     transform: translateY(6px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1253,6 +1302,7 @@ button {
   background: #09090b;
   margin-top: 10px;
 }
+
 .pdf-viewer-wrap iframe {
   width: 100%;
   height: 480px;
@@ -1268,6 +1318,7 @@ button {
   background: #121215;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
+
 .pdf-name-tag {
   font-size: 12px;
   font-weight: 700;
@@ -1307,6 +1358,7 @@ button {
   justify-content: space-between;
   gap: 10px;
 }
+
 .artefak-card-box h5 {
   font-size: 12px;
   font-weight: 800;
@@ -1321,6 +1373,7 @@ button {
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
+
 .artefak-mini-frame iframe {
   width: 100%;
   height: 100%;
@@ -1331,6 +1384,7 @@ button {
   display: flex;
   gap: 8px;
 }
+
 .btn-mini-view {
   flex: 1;
   background: rgba(255, 255, 255, 0.08);
@@ -1346,6 +1400,7 @@ button {
   gap: 4px;
   transition: var(--transition);
 }
+
 .btn-mini-view:hover {
   background: var(--neon-lime);
   color: #09090b;
@@ -1381,23 +1436,28 @@ button {
   background: #ffd4e5;
   color: #09090b;
 }
+
 .course-lime {
   background: #d4ff32;
   color: #09090b;
 }
+
 .course-lilac {
   background: #bfb5ff;
   color: #09090b;
 }
+
 .course-dark {
   background: #121215;
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.12);
 }
+
 .course-peach {
   background: #ffd0a8;
   color: #09090b;
 }
+
 .course-mint {
   background: #9df0d0;
   color: #09090b;
@@ -1419,6 +1479,7 @@ button {
   border-radius: 20px;
   text-transform: uppercase;
 }
+
 .course-dark .course-step-num {
   background: var(--neon-lime);
   color: #09090b;
@@ -1435,6 +1496,7 @@ button {
   font-size: 18px;
   color: #09090b;
 }
+
 .course-dark .course-icon-round {
   background: rgba(255, 255, 255, 0.1);
   color: var(--neon-lime);
@@ -1463,6 +1525,7 @@ button {
   padding-top: 14px;
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
+
 .course-dark .course-bottom-row {
   border-top-color: rgba(255, 255, 255, 0.1);
 }
@@ -1476,6 +1539,7 @@ button {
   border-radius: 20px;
   letter-spacing: 0.5px;
 }
+
 .course-dark .course-badge-pill {
   background: var(--neon-lime);
   color: #09090b;
@@ -1493,10 +1557,12 @@ button {
   font-size: 13px;
   transition: var(--transition);
 }
+
 .course-dark .course-arrow-btn {
   background: var(--neon-lime);
   color: #09090b;
 }
+
 .course-card-editorial:hover .course-arrow-btn {
   transform: rotate(45deg) scale(1.1);
 }
@@ -1815,16 +1881,20 @@ button {
     padding-top: 90px;
     padding-bottom: 40px;
   }
+
   .courses-grid-3col,
   .action-plan-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .framework-4step-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .artefak-grid-modal {
     grid-template-columns: 1fr;
   }
+
   .footer-top-grid {
     grid-template-columns: 1fr;
   }
@@ -1834,6 +1904,7 @@ button {
   .sticky-social-bar {
     display: none;
   }
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -1844,22 +1915,28 @@ button {
     background: #09090b;
     padding: 20px;
   }
+
   .nav-links.active {
     display: flex;
   }
+
   .hamburger {
     display: flex;
   }
+
   .courses-grid-3col,
   .action-plan-grid {
     grid-template-columns: 1fr;
   }
+
   .framework-4step-grid {
     grid-template-columns: 1fr;
   }
+
   .hero-bottom-worm-track {
     height: 120px;
   }
+
   .footer-bottom-bar {
     flex-direction: column;
     gap: 16px;

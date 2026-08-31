@@ -1,933 +1,1361 @@
 <!doctype html>
 <html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refleksi Semester 2 | E-Portofolio PPG Agasta Pratama Nugraha</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Refleksi Semester 2 | E-Portofolio PPG Agasta Pratama Nugraha</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Permanent+Marker&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Permanent+Marker&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap"
-    rel="stylesheet" />
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- CSS External & Interactive Animations -->
+    <link rel="stylesheet" href="css/refleksi-s2.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
 
-  <!-- CSS External & Interactive Animations -->
-  <link rel="stylesheet" href="css/refleksi-s2.css" />
-  <link rel="stylesheet" href="css/animations.css" />
-</head>
-
-<body>
-  <!-- STICKY VERTICAL SOCIAL BAR -->
-  <aside class="sticky-social-bar" aria-label="Social Media Bar">
-    <div class="social-icons-vertical">
-      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin-in"></i>
-      </a>
-      <a href="mailto:agasta.pratama@email.com" aria-label="Email">
-        <i class="fa-regular fa-envelope"></i>
-      </a>
-    </div>
-    <div class="vertical-text-tag">
-      <span>PENDIDIK INOVATIF & ADAPTIF</span>
-      <span class="sparkle-doodle">✦</span>
-    </div>
-  </aside>
-
-  <!-- FLOATING NAVBAR -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="beranda.html" class="logo">AGASTA<span>.</span></a>
-
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <ul class="nav-links" id="navLinks">
-        <li><a href="visi.html">VISI PRIBADI</a></li>
-        <li><a href="refleksi-s1.html">REFLEKSI S1</a></li>
-        <li><a href="refleksi-s2.html" class="active">REFLEKSI S2</a></li>
-        <li><a href="inovasi.html">KARYA INOVATIF</a></li>
-      </ul>
-
-      <div class="nav-cta">
-        <a href="#kontak" class="btn-pill-neon pulse-badge">
-          HUBUNGI SAYA <i class="fa-solid fa-arrow-up-right-from-square"></i>
+  <body>
+    <!-- STICKY VERTICAL SOCIAL BAR -->
+    <aside class="sticky-social-bar" aria-label="Social Media Bar">
+      <div class="social-icons-vertical">
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:agasta.pratama@email.com" aria-label="Email">
+          <i class="fa-regular fa-envelope"></i>
         </a>
       </div>
-    </div>
-  </nav>
-
-  <!-- 1. HERO ACADEMIC BANNER -->
-  <header class="hero-academic" id="hero">
-    <svg class="deco-floating-crown floating-gentle" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M5 32 L 12 12 L 25 24 L 38 12 L 45 32 Z" stroke="#d4ff32" stroke-width="3" stroke-linecap="round"
-        stroke-linejoin="round" />
-      <circle cx="12" cy="10" r="2.5" fill="#d4ff32" />
-      <circle cx="25" cy="8" r="2.5" fill="#d4ff32" />
-      <circle cx="38" cy="10" r="2.5" fill="#d4ff32" />
-    </svg>
-
-    <svg class="deco-floating-smiley floating-rotate" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="50" cy="50" r="45" stroke="#bfb5ff" stroke-width="5" stroke-dasharray="8 6" />
-      <circle cx="36" cy="40" r="5" fill="#bfb5ff" />
-      <circle cx="64" cy="40" r="5" fill="#bfb5ff" />
-      <path d="M32 60 Q 50 78 68 60" stroke="#bfb5ff" stroke-width="5" stroke-linecap="round" />
-    </svg>
-
-    <div class="deco-sparkle-1">✦</div>
-    <div class="deco-sparkle-2">★</div>
-
-    <div class="container hero-academic-content reveal-scale">
-      <div class="g1-asterisk-badge">
-        <span class="g1-asterisk-icon">✱</span>
-        <span class="g1-badge-pill">LK 2 REFLEKSI PENGALAMAN BELAJAR SEMESTER 2</span>
+      <div class="vertical-text-tag">
+        <span>PENDIDIK INOVATIF & ADAPTIF</span>
+        <span class="sparkle-doodle">✦</span>
       </div>
+    </aside>
 
-      <h1 class="hero-academic-title">
-        JURNAL REFLEKSI & ARTEFAK <br />
-        <span class="text-lime">5 MATA KULIAH</span> TINGKAT LANJUT.
-      </h1>
-      <p class="hero-academic-desc">
-        Dokumentasi kematangan pedagogik, penguasaan iklim sosio-emosional, kepemimpinan proyek komunitas, dan praktik mengajar mandiri
-        <strong>Agasta Pratama Nugraha (NIM: 25105260369)</strong> • Kelas B/Informatika UNY.
-      </p>
-      <div class="hero-academic-actions">
-        <a href="#matkul-list" class="btn-academic-cta">
-          JELAJAHI REFLEKSI MATKUL <i class="fa-solid fa-arrow-down-long"></i>
-        </a>
+    <!-- FLOATING NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">AGASTA<span>.</span></a>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="visi.html">VISI PRIBADI</a></li>
+          <li><a href="refleksi-s1.html">REFLEKSI S1</a></li>
+          <li><a href="refleksi-s2.html" class="active">REFLEKSI S2</a></li>
+          <li><a href="inovasi.html">KARYA INOVATIF</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="#kontak" class="btn-pill-neon pulse-badge">
+            HUBUNGI SAYA <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
       </div>
-    </div>
+    </nav>
 
-    <!-- Animasi Cacing Bawah -->
-    <div class="hero-bottom-worm-track" aria-hidden="true">
-      <svg class="worm-svg-canvas" viewBox="0 0 1440 160" preserveAspectRatio="none" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path class="worm-faint-track"
-          d="M -100 100 Q 150 130 350 70 Q 500 10 650 60 Q 800 110 980 50 Q 1150 -10 1300 80 Q 1420 130 1560 70" />
-        <path class="worm-slither-body"
-          d="M -100 100 Q 150 130 350 70 Q 500 10 650 60 Q 800 110 980 50 Q 1150 -10 1300 80 Q 1420 130 1560 70" />
+    <!-- 1. HERO ACADEMIC BANNER -->
+    <header class="hero-academic" id="hero">
+      <svg
+        class="deco-floating-crown floating-gentle"
+        viewBox="0 0 50 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 32 L 12 12 L 25 24 L 38 12 L 45 32 Z"
+          stroke="#d4ff32"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <circle cx="12" cy="10" r="2.5" fill="#d4ff32" />
+        <circle cx="25" cy="8" r="2.5" fill="#d4ff32" />
+        <circle cx="38" cy="10" r="2.5" fill="#d4ff32" />
       </svg>
-    </div>
-  </header>
 
-  <!-- 2. SECTION: 5 COURSE CARDS (BERJEJER 2 KESAMPING) -->
-  <section class="courses-showcase-section" id="matkul-list">
-    <div class="container">
-      <div class="section-top-title-group reveal" style="text-align: center; margin-bottom: 35px">
-        <span class="section-tag-badge">DAFTAR MATA KULIAH S2 PPG</span>
-        <h2>
-          Pilih Mata Kuliah untuk Melihat Detail Refleksi LK 2 ↙
-        </h2>
-        <p style="max-width: 720px; margin: 10px auto 0;">
-          Klik kartu di bawah untuk membuka eksplorasi esai refleksi dan artefak mata kuliah Semester 2 Agasta Pratama Nugraha.
+      <svg
+        class="deco-floating-smiley floating-rotate"
+        viewBox="0 0 100 100"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="50"
+          cy="50"
+          r="45"
+          stroke="#bfb5ff"
+          stroke-width="5"
+          stroke-dasharray="8 6"
+        />
+        <circle cx="36" cy="40" r="5" fill="#bfb5ff" />
+        <circle cx="64" cy="40" r="5" fill="#bfb5ff" />
+        <path
+          d="M32 60 Q 50 78 68 60"
+          stroke="#bfb5ff"
+          stroke-width="5"
+          stroke-linecap="round"
+        />
+      </svg>
+
+      <div class="deco-sparkle-1">✦</div>
+      <div class="deco-sparkle-2">★</div>
+
+      <div class="container hero-academic-content reveal-scale">
+        <div class="g1-asterisk-badge">
+          <span class="g1-asterisk-icon">✱</span>
+          <span class="g1-badge-pill"
+            >LK 2 REFLEKSI PENGALAMAN BELAJAR SEMESTER 2</span
+          >
+        </div>
+
+        <h1 class="hero-academic-title">
+          JURNAL REFLEKSI & ARTEFAK <br />
+          <span class="text-lime">5 MATA KULIAH</span> TINGKAT LANJUT.
+        </h1>
+        <p class="hero-academic-desc">
+          Dokumentasi kematangan pedagogik, penguasaan iklim sosio-emosional,
+          kepemimpinan proyek komunitas, dan praktik mengajar mandiri
+          <strong>Agasta Pratama Nugraha (NIM: 25105260369)</strong> • Kelas
+          B/Informatika UNY.
         </p>
-      </div>
-
-      <!-- 2-COLUMN GRID (BERJEJER 2 KESAMPING) -->
-      <div class="courses-grid-2col">
-        <!-- CARD 1: PSE -->
-        <div class="course-card-editorial course-lilac reveal-scale delay-100 shimmer-hover" onclick="openModal('modal-pse')">
-          <div>
-            <div class="course-card-top-meta">
-              <span class="course-step-num">MK 01</span>
-              <div class="course-icon-round">
-                <i class="fa-solid fa-heart-pulse"></i>
-              </div>
-            </div>
-            <div class="course-body-wrap">
-              <h3>Pembelajaran Sosial Emosional (PSE)</h3>
-              <p>
-                Penguasaan 5 kompetensi CASEL, teknik STOP, mindfulness, dan penciptaan lingkungan belajar yang aman, suportif, serta berempati bagi murid.
-              </p>
-            </div>
-          </div>
-          <div class="course-bottom-row">
-            <span class="course-badge-pill">CASEL & TEKNIK STOP</span>
-            <div class="course-arrow-btn">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD 2: PMA LANJUT -->
-        <div class="course-card-editorial course-lime reveal-scale delay-200 shimmer-hover" onclick="openModal('modal-pmal')">
-          <div>
-            <div class="course-card-top-meta">
-              <span class="course-step-num">MK 02</span>
-              <div class="course-icon-round">
-                <i class="fa-solid fa-chart-line"></i>
-              </div>
-            </div>
-            <div class="course-body-wrap">
-              <h3>Pembelajaran Mendalam & Asesmen Lanjut</h3>
-              <p>
-                Perancangan asesmen performa tingkat tinggi, rubrik analitik komprehensif, portofolio digital, dan evaluasi berkelanjutan program Informatika.
-              </p>
-            </div>
-          </div>
-          <div class="course-bottom-row">
-            <span class="course-badge-pill">ASESMEN PERFORMA</span>
-            <div class="course-arrow-btn">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD 3: PPL MANDIRI -->
-        <div class="course-card-editorial course-pink reveal-scale delay-300 shimmer-hover" onclick="openModal('modal-pplm')">
-          <div>
-            <div class="course-card-top-meta">
-              <span class="course-step-num">MK 03</span>
-              <div class="course-icon-round">
-                <i class="fa-solid fa-chalkboard-user"></i>
-              </div>
-            </div>
-            <div class="course-body-wrap">
-              <h3>Praktik Pengalaman Lapangan (PPL) Mandiri</h3>
-              <p>
-                Praktik mengajar mandiri penuh di SMA Negeri 4 Yogyakarta dengan penerapan siklus Lesson Study (Plan-Do-See) dan diferensiasi kelas.
-              </p>
-            </div>
-          </div>
-          <div class="course-bottom-row">
-            <span class="course-badge-pill">LESSON STUDY MANDIRI</span>
-            <div class="course-arrow-btn">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD 4: PROJEK KEPEMIMPINAN -->
-        <div class="course-card-editorial course-dark reveal-scale delay-400 shimmer-hover" onclick="openModal('modal-pkep')">
-          <div>
-            <div class="course-card-top-meta">
-              <span class="course-step-num">MK 04</span>
-              <div class="course-icon-round">
-                <i class="fa-solid fa-users-gear"></i>
-              </div>
-            </div>
-            <div class="course-body-wrap">
-              <h3>Projek Kepemimpinan</h3>
-              <p>
-                Inisiasi program service learning berbasis komunitas sekolah: pelatihan literasi digital, pencegahan cyberbullying, dan optimalisasi AI positif.
-              </p>
-            </div>
-          </div>
-          <div class="course-bottom-row">
-            <span class="course-badge-pill">SERVICE LEARNING</span>
-            <div class="course-arrow-btn">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD 5: PKB -->
-        <div class="course-card-editorial course-peach reveal-scale delay-500 shimmer-hover" onclick="openModal('modal-pkb')">
-          <div>
-            <div class="course-card-top-meta">
-              <span class="course-step-num">MK 05</span>
-              <div class="course-icon-round">
-                <i class="fa-solid fa-book-bookmark"></i>
-              </div>
-            </div>
-            <div class="course-body-wrap">
-              <h3>Pengembangan Keprofesian Berkelanjutan (PKB)</h3>
-              <p>
-                Diseminasi Penelitian Tindakan Kelas (PTK), keaktifan dalam Komunitas Praktisi / MGMP Informatika, dan pemanfaatan Platform Merdeka Mengajar (PMM).
-              </p>
-            </div>
-          </div>
-          <div class="course-bottom-row">
-            <span class="course-badge-pill">DISEMINASI PTK & MGMP</span>
-            <div class="course-arrow-btn">
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
-          </div>
+        <div class="hero-academic-actions">
+          <a href="#matkul-list" class="btn-academic-cta">
+            JELAJAHI REFLEKSI MATKUL <i class="fa-solid fa-arrow-down-long"></i>
+          </a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- 3. SECTION: APA YANG DIDAPAT DI SEMESTER 2 -->
-  <section class="s2-outcomes-section" id="apa-didapat">
-    <div class="container">
-      <div class="section-top-title-group reveal" style="text-align: center;">
-        <span class="section-tag-badge">TRANSFORMASI TINGKAT LANJUT</span>
-        <h2>Apa yang Didapat Selama Semester 2?</h2>
-        <p style="max-width: 720px; margin: 10px auto 0; color: #a1a1aa;">
-          Pencapaian kematangan kepemimpinan, kecerdasan sosio-emosional, dan kemandirian penuh sebagai pendidik profesional.
-        </p>
+      <!-- Animasi Cacing Bawah -->
+      <div class="hero-bottom-worm-track" aria-hidden="true">
+        <svg
+          class="worm-svg-canvas"
+          viewBox="0 0 1440 160"
+          preserveAspectRatio="none"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="worm-faint-track"
+            d="M -100 100 Q 150 130 350 70 Q 500 10 650 60 Q 800 110 980 50 Q 1150 -10 1300 80 Q 1420 130 1560 70"
+          />
+          <path
+            class="worm-slither-body"
+            d="M -100 100 Q 150 130 350 70 Q 500 10 650 60 Q 800 110 980 50 Q 1150 -10 1300 80 Q 1420 130 1560 70"
+          />
+        </svg>
       </div>
+    </header>
 
-      <div class="s2-outcomes-grid">
-        <div class="s2-outcome-card reveal-scale delay-100">
-          <div class="icon-wrap"><i class="fa-solid fa-shield-heart"></i></div>
-          <h4>Kecerdasan Sosio-Emosional & Well-Being</h4>
-          <p>
-            Mampu mengelola dinamika emosi kelas, meredakan kecemasan belajar siswa saat praktikum coding dengan teknik STOP, dan membangun relasi kolaboratif yang inklusif.
+    <!-- 2. SECTION: 5 COURSE CARDS (BERJEJER 2 KESAMPING) -->
+    <section class="courses-showcase-section" id="matkul-list">
+      <div class="container">
+        <div
+          class="section-top-title-group reveal"
+          style="text-align: center; margin-bottom: 35px"
+        >
+          <span class="section-tag-badge">DAFTAR MATA KULIAH S2 PPG</span>
+          <h2>Pilih Mata Kuliah untuk Melihat Detail Refleksi LK 2 ↙</h2>
+          <p style="max-width: 720px; margin: 10px auto 0">
+            Klik kartu di bawah untuk membuka eksplorasi esai refleksi dan
+            artefak mata kuliah Semester 2 Agasta Pratama Nugraha.
           </p>
         </div>
 
-        <div class="s2-outcome-card reveal-scale delay-200">
-          <div class="icon-wrap"><i class="fa-solid fa-user-check"></i></div>
-          <h4>Kemandirian Mengajar Penuh & Lesson Study</h4>
-          <p>
-            Memimpin kelas Informatika secara mandiri di SMAN 4 Yogyakarta, mengeksekusi asesmen performa digital, dan melakukan refleksi siklus terbuka bersama rekan guru.
+        <!-- 2-COLUMN GRID (BERJEJER 2 KESAMPING) -->
+        <div class="courses-grid-2col">
+          <!-- CARD 1: PSE -->
+          <div
+            class="course-card-editorial course-lilac reveal-scale delay-100 shimmer-hover"
+            onclick="openModal('modal-pse')"
+          >
+            <div>
+              <div class="course-card-top-meta">
+                <span class="course-step-num">MK 01</span>
+                <div class="course-icon-round">
+                  <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+              </div>
+              <div class="course-body-wrap">
+                <h3>Pembelajaran Sosial Emosional (PSE)</h3>
+                <p>
+                  Penguasaan 5 kompetensi CASEL, teknik STOP, mindfulness, dan
+                  penciptaan lingkungan belajar yang aman, suportif, serta
+                  berempati bagi murid.
+                </p>
+              </div>
+            </div>
+            <div class="course-bottom-row">
+              <span class="course-badge-pill">CASEL & TEKNIK STOP</span>
+              <div class="course-arrow-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2: PMA LANJUT -->
+          <div
+            class="course-card-editorial course-lime reveal-scale delay-200 shimmer-hover"
+            onclick="openModal('modal-pmal')"
+          >
+            <div>
+              <div class="course-card-top-meta">
+                <span class="course-step-num">MK 02</span>
+                <div class="course-icon-round">
+                  <i class="fa-solid fa-chart-line"></i>
+                </div>
+              </div>
+              <div class="course-body-wrap">
+                <h3>Pembelajaran Mendalam & Asesmen Lanjut</h3>
+                <p>
+                  Perancangan asesmen performa tingkat tinggi, rubrik analitik
+                  komprehensif, portofolio digital, dan evaluasi berkelanjutan
+                  program Informatika.
+                </p>
+              </div>
+            </div>
+            <div class="course-bottom-row">
+              <span class="course-badge-pill">ASESMEN PERFORMA</span>
+              <div class="course-arrow-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3: PPL MANDIRI -->
+          <div
+            class="course-card-editorial course-pink reveal-scale delay-300 shimmer-hover"
+            onclick="openModal('modal-pplm')"
+          >
+            <div>
+              <div class="course-card-top-meta">
+                <span class="course-step-num">MK 03</span>
+                <div class="course-icon-round">
+                  <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+              </div>
+              <div class="course-body-wrap">
+                <h3>Praktik Pengalaman Lapangan (PPL) Mandiri</h3>
+                <p>
+                  Praktik mengajar mandiri penuh di SMA Negeri 4 Yogyakarta
+                  dengan penerapan siklus Lesson Study (Plan-Do-See) dan
+                  diferensiasi kelas.
+                </p>
+              </div>
+            </div>
+            <div class="course-bottom-row">
+              <span class="course-badge-pill">LESSON STUDY MANDIRI</span>
+              <div class="course-arrow-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4: PROJEK KEPEMIMPINAN -->
+          <div
+            class="course-card-editorial course-dark reveal-scale delay-400 shimmer-hover"
+            onclick="openModal('modal-pkep')"
+          >
+            <div>
+              <div class="course-card-top-meta">
+                <span class="course-step-num">MK 04</span>
+                <div class="course-icon-round">
+                  <i class="fa-solid fa-users-gear"></i>
+                </div>
+              </div>
+              <div class="course-body-wrap">
+                <h3>Projek Kepemimpinan</h3>
+                <p>
+                  Inisiasi program service learning berbasis komunitas sekolah:
+                  pelatihan literasi digital, pencegahan cyberbullying, dan
+                  optimalisasi AI positif.
+                </p>
+              </div>
+            </div>
+            <div class="course-bottom-row">
+              <span class="course-badge-pill">SERVICE LEARNING</span>
+              <div class="course-arrow-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 5: PKB -->
+          <div
+            class="course-card-editorial course-peach reveal-scale delay-500 shimmer-hover"
+            onclick="openModal('modal-pkb')"
+          >
+            <div>
+              <div class="course-card-top-meta">
+                <span class="course-step-num">MK 05</span>
+                <div class="course-icon-round">
+                  <i class="fa-solid fa-book-bookmark"></i>
+                </div>
+              </div>
+              <div class="course-body-wrap">
+                <h3>Pengembangan Keprofesian Berkelanjutan (PKB)</h3>
+                <p>
+                  Diseminasi Penelitian Tindakan Kelas (PTK), keaktifan dalam
+                  Komunitas Praktisi / MGMP Informatika, dan pemanfaatan
+                  Platform Merdeka Mengajar (PMM).
+                </p>
+              </div>
+            </div>
+            <div class="course-bottom-row">
+              <span class="course-badge-pill">DISEMINASI PTK & MGMP</span>
+              <div class="course-arrow-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SECTION: APA YANG DIDAPAT DI SEMESTER 2 -->
+    <section class="s2-outcomes-section" id="apa-didapat">
+      <div class="container">
+        <div class="section-top-title-group reveal" style="text-align: center">
+          <span class="section-tag-badge">TRANSFORMASI TINGKAT LANJUT</span>
+          <h2>Apa yang Didapat Selama Semester 2?</h2>
+          <p style="max-width: 720px; margin: 10px auto 0; color: #a1a1aa">
+            Pencapaian kematangan kepemimpinan, kecerdasan sosio-emosional, dan
+            kemandirian penuh sebagai pendidik profesional.
           </p>
         </div>
 
-        <div class="s2-outcome-card reveal-scale delay-300">
-          <div class="icon-wrap"><i class="fa-solid fa-handshake-angle"></i></div>
-          <h4>Kepemimpinan Komunitas & Guru Pembelajar</h4>
-          <p>
-            Menginisiasi projek service learning pemberdayaan literasi digital, aktif dalam diseminasi PTK, dan berkomitmen menjadi agen transformasi pendidikan berkelanjutan.
+        <div class="s2-outcomes-grid">
+          <div class="s2-outcome-card reveal-scale delay-100">
+            <div class="icon-wrap">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <h4>Kecerdasan Sosio-Emosional & Well-Being</h4>
+            <p>
+              Mampu mengelola dinamika emosi kelas, meredakan kecemasan belajar
+              siswa saat praktikum coding dengan teknik STOP, dan membangun
+              relasi kolaboratif yang inklusif.
+            </p>
+          </div>
+
+          <div class="s2-outcome-card reveal-scale delay-200">
+            <div class="icon-wrap"><i class="fa-solid fa-user-check"></i></div>
+            <h4>Kemandirian Mengajar Penuh & Lesson Study</h4>
+            <p>
+              Memimpin kelas Informatika secara mandiri di SMAN 4 Yogyakarta,
+              mengeksekusi asesmen performa digital, dan melakukan refleksi
+              siklus terbuka bersama rekan guru.
+            </p>
+          </div>
+
+          <div class="s2-outcome-card reveal-scale delay-300">
+            <div class="icon-wrap">
+              <i class="fa-solid fa-handshake-angle"></i>
+            </div>
+            <h4>Kepemimpinan Komunitas & Guru Pembelajar</h4>
+            <p>
+              Menginisiasi projek service learning pemberdayaan literasi
+              digital, aktif dalam diseminasi PTK, dan berkomitmen menjadi agen
+              transformasi pendidikan berkelanjutan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SECTION: RENCANA AKSI DAN TINDAK LANJUT (HORIZONTAL EXPANDABLE ACCORDION - GAMBAR 2 & 3) -->
+    <section class="action-plan-section" id="tindak-lanjut">
+      <div class="container">
+        <div
+          class="section-top-title-group reveal"
+          style="text-align: center; margin-bottom: 40px"
+        >
+          <span class="section-tag-badge">KOMITMEN MASA DEPAN</span>
+          <h2>Rencana Aksi & Tindak Lanjut Pasca-PPG</h2>
+          <p style="max-width: 720px; margin: 10px auto 0">
+            Klik setiap kartu di bawah untuk mengeksplorasi komitmen aksi nyata
+            dan keberlanjutan profesionalisme pendidik Informatika.
           </p>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- 4. SECTION: RENCANA AKSI DAN TINDAK LANJUT (HORIZONTAL EXPANDABLE ACCORDION - GAMBAR 2 & 3) -->
-  <section class="action-plan-section" id="tindak-lanjut">
-    <div class="container">
-      <div class="section-top-title-group reveal" style="text-align: center; margin-bottom: 40px">
-        <span class="section-tag-badge">KOMITMEN MASA DEPAN</span>
-        <h2>Rencana Aksi & Tindak Lanjut Pasca-PPG</h2>
-        <p style="max-width: 720px; margin: 10px auto 0;">
-          Klik setiap kartu di bawah untuk mengeksplorasi komitmen aksi nyata dan keberlanjutan profesionalisme pendidik Informatika.
-        </p>
-      </div>
-
-      <!-- HORIZONTAL EXPANDABLE CARDS (REFERENSI GAMBAR 2 & 3 - SOFT BENTO THEME) -->
-      <div class="expandable-action-accordion reveal-scale delay-100">
-        <!-- PILL 1: SOSIAL EMOSIONAL (Soft Pastel Pink) -->
-        <div class="action-expand-pill pill-pink" onclick="activateAccordionPill(this)">
-          <div class="pill-icon-top">
-            <i class="fa-solid fa-heart-pulse"></i>
+        <!-- HORIZONTAL EXPANDABLE CARDS (REFERENSI GAMBAR 2 & 3 - SOFT BENTO THEME) -->
+        <div class="expandable-action-accordion reveal-scale delay-100">
+          <!-- PILL 1: SOSIAL EMOSIONAL (Soft Pastel Pink) -->
+          <div
+            class="action-expand-pill pill-pink"
+            onclick="activateAccordionPill(this)"
+          >
+            <div class="pill-icon-top">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div class="pill-vertical-label">SOSIAL EMOSIONAL</div>
+            <div class="pill-expanded-content">
+              <h3 class="pill-title">Integrasi PSE & Iklim Belajar Positif</h3>
+              <p class="pill-desc">
+                Menginternalisasikan 5 kompetensi sosial-emosional (CASEL) dan
+                teknik kesadaran penuh (*mindfulness/teknik STOP*) ke dalam
+                sintaks pembelajaran Informatika agar murid belajar dengan rasa
+                aman, fokus, empati, dan kesejahteraan psikologis
+                (*well-being*).
+              </p>
+            </div>
           </div>
-          <div class="pill-vertical-label">SOSIAL EMOSIONAL</div>
-          <div class="pill-expanded-content">
-            <h3 class="pill-title">Integrasi PSE & Iklim Belajar Positif</h3>
-            <p class="pill-desc">
-              Menginternalisasikan 5 kompetensi sosial-emosional (CASEL) dan teknik kesadaran penuh (*mindfulness/teknik STOP*) ke dalam sintaks pembelajaran Informatika agar murid belajar dengan rasa aman, fokus, empati, dan kesejahteraan psikologis (*well-being*).
-            </p>
+
+          <!-- PILL 2: LESSON STUDY (Soft Vibrant Neon Lime - Active by Default) -->
+          <div
+            class="action-expand-pill pill-lime active"
+            onclick="activateAccordionPill(this)"
+          >
+            <div class="pill-icon-top">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <div class="pill-vertical-label">LESSON STUDY</div>
+            <div class="pill-expanded-content">
+              <h3 class="pill-title">Praktik Mandiri Berbasis Lesson Study</h3>
+              <p class="pill-desc">
+                Melaksanakan siklus refleksi kolaboratif *Plan-Do-See* (Lesson
+                Study) secara konsisten bersama guru pamong dan rekan sejawat,
+                serta menerapkan rubrik asesmen performa berbasis portofolio
+                digital untuk perbaikan mutu pembelajaran berkelanjutan.
+              </p>
+            </div>
+          </div>
+
+          <!-- PILL 3: DISEMINASI (Soft Pastel Lilac) -->
+          <div
+            class="action-expand-pill pill-lilac"
+            onclick="activateAccordionPill(this)"
+          >
+            <div class="pill-icon-top">
+              <i class="fa-solid fa-users-rays"></i>
+            </div>
+            <div class="pill-vertical-label">DISEMINASI PKB</div>
+            <div class="pill-expanded-content">
+              <h3 class="pill-title">
+                Kepemimpinan Komunitas & Berbagi di PMM
+              </h3>
+              <p class="pill-desc">
+                Mempublikasikan modul ajar dan bukti karya inovatif di Platform
+                Merdeka Mengajar (PMM), menginisiasi program literasi kecerdasan
+                buatan (AI) etis di sekolah, serta aktif mendiseminasikan
+                Penelitian Tindakan Kelas (PTK) di forum MGMP Informatika.
+              </p>
+            </div>
           </div>
         </div>
-
-        <!-- PILL 2: LESSON STUDY (Soft Vibrant Neon Lime - Active by Default) -->
-        <div class="action-expand-pill pill-lime active" onclick="activateAccordionPill(this)">
-          <div class="pill-icon-top">
-            <i class="fa-solid fa-chalkboard-user"></i>
-          </div>
-          <div class="pill-vertical-label">LESSON STUDY</div>
-          <div class="pill-expanded-content">
-            <h3 class="pill-title">Praktik Mandiri Berbasis Lesson Study</h3>
-            <p class="pill-desc">
-              Melaksanakan siklus refleksi kolaboratif *Plan-Do-See* (Lesson Study) secara konsisten bersama guru pamong dan rekan sejawat, serta menerapkan rubrik asesmen performa berbasis portofolio digital untuk perbaikan mutu pembelajaran berkelanjutan.
-            </p>
-          </div>
-        </div>
-
-        <!-- PILL 3: DISEMINASI (Soft Pastel Lilac) -->
-        <div class="action-expand-pill pill-lilac" onclick="activateAccordionPill(this)">
-          <div class="pill-icon-top">
-            <i class="fa-solid fa-users-rays"></i>
-          </div>
-          <div class="pill-vertical-label">DISEMINASI PKB</div>
-          <div class="pill-expanded-content">
-            <h3 class="pill-title">Kepemimpinan Komunitas & Berbagi di PMM</h3>
-            <p class="pill-desc">
-              Mempublikasikan modul ajar dan bukti karya inovatif di Platform Merdeka Mengajar (PMM), menginisiasi program literasi kecerdasan buatan (AI) etis di sekolah, serta aktif mendiseminasikan Penelitian Tindakan Kelas (PTK) di forum MGMP Informatika.
-            </p>
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ==========================================================================
+    <!-- ==========================================================================
          MODALS FOR SEMESTER 2 COURSES (4C REFLECTION FRAMEWORK)
          ========================================================================== -->
 
-  <!-- MODAL 1: PSE -->
-  <div class="modal-overlay" id="modal-pse">
-    <div class="modal-container">
-      <div class="modal-header">
-        <div class="modal-header-left">
-          <div class="modal-icon-badge" style="background: #9333ea; color: #ffffff">
-            <i class="fa-solid fa-heart-pulse"></i>
+    <!-- MODAL 1: PSE -->
+    <div class="modal-overlay" id="modal-pse">
+      <div class="modal-container">
+        <div class="modal-header">
+          <div class="modal-header-left">
+            <div
+              class="modal-icon-badge"
+              style="background: #9333ea; color: #ffffff"
+            >
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div class="modal-title-wrap">
+              <h2>Pembelajaran Sosial Emosional (PSE)</h2>
+              <p>
+                Agasta Pratama Nugraha (NIM: 25105260369) • Kelas B/Informatika
+                UNY
+              </p>
+            </div>
           </div>
-          <div class="modal-title-wrap">
-            <h2>Pembelajaran Sosial Emosional (PSE)</h2>
-            <p>Agasta Pratama Nugraha (NIM: 25105260369) • Kelas B/Informatika UNY</p>
-          </div>
-        </div>
-        <button class="modal-close-btn" onclick="closeModal('modal-pse')">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-
-      <div class="modal-body">
-        <div class="modal-tabs">
-          <button class="modal-tab-btn active" onclick="switchTab(this, 'pse-tab-desc')">
-            Ringkasan Refleksi 4C
-          </button>
-          <button class="modal-tab-btn" onclick="switchTab(this, 'pse-tab-artefak')">
-            Artefak & Bukti Belajar
+          <button class="modal-close-btn" onclick="closeModal('modal-pse')">
+            <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
 
-        <div class="tab-pane active" id="pse-tab-desc">
-          <div class="reflection-4c-container">
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-link"></i> 1. Connection (Keterkaitan)</div>
-              <div class="c-block-content">
-                Mata kuliah PSE sangat esensial bagi calon guru Informatika karena tantangan pembelajaran digital sering kali menimbulkan kecemasan (*coding anxiety*), frustrasi saat menghadapi error algoritma, dan distraksi sosial. Penguasaan 5 kompetensi CASEL membantu saya merancang pembelajaran yang tidak hanya melatih kognitif, tetapi juga memelihara kesehatan mental (*well-being*) peserta didik.
+        <div class="modal-body">
+          <div class="modal-tabs">
+            <button
+              class="modal-tab-btn active"
+              onclick="switchTab(this, 'pse-tab-desc')"
+            >
+              Ringkasan Refleksi 4C
+            </button>
+            <button
+              class="modal-tab-btn"
+              onclick="switchTab(this, 'pse-tab-artefak')"
+            >
+              Artefak & Bukti Belajar
+            </button>
+          </div>
+
+          <div class="tab-pane active" id="pse-tab-desc">
+            <div class="reflection-4c-container">
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-link"></i> 1. Connection (Keterkaitan)
+                </div>
+                <div class="c-block-content">
+                  Mata kuliah PSE sangat esensial bagi calon guru Informatika
+                  karena tantangan pembelajaran digital sering kali menimbulkan
+                  kecemasan (*coding anxiety*), frustrasi saat menghadapi error
+                  algoritma, dan distraksi sosial. Penguasaan 5 kompetensi CASEL
+                  membantu saya merancang pembelajaran yang tidak hanya melatih
+                  kognitif, tetapi juga memelihara kesehatan mental
+                  (*well-being*) peserta didik.
+                </div>
               </div>
-            </div>
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-bolt"></i> 2. Challenge (Perubahan Perspektif)</div>
-              <div class="c-block-content">
-                Sebelumnya saya beranggapan bahwa emosi adalah urusan pribadi siswa di luar ranah guru mata pelajaran eksak/teknologi. Namun perkuliahan ini membuka mata saya bahwa emosi sangat menentukan kesiapan otak dalam menyerap konsep logika. Tanpa suasana emosional yang aman dan suportif, siswa akan cenderung pasif atau takut mencoba hal baru.
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-bolt"></i> 2. Challenge (Perubahan
+                  Perspektif)
+                </div>
+                <div class="c-block-content">
+                  Sebelumnya saya beranggapan bahwa emosi adalah urusan pribadi
+                  siswa di luar ranah guru mata pelajaran eksak/teknologi. Namun
+                  perkuliahan ini membuka mata saya bahwa emosi sangat
+                  menentukan kesiapan otak dalam menyerap konsep logika. Tanpa
+                  suasana emosional yang aman dan suportif, siswa akan cenderung
+                  pasif atau takut mencoba hal baru.
+                </div>
               </div>
-            </div>
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-brain"></i> 3. Concept (Konsep Utama)</div>
-              <div class="c-block-content">
-                Kerangka 5 Kompetensi Sosial Emosional CASEL (*Self-Awareness, Self-Management, Social Awareness, Relationship Skills, Responsible Decision-Making*), teknik kesadaran penuh (*Mindfulness*), teknik STOP (Stop, Take a breath, Observe, Proceed), serta integrasi KSE eksplisit dan implisit dalam modul ajar.
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-brain"></i> 3. Concept (Konsep Utama)
+                </div>
+                <div class="c-block-content">
+                  Kerangka 5 Kompetensi Sosial Emosional CASEL (*Self-Awareness,
+                  Self-Management, Social Awareness, Relationship Skills,
+                  Responsible Decision-Making*), teknik kesadaran penuh
+                  (*Mindfulness*), teknik STOP (Stop, Take a breath, Observe,
+                  Proceed), serta integrasi KSE eksplisit dan implisit dalam
+                  modul ajar.
+                </div>
               </div>
-            </div>
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-arrows-rotate"></i> 4. Change (Komitmen Perubahan)</div>
-              <div class="c-block-content">
-                Membiasakan *check-in* emosi di awal sesi praktikum Informatika, menerapkan teknik STOP saat siswa mulai jenuh atau stres menyelesaikan tugas proyek, serta menciptakan budaya saling mengapresiasi antaranggota kelompok kerja.
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-arrows-rotate"></i> 4. Change (Komitmen
+                  Perubahan)
+                </div>
+                <div class="c-block-content">
+                  Membiasakan *check-in* emosi di awal sesi praktikum
+                  Informatika, menerapkan teknik STOP saat siswa mulai jenuh
+                  atau stres menyelesaikan tugas proyek, serta menciptakan
+                  budaya saling mengapresiasi antaranggota kelompok kerja.
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="tab-pane" id="pse-tab-artefak">
-          <div class="artefak-grid-modal">
-            <div class="artefak-card-box">
-              <h5>Artefak 1 – Rencana Integrasi KSE pada Modul Informatika</h5>
-              <p style="font-size: 11px; color: #a1a1aa;">Penyisipan teknik STOP dan mindfulness pada sintaks Project-Based Learning.</p>
-              <span class="btn-mini-view"><i class="fa-solid fa-check"></i> Terintegrasi Modul</span>
-            </div>
-            <div class="artefak-card-box">
-              <h5>Artefak 2 – Lembar Refleksi Emosional Siswa (Mood Meter)</h5>
-              <p style="font-size: 11px; color: #a1a1aa;">Instrumen pemantauan regulasi diri siswa pasca-penyelesaian tantangan coding.</p>
-              <span class="btn-mini-view"><i class="fa-solid fa-check"></i> Rubrik KSE</span>
-            </div>
-            <div class="artefak-card-box">
-              <h5>Artefak 3 – Dokumentasi Praktik Mindfulness di Kelas</h5>
-              <p style="font-size: 11px; color: #a1a1aa;">Penerapan jeda hening dan pernapasan berkesadaran di Lab Komputer SMAN 4 YK.</p>
-              <span class="btn-mini-view"><i class="fa-solid fa-check"></i> Rekam Jejak</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- MODAL 2: PMA LANJUT -->
-  <div class="modal-overlay" id="modal-pmal">
-    <div class="modal-container">
-      <div class="modal-header">
-        <div class="modal-header-left">
-          <div class="modal-icon-badge" style="background: #15803d; color: #ffffff">
-            <i class="fa-solid fa-chart-line"></i>
-          </div>
-          <div class="modal-title-wrap">
-            <h2>Pembelajaran Mendalam & Asesmen Lanjut</h2>
-            <p>Agasta Pratama Nugraha (NIM: 25105260369) • Kelas B/Informatika UNY</p>
-          </div>
-        </div>
-        <button class="modal-close-btn" onclick="closeModal('modal-pmal')">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-
-      <div class="modal-body">
-        <div class="modal-tabs">
-          <button class="modal-tab-btn active" onclick="switchTab(this, 'pmal-tab-desc')">
-            Ringkasan Refleksi 4C
-          </button>
-          <button class="modal-tab-btn" onclick="switchTab(this, 'pmal-tab-artefak')">
-            Artefak & Bukti Belajar
-          </button>
-        </div>
-
-        <div class="tab-pane active" id="pmal-tab-desc">
-          <div class="reflection-4c-container">
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-link"></i> 1. Connection (Keterkaitan)</div>
-              <div class="c-block-content">
-                Mata kuliah ini memperluas kapasitas saya dalam merancang penilaian komprehensif yang melampaui tes pilihan ganda konvensional. Dalam bidang Informatika, kemampuan murid harus dinilai dari proses bernalar kritis (*computational thinking*), struktur logika kode, serta orisinalitas produk digital.
+          <div class="tab-pane" id="pse-tab-artefak">
+            <div class="artefak-grid-modal">
+              <div class="artefak-card-box">
+                <h5>
+                  Artefak 1 – Rencana Integrasi KSE pada Modul Informatika
+                </h5>
+                <p style="font-size: 11px; color: #a1a1aa">
+                  Penyisipan teknik STOP dan mindfulness pada sintaks
+                  Project-Based Learning.
+                </p>
+                <span class="btn-mini-view"
+                  ><i class="fa-solid fa-check"></i> Terintegrasi Modul</span
+                >
               </div>
-            </div>
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-bolt"></i> 2. Challenge (Perubahan Perspektif)</div>
-              <div class="c-block-content">
-                Asesmen tingkat lanjut bukan sekadar menambah tingkat kesulitan soal, tetapi bagaimana asesmen itu sendiri menjadi pengalaman belajar yang reflektif (*assessment as learning*). Umpan balik yang spesifik, deskriptif, dan tepat waktu jauh lebih berdampak daripada sekadar memberikan skor angka.
+              <div class="artefak-card-box">
+                <h5>
+                  Artefak 2 – Lembar Refleksi Emosional Siswa (Mood Meter)
+                </h5>
+                <p style="font-size: 11px; color: #a1a1aa">
+                  Instrumen pemantauan regulasi diri siswa pasca-penyelesaian
+                  tantangan coding.
+                </p>
+                <span class="btn-mini-view"
+                  ><i class="fa-solid fa-check"></i> Rubrik KSE</span
+                >
               </div>
-            </div>
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-brain"></i> 3. Concept (Konsep Utama)</div>
-              <div class="c-block-content">
-                Desain asesmen autentik dan kinerja (*performance assessment*), rubrik analitik dan holistik berjenjang, Taksonomi SOLO level *Relational* dan *Extended Abstract*, serta pemanfaatan e-portofolio untuk memantau pertumbuhan belajar murid secara longitudinal.
+              <div class="artefak-card-box">
+                <h5>Artefak 3 – Dokumentasi Praktik Mindfulness di Kelas</h5>
+                <p style="font-size: 11px; color: #a1a1aa">
+                  Penerapan jeda hening dan pernapasan berkesadaran di Lab
+                  Komputer SMAN 4 YK.
+                </p>
+                <span class="btn-mini-view"
+                  ><i class="fa-solid fa-check"></i> Rekam Jejak</span
+                >
               </div>
-            </div>
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-arrows-rotate"></i> 4. Change (Komitmen Perubahan)</div>
-              <div class="c-block-content">
-                Menerapkan sistem asesmen performa berbasis proyek dengan rubrik transparan yang dipahami murid sejak awal, memberikan umpan balik formatif berbasis *peer-review*, dan menggunakan hasil asesmen untuk perbaikan modul ajar berikutnya.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="tab-pane" id="pmal-tab-artefak">
-          <div class="artefak-grid-modal">
-            <div class="artefak-card-box">
-              <h5>Artefak 1 – Rubrik Analitik Proyek Informatika</h5>
-              <p style="font-size: 11px; color: #a1a1aa;">Panduan penilaian performa computational thinking, estetika UI/UX, dan kerjasama tim.</p>
-              <span class="btn-mini-view"><i class="fa-solid fa-check"></i> Rubrik Terstandar</span>
-            </div>
-            <div class="artefak-card-box">
-              <h5>Artefak 2 – Instrumen Asesmen Autentik Studi Kasus</h5>
-              <p style="font-size: 11px; color: #a1a1aa;">Soal pemecahan masalah algoritma dunia nyata dengan level kognitif tinggi.</p>
-              <span class="btn-mini-view"><i class="fa-solid fa-check"></i> Instrumen Uji</span>
-            </div>
-            <div class="artefak-card-box">
-              <h5>Artefak 3 – Portofolio Digital Hasil Karya Siswa</h5>
-              <p style="font-size: 11px; color: #a1a1aa;">Kompilasi artefak produk digital dan catatan refleksi formatif murid.</p>
-              <span class="btn-mini-view"><i class="fa-solid fa-check"></i> Portofolio</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- MODAL 3: PPL MANDIRI -->
-  <div class="modal-overlay" id="modal-pplm">
-    <div class="modal-container">
-      <div class="modal-header">
-        <div class="modal-header-left">
-          <div class="modal-icon-badge" style="background: #e11d48; color: #ffffff">
-            <i class="fa-solid fa-chalkboard-user"></i>
+    <!-- MODAL 2: PMA LANJUT -->
+    <div class="modal-overlay" id="modal-pmal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <div class="modal-header-left">
+            <div
+              class="modal-icon-badge"
+              style="background: #15803d; color: #ffffff"
+            >
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div class="modal-title-wrap">
+              <h2>Pembelajaran Mendalam & Asesmen Lanjut</h2>
+              <p>
+                Agasta Pratama Nugraha (NIM: 25105260369) • Kelas B/Informatika
+                UNY
+              </p>
+            </div>
           </div>
-          <div class="modal-title-wrap">
-            <h2>Praktik Pengalaman Lapangan (PPL) Mandiri</h2>
-            <p>Agasta Pratama Nugraha • SMA Negeri 4 Yogyakarta</p>
-          </div>
-        </div>
-        <button class="modal-close-btn" onclick="closeModal('modal-pplm')">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-
-      <div class="modal-body">
-        <div class="modal-tabs">
-          <button class="modal-tab-btn active" onclick="switchTab(this, 'pplm-tab-desc')">
-            Ringkasan Refleksi 4C
-          </button>
-          <button class="modal-tab-btn" onclick="switchTab(this, 'pplm-tab-artefak')">
-            Artefak & Bukti Belajar
+          <button class="modal-close-btn" onclick="closeModal('modal-pmal')">
+            <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
 
-        <div class="tab-pane active" id="pplm-tab-desc">
-          <div class="reflection-4c-container">
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-link"></i> 1. Connection (Keterkaitan)</div>
-              <div class="c-block-content">
-                PPL Mandiri adalah puncak pengujian seluruh teori pedagogik dan keilmuan Informatika. Mengambil tanggung jawab penuh pengelolaan kelas di SMA Negeri 4 Yogyakarta menuntut kesiapan kepemimpinan instruksional, kecepatan adaptasi, dan ketajaman reflektif dalam merespons dinamika kelas nyata.
+        <div class="modal-body">
+          <div class="modal-tabs">
+            <button
+              class="modal-tab-btn active"
+              onclick="switchTab(this, 'pmal-tab-desc')"
+            >
+              Ringkasan Refleksi 4C
+            </button>
+            <button
+              class="modal-tab-btn"
+              onclick="switchTab(this, 'pmal-tab-artefak')"
+            >
+              Artefak & Bukti Belajar
+            </button>
+          </div>
+
+          <div class="tab-pane active" id="pmal-tab-desc">
+            <div class="reflection-4c-container">
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-link"></i> 1. Connection (Keterkaitan)
+                </div>
+                <div class="c-block-content">
+                  Mata kuliah ini memperluas kapasitas saya dalam merancang
+                  penilaian komprehensif yang melampaui tes pilihan ganda
+                  konvensional. Dalam bidang Informatika, kemampuan murid harus
+                  dinilai dari proses bernalar kritis (*computational
+                  thinking*), struktur logika kode, serta orisinalitas produk
+                  digital.
+                </div>
               </div>
-            </div>
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-bolt"></i> 2. Challenge (Perubahan Perspektif)</div>
-              <div class="c-block-content">
-                Mengajar mandiri membuktikan bahwa fleksibilitas dan kepekaan situasi jauh lebih penting daripada sekadar kaku mengikuti lembar RPP/Modul. Ketika metode awal kurang direspons siswa, guru harus dengan sigap memodifikasi scaffolding tanpa menghilangkan esensi tujuan capaian pembelajaran.
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-bolt"></i> 2. Challenge (Perubahan
+                  Perspektif)
+                </div>
+                <div class="c-block-content">
+                  Asesmen tingkat lanjut bukan sekadar menambah tingkat
+                  kesulitan soal, tetapi bagaimana asesmen itu sendiri menjadi
+                  pengalaman belajar yang reflektif (*assessment as learning*).
+                  Umpan balik yang spesifik, deskriptif, dan tepat waktu jauh
+                  lebih berdampak daripada sekadar memberikan skor angka.
+                </div>
               </div>
-            </div>
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-brain"></i> 3. Concept (Konsep Utama)</div>
-              <div class="c-block-content">
-                Siklus Lesson Study (*Plan-Do-See*), manajemen waktu instruksional yang efisien, diferensiasi produk tugas coding, dan integrasi refleksi harian pasca-tatap muka untuk continual quality improvement.
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-brain"></i> 3. Concept (Konsep Utama)
+                </div>
+                <div class="c-block-content">
+                  Desain asesmen autentik dan kinerja (*performance
+                  assessment*), rubrik analitik dan holistik berjenjang,
+                  Taksonomi SOLO level *Relational* dan *Extended Abstract*,
+                  serta pemanfaatan e-portofolio untuk memantau pertumbuhan
+                  belajar murid secara longitudinal.
+                </div>
               </div>
-            </div>
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-arrows-rotate"></i> 4. Change (Komitmen Perubahan)</div>
-              <div class="c-block-content">
-                Menjadikan budaya Lesson Study dan diskusi terbuka dengan rekan sejawat sebagai kebiasaan profesional permanen, serta selalu menyiapkan rencana cadangan (*contingency plan*) yang adaptif terhadap karakteristik siswa.
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-arrows-rotate"></i> 4. Change (Komitmen
+                  Perubahan)
+                </div>
+                <div class="c-block-content">
+                  Menerapkan sistem asesmen performa berbasis proyek dengan
+                  rubrik transparan yang dipahami murid sejak awal, memberikan
+                  umpan balik formatif berbasis *peer-review*, dan menggunakan
+                  hasil asesmen untuk perbaikan modul ajar berikutnya.
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="tab-pane" id="pplm-tab-artefak">
-          <div class="artefak-grid-modal">
-            <div class="artefak-card-box">
-              <h5>Artefak 1 – Laporan Lengkap PPL Mandiri SMAN 4 YK</h5>
-              <p style="font-size: 11px; color: #a1a1aa;">Dokumentasi perangkat ajar, rekaman mengajar, dan evaluasi hasil belajar siswa.</p>
-              <span class="btn-mini-view"><i class="fa-solid fa-check"></i> Laporan PPL</span>
-            </div>
-            <div class="artefak-card-box">
-              <h5>Artefak 2 – Lembar Observasi & Notula Lesson Study</h5>
-              <p style="font-size: 11px; color: #a1a1aa;">Catatan masukan dari Dosen Pembimbing Lapangan dan Guru Pamong.</p>
-              <span class="btn-mini-view"><i class="fa-solid fa-check"></i> Notula Evaluasi</span>
-            </div>
-            <div class="artefak-card-box">
-              <h5>Artefak 3 – Video Praktik Mengajar Mandiri</h5>
-              <p style="font-size: 11px; color: #a1a1aa;">Cuplikan interaksi PjBL, scaffolding help card, dan sesi refleksi murid.</p>
-              <span class="btn-mini-view"><i class="fa-solid fa-check"></i> Rekaman Aksi</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- MODAL 4: PROJEK KEPEMIMPINAN -->
-  <div class="modal-overlay" id="modal-pkep">
-    <div class="modal-container">
-      <div class="modal-header">
-        <div class="modal-header-left">
-          <div class="modal-icon-badge" style="background: #ea580c; color: #ffffff">
-            <i class="fa-solid fa-users-gear"></i>
-          </div>
-          <div class="modal-title-wrap">
-            <h2>Projek Kepemimpinan</h2>
-            <p>Agasta Pratama Nugraha (NIM: 25105260369) • Kelas B/Informatika UNY</p>
-          </div>
-        </div>
-        <button class="modal-close-btn" onclick="closeModal('modal-pkep')">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-
-      <div class="modal-body">
-        <div class="modal-tabs">
-          <button class="modal-tab-btn active" onclick="switchTab(this, 'pkep-tab-desc')">
-            Ringkasan Refleksi 4C
-          </button>
-          <button class="modal-tab-btn" onclick="switchTab(this, 'pkep-tab-artefak')">
-            Artefak & Bukti Belajar
-          </button>
-        </div>
-
-        <div class="tab-pane active" id="pkep-tab-desc">
-          <div class="reflection-4c-container">
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-link"></i> 1. Connection (Keterkaitan)</div>
-              <div class="c-block-content">
-                Mata kuliah Projek Kepemimpinan menanamkan kesadaran bahwa guru bukan sekadar pengajar di dalam kelas, melainkan pemimpin perubahan (*agent of change*) di lingkungan sekolah dan komunitas. Melalui pendekatan Service Learning, saya belajar mengidentifikasi kebutuhan riil masyarakat dan merancang inisiatif solusi yang berdampak.
+          <div class="tab-pane" id="pmal-tab-artefak">
+            <div class="artefak-grid-modal">
+              <div class="artefak-card-box">
+                <h5>Artefak 1 – Rubrik Analitik Proyek Informatika</h5>
+                <p style="font-size: 11px; color: #a1a1aa">
+                  Panduan penilaian performa computational thinking, estetika
+                  UI/UX, dan kerjasama tim.
+                </p>
+                <span class="btn-mini-view"
+                  ><i class="fa-solid fa-check"></i> Rubrik Terstandar</span
+                >
               </div>
-            </div>
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-bolt"></i> 2. Challenge (Perubahan Perspektif)</div>
-              <div class="c-block-content">
-                Memimpin proyek komunitas menuntut kemampuan manajerial, negosiasi, dan kolaborasi lintas pihak (*stakeholders*). Keberhasilan proyek tidak ditentukan oleh gagasan yang muluk-muluk, melainkan oleh ketepatan membaca kebutuhan riil dan keberlanjutan dampak yang dihasilkan.
+              <div class="artefak-card-box">
+                <h5>Artefak 2 – Instrumen Asesmen Autentik Studi Kasus</h5>
+                <p style="font-size: 11px; color: #a1a1aa">
+                  Soal pemecahan masalah algoritma dunia nyata dengan level
+                  kognitif tinggi.
+                </p>
+                <span class="btn-mini-view"
+                  ><i class="fa-solid fa-check"></i> Instrumen Uji</span
+                >
               </div>
-            </div>
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-brain"></i> 3. Concept (Konsep Utama)</div>
-              <div class="c-block-content">
-                Prinsip *Service Learning*, analisis kebutuhan berbasis komunitas (*community asset mapping*), penyusunan *timeline* dan anggaran proyek, manajemen risiko, serta evaluasi dampak program menggunakan indikator ketercapaian terukur.
+              <div class="artefak-card-box">
+                <h5>Artefak 3 – Portofolio Digital Hasil Karya Siswa</h5>
+                <p style="font-size: 11px; color: #a1a1aa">
+                  Kompilasi artefak produk digital dan catatan refleksi formatif
+                  murid.
+                </p>
+                <span class="btn-mini-view"
+                  ><i class="fa-solid fa-check"></i> Portofolio</span
+                >
               </div>
-            </div>
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-arrows-rotate"></i> 4. Change (Komitmen Perubahan)</div>
-              <div class="c-block-content">
-                Terus aktif memprakarsai kegiatan pengabdian masyarakat dan pemberdayaan literasi digital di sekolah penempatan, serta membangun kemitraan dengan dunia industri dan komunitas pendidikan.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="tab-pane" id="pkep-tab-artefak">
-          <div class="artefak-grid-modal">
-            <div class="artefak-card-box">
-              <h5>Artefak 1 – Proposal Projek Kepemimpinan Komunitas</h5>
-              <p style="font-size: 11px; color: #a1a1aa;">Perancangan workshop literasi digital dan pencegahan cyberbullying di sekolah.</p>
-              <span class="btn-mini-view"><i class="fa-solid fa-check"></i> Dokumen Proposal</span>
-            </div>
-            <div class="artefak-card-box">
-              <h5>Artefak 2 – Laporan Pelaksanaan & Dokumentasi Aksi</h5>
-              <p style="font-size: 11px; color: #a1a1aa;">Hasil pelaksanaan service learning, angket kepuasan peserta, dan testimoni mitra.</p>
-              <span class="btn-mini-view"><i class="fa-solid fa-check"></i> Laporan Aksi</span>
-            </div>
-            <div class="artefak-card-box">
-              <h5>Artefak 3 – Poster & Video Diseminasi Projek</h5>
-              <p style="font-size: 11px; color: #a1a1aa;">Media publikasi visual untuk menyebarluaskan praktik baik program kepemimpinan.</p>
-              <span class="btn-mini-view"><i class="fa-solid fa-check"></i> Media Diseminasi</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- MODAL 5: PKB -->
-  <div class="modal-overlay" id="modal-pkb">
-    <div class="modal-container">
-      <div class="modal-header">
-        <div class="modal-header-left">
-          <div class="modal-icon-badge" style="background: #0284c7; color: #ffffff">
-            <i class="fa-solid fa-book-bookmark"></i>
+    <!-- MODAL 3: PPL MANDIRI -->
+    <div class="modal-overlay" id="modal-pplm">
+      <div class="modal-container">
+        <div class="modal-header">
+          <div class="modal-header-left">
+            <div
+              class="modal-icon-badge"
+              style="background: #e11d48; color: #ffffff"
+            >
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <div class="modal-title-wrap">
+              <h2>Praktik Pengalaman Lapangan (PPL) Mandiri</h2>
+              <p>Agasta Pratama Nugraha • SMA Negeri 4 Yogyakarta</p>
+            </div>
           </div>
-          <div class="modal-title-wrap">
-            <h2>Pengembangan Keprofesian Berkelanjutan (PKB)</h2>
-            <p>Agasta Pratama Nugraha (NIM: 25105260369) • Kelas B/Informatika UNY</p>
-          </div>
-        </div>
-        <button class="modal-close-btn" onclick="closeModal('modal-pkb')">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-
-      <div class="modal-body">
-        <div class="modal-tabs">
-          <button class="modal-tab-btn active" onclick="switchTab(this, 'pkb-tab-desc')">
-            Ringkasan Refleksi 4C
-          </button>
-          <button class="modal-tab-btn" onclick="switchTab(this, 'pkb-tab-artefak')">
-            Artefak & Bukti Belajar
+          <button class="modal-close-btn" onclick="closeModal('modal-pplm')">
+            <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
 
-        <div class="tab-pane active" id="pkb-tab-desc">
-          <div class="reflection-4c-container">
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-link"></i> 1. Connection (Keterkaitan)</div>
-              <div class="c-block-content">
-                Mata kuliah PKB membekali saya fondasi untuk menjadi pendidik pembelajar sepanjang hayat (*lifelong learner*). Perkembangan ilmu Informatika dan kecerdasan buatan bergerak sangat cepat; tanpa komitmen pengembangan diri yang terencana, seorang guru akan tertinggal dari generasi murid yang diajarnya.
+        <div class="modal-body">
+          <div class="modal-tabs">
+            <button
+              class="modal-tab-btn active"
+              onclick="switchTab(this, 'pplm-tab-desc')"
+            >
+              Ringkasan Refleksi 4C
+            </button>
+            <button
+              class="modal-tab-btn"
+              onclick="switchTab(this, 'pplm-tab-artefak')"
+            >
+              Artefak & Bukti Belajar
+            </button>
+          </div>
+
+          <div class="tab-pane active" id="pplm-tab-desc">
+            <div class="reflection-4c-container">
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-link"></i> 1. Connection (Keterkaitan)
+                </div>
+                <div class="c-block-content">
+                  PPL Mandiri adalah puncak pengujian seluruh teori pedagogik
+                  dan keilmuan Informatika. Mengambil tanggung jawab penuh
+                  pengelolaan kelas di SMA Negeri 4 Yogyakarta menuntut kesiapan
+                  kepemimpinan instruksional, kecepatan adaptasi, dan ketajaman
+                  reflektif dalam merespons dinamika kelas nyata.
+                </div>
               </div>
-            </div>
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-bolt"></i> 2. Challenge (Perubahan Perspektif)</div>
-              <div class="c-block-content">
-                Pengembangan profesi bukan sekadar mengumpulkan sertifikat pelatihan atau memenuhi jam kerja, melainkan proses refleksi berkelanjutan yang berdampak langsung pada perbaikan kualitas belajar murid di ruang kelas.
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-bolt"></i> 2. Challenge (Perubahan
+                  Perspektif)
+                </div>
+                <div class="c-block-content">
+                  Mengajar mandiri membuktikan bahwa fleksibilitas dan kepekaan
+                  situasi jauh lebih penting daripada sekadar kaku mengikuti
+                  lembar RPP/Modul. Ketika metode awal kurang direspons siswa,
+                  guru harus dengan sigap memodifikasi scaffolding tanpa
+                  menghilangkan esensi tujuan capaian pembelajaran.
+                </div>
               </div>
-            </div>
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-brain"></i> 3. Concept (Konsep Utama)</div>
-              <div class="c-block-content">
-                Metodologi Penelitian Tindakan Kelas (PTK), penulisan karya tulis ilmiah dan artikel jurnal pendidikan, pemanfaatan ekosistem Platform Merdeka Mengajar (PMM), serta keaktifan dalam Komunitas Praktisi / MGMP Informatika.
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-brain"></i> 3. Concept (Konsep Utama)
+                </div>
+                <div class="c-block-content">
+                  Siklus Lesson Study (*Plan-Do-See*), manajemen waktu
+                  instruksional yang efisien, diferensiasi produk tugas coding,
+                  dan integrasi refleksi harian pasca-tatap muka untuk continual
+                  quality improvement.
+                </div>
               </div>
-            </div>
-            <div class="c-block">
-              <div class="c-block-title"><i class="fa-solid fa-arrows-rotate"></i> 4. Change (Komitmen Perubahan)</div>
-              <div class="c-block-content">
-                Menyusun target pengembangan diri tahunan, rutin menulis refleksi pembelajaran dan mempublikasikannya, serta aktif berbagi praktik baik (*best practices*) di forum MGMP Informatika.
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-arrows-rotate"></i> 4. Change (Komitmen
+                  Perubahan)
+                </div>
+                <div class="c-block-content">
+                  Menjadikan budaya Lesson Study dan diskusi terbuka dengan
+                  rekan sejawat sebagai kebiasaan profesional permanen, serta
+                  selalu menyiapkan rencana cadangan (*contingency plan*) yang
+                  adaptif terhadap karakteristik siswa.
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="tab-pane" id="pkb-tab-artefak">
-          <div class="artefak-grid-modal">
-            <div class="artefak-card-box">
-              <h5>Artefak 1 – Naskah Artikel Publikasi PTK</h5>
-              <p style="font-size: 11px; color: #a1a1aa;">Artikel ilmiah tentang peningkatan keaktifan belajar melalui PjBL Informatika.</p>
-              <span class="btn-mini-view"><i class="fa-solid fa-check"></i> Naskah PTK</span>
-            </div>
-            <div class="artefak-card-box">
-              <h5>Artefak 2 – Rencana Pengembangan Keprofesian Diri</h5>
-              <p style="font-size: 11px; color: #a1a1aa;">Peta jalan karir guru profesional 3 tahun ke depan berbasis kompetensi abad 21.</p>
-              <span class="btn-mini-view"><i class="fa-solid fa-check"></i> Rencana Karir</span>
-            </div>
-            <div class="artefak-card-box">
-              <h5>Artefak 3 – Sertifikat & Bukti Karya di PMM</h5>
-              <p style="font-size: 11px; color: #a1a1aa;">Aksi nyata dan kontribusi perangkat ajar pada Platform Merdeka Mengajar.</p>
-              <span class="btn-mini-view"><i class="fa-solid fa-check"></i> Aksi Nyata PMM</span>
+          <div class="tab-pane" id="pplm-tab-artefak">
+            <div class="artefak-grid-modal">
+              <div class="artefak-card-box">
+                <h5>Artefak 1 – Laporan Lengkap PPL Mandiri SMAN 4 YK</h5>
+                <p style="font-size: 11px; color: #a1a1aa">
+                  Dokumentasi perangkat ajar, rekaman mengajar, dan evaluasi
+                  hasil belajar siswa.
+                </p>
+                <span class="btn-mini-view"
+                  ><i class="fa-solid fa-check"></i> Laporan PPL</span
+                >
+              </div>
+              <div class="artefak-card-box">
+                <h5>Artefak 2 – Lembar Observasi & Notula Lesson Study</h5>
+                <p style="font-size: 11px; color: #a1a1aa">
+                  Catatan masukan dari Dosen Pembimbing Lapangan dan Guru
+                  Pamong.
+                </p>
+                <span class="btn-mini-view"
+                  ><i class="fa-solid fa-check"></i> Notula Evaluasi</span
+                >
+              </div>
+              <div class="artefak-card-box">
+                <h5>Artefak 3 – Video Praktik Mengajar Mandiri</h5>
+                <p style="font-size: 11px; color: #a1a1aa">
+                  Cuplikan interaksi PjBL, scaffolding help card, dan sesi
+                  refleksi murid.
+                </p>
+                <span class="btn-mini-view"
+                  ><i class="fa-solid fa-check"></i> Rekaman Aksi</span
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- 5. NEW 3-COLUMN FOOTER -->
-  <footer class="main-footer" id="kontak">
-    <div class="container">
-      <div class="footer-top-grid">
-        <!-- Kolom Kiri -->
-        <div class="footer-left-headline reveal-left">
-          <div class="footer-cursive-text">
-            Mari ciptakan<br />
-            pembelajaran<br />
-            <span class="text-lime">menginspirasi!</span>
+    <!-- MODAL 4: PROJEK KEPEMIMPINAN -->
+    <div class="modal-overlay" id="modal-pkep">
+      <div class="modal-container">
+        <div class="modal-header">
+          <div class="modal-header-left">
+            <div
+              class="modal-icon-badge"
+              style="background: #ea580c; color: #ffffff"
+            >
+              <i class="fa-solid fa-users-gear"></i>
+            </div>
+            <div class="modal-title-wrap">
+              <h2>Projek Kepemimpinan</h2>
+              <p>
+                Agasta Pratama Nugraha (NIM: 25105260369) • Kelas B/Informatika
+                UNY
+              </p>
+            </div>
           </div>
-          <div class="footer-stars-doodle">✦ ✦</div>
-          <svg class="footer-underline-doodle" viewBox="0 0 200 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 8 Q 50 2 100 8 T 195 8" stroke="#b8b5ff" stroke-width="3" stroke-linecap="round" />
-          </svg>
-          <p class="footer-left-desc">
-            "Ing ngarsa sung tuladha, ing madya mangun karsa, tut wuri handayani." Menuntun kodrat generasi penerus bangsa melalui teknologi dan budi pekerti.
+          <button class="modal-close-btn" onclick="closeModal('modal-pkep')">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-tabs">
+            <button
+              class="modal-tab-btn active"
+              onclick="switchTab(this, 'pkep-tab-desc')"
+            >
+              Ringkasan Refleksi 4C
+            </button>
+            <button
+              class="modal-tab-btn"
+              onclick="switchTab(this, 'pkep-tab-artefak')"
+            >
+              Artefak & Bukti Belajar
+            </button>
+          </div>
+
+          <div class="tab-pane active" id="pkep-tab-desc">
+            <div class="reflection-4c-container">
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-link"></i> 1. Connection (Keterkaitan)
+                </div>
+                <div class="c-block-content">
+                  Mata kuliah Projek Kepemimpinan menanamkan kesadaran bahwa
+                  guru bukan sekadar pengajar di dalam kelas, melainkan pemimpin
+                  perubahan (*agent of change*) di lingkungan sekolah dan
+                  komunitas. Melalui pendekatan Service Learning, saya belajar
+                  mengidentifikasi kebutuhan riil masyarakat dan merancang
+                  inisiatif solusi yang berdampak.
+                </div>
+              </div>
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-bolt"></i> 2. Challenge (Perubahan
+                  Perspektif)
+                </div>
+                <div class="c-block-content">
+                  Memimpin proyek komunitas menuntut kemampuan manajerial,
+                  negosiasi, dan kolaborasi lintas pihak (*stakeholders*).
+                  Keberhasilan proyek tidak ditentukan oleh gagasan yang
+                  muluk-muluk, melainkan oleh ketepatan membaca kebutuhan riil
+                  dan keberlanjutan dampak yang dihasilkan.
+                </div>
+              </div>
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-brain"></i> 3. Concept (Konsep Utama)
+                </div>
+                <div class="c-block-content">
+                  Prinsip *Service Learning*, analisis kebutuhan berbasis
+                  komunitas (*community asset mapping*), penyusunan *timeline*
+                  dan anggaran proyek, manajemen risiko, serta evaluasi dampak
+                  program menggunakan indikator ketercapaian terukur.
+                </div>
+              </div>
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-arrows-rotate"></i> 4. Change (Komitmen
+                  Perubahan)
+                </div>
+                <div class="c-block-content">
+                  Terus aktif memprakarsai kegiatan pengabdian masyarakat dan
+                  pemberdayaan literasi digital di sekolah penempatan, serta
+                  membangun kemitraan dengan dunia industri dan komunitas
+                  pendidikan.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="pkep-tab-artefak">
+            <div class="artefak-grid-modal">
+              <div class="artefak-card-box">
+                <h5>Artefak 1 – Proposal Projek Kepemimpinan Komunitas</h5>
+                <p style="font-size: 11px; color: #a1a1aa">
+                  Perancangan workshop literasi digital dan pencegahan
+                  cyberbullying di sekolah.
+                </p>
+                <span class="btn-mini-view"
+                  ><i class="fa-solid fa-check"></i> Dokumen Proposal</span
+                >
+              </div>
+              <div class="artefak-card-box">
+                <h5>Artefak 2 – Laporan Pelaksanaan & Dokumentasi Aksi</h5>
+                <p style="font-size: 11px; color: #a1a1aa">
+                  Hasil pelaksanaan service learning, angket kepuasan peserta,
+                  dan testimoni mitra.
+                </p>
+                <span class="btn-mini-view"
+                  ><i class="fa-solid fa-check"></i> Laporan Aksi</span
+                >
+              </div>
+              <div class="artefak-card-box">
+                <h5>Artefak 3 – Poster & Video Diseminasi Projek</h5>
+                <p style="font-size: 11px; color: #a1a1aa">
+                  Media publikasi visual untuk menyebarluaskan praktik baik
+                  program kepemimpinan.
+                </p>
+                <span class="btn-mini-view"
+                  ><i class="fa-solid fa-check"></i> Media Diseminasi</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 5: PKB -->
+    <div class="modal-overlay" id="modal-pkb">
+      <div class="modal-container">
+        <div class="modal-header">
+          <div class="modal-header-left">
+            <div
+              class="modal-icon-badge"
+              style="background: #0284c7; color: #ffffff"
+            >
+              <i class="fa-solid fa-book-bookmark"></i>
+            </div>
+            <div class="modal-title-wrap">
+              <h2>Pengembangan Keprofesian Berkelanjutan (PKB)</h2>
+              <p>
+                Agasta Pratama Nugraha (NIM: 25105260369) • Kelas B/Informatika
+                UNY
+              </p>
+            </div>
+          </div>
+          <button class="modal-close-btn" onclick="closeModal('modal-pkb')">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-tabs">
+            <button
+              class="modal-tab-btn active"
+              onclick="switchTab(this, 'pkb-tab-desc')"
+            >
+              Ringkasan Refleksi 4C
+            </button>
+            <button
+              class="modal-tab-btn"
+              onclick="switchTab(this, 'pkb-tab-artefak')"
+            >
+              Artefak & Bukti Belajar
+            </button>
+          </div>
+
+          <div class="tab-pane active" id="pkb-tab-desc">
+            <div class="reflection-4c-container">
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-link"></i> 1. Connection (Keterkaitan)
+                </div>
+                <div class="c-block-content">
+                  Mata kuliah PKB membekali saya fondasi untuk menjadi pendidik
+                  pembelajar sepanjang hayat (*lifelong learner*). Perkembangan
+                  ilmu Informatika dan kecerdasan buatan bergerak sangat cepat;
+                  tanpa komitmen pengembangan diri yang terencana, seorang guru
+                  akan tertinggal dari generasi murid yang diajarnya.
+                </div>
+              </div>
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-bolt"></i> 2. Challenge (Perubahan
+                  Perspektif)
+                </div>
+                <div class="c-block-content">
+                  Pengembangan profesi bukan sekadar mengumpulkan sertifikat
+                  pelatihan atau memenuhi jam kerja, melainkan proses refleksi
+                  berkelanjutan yang berdampak langsung pada perbaikan kualitas
+                  belajar murid di ruang kelas.
+                </div>
+              </div>
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-brain"></i> 3. Concept (Konsep Utama)
+                </div>
+                <div class="c-block-content">
+                  Metodologi Penelitian Tindakan Kelas (PTK), penulisan karya
+                  tulis ilmiah dan artikel jurnal pendidikan, pemanfaatan
+                  ekosistem Platform Merdeka Mengajar (PMM), serta keaktifan
+                  dalam Komunitas Praktisi / MGMP Informatika.
+                </div>
+              </div>
+              <div class="c-block">
+                <div class="c-block-title">
+                  <i class="fa-solid fa-arrows-rotate"></i> 4. Change (Komitmen
+                  Perubahan)
+                </div>
+                <div class="c-block-content">
+                  Menyusun target pengembangan diri tahunan, rutin menulis
+                  refleksi pembelajaran dan mempublikasikannya, serta aktif
+                  berbagi praktik baik (*best practices*) di forum MGMP
+                  Informatika.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="pkb-tab-artefak">
+            <div class="artefak-grid-modal">
+              <div class="artefak-card-box">
+                <h5>Artefak 1 – Naskah Artikel Publikasi PTK</h5>
+                <p style="font-size: 11px; color: #a1a1aa">
+                  Artikel ilmiah tentang peningkatan keaktifan belajar melalui
+                  PjBL Informatika.
+                </p>
+                <span class="btn-mini-view"
+                  ><i class="fa-solid fa-check"></i> Naskah PTK</span
+                >
+              </div>
+              <div class="artefak-card-box">
+                <h5>Artefak 2 – Rencana Pengembangan Keprofesian Diri</h5>
+                <p style="font-size: 11px; color: #a1a1aa">
+                  Peta jalan karir guru profesional 3 tahun ke depan berbasis
+                  kompetensi abad 21.
+                </p>
+                <span class="btn-mini-view"
+                  ><i class="fa-solid fa-check"></i> Rencana Karir</span
+                >
+              </div>
+              <div class="artefak-card-box">
+                <h5>Artefak 3 – Sertifikat & Bukti Karya di PMM</h5>
+                <p style="font-size: 11px; color: #a1a1aa">
+                  Aksi nyata dan kontribusi perangkat ajar pada Platform Merdeka
+                  Mengajar.
+                </p>
+                <span class="btn-mini-view"
+                  ><i class="fa-solid fa-check"></i> Aksi Nyata PMM</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. NEW 3-COLUMN FOOTER -->
+    <footer class="main-footer" id="kontak">
+      <div class="container">
+        <div class="footer-top-grid">
+          <!-- Kolom Kiri -->
+          <div class="footer-left-headline reveal-left">
+            <div class="footer-cursive-text">
+              Mari ciptakan<br />
+              pembelajaran<br />
+              <span class="text-lime">menginspirasi!</span>
+            </div>
+            <div class="footer-stars-doodle">✦ ✦</div>
+            <svg
+              class="footer-underline-doodle"
+              viewBox="0 0 200 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 8 Q 50 2 100 8 T 195 8"
+                stroke="#b8b5ff"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+            </svg>
+            <p class="footer-left-desc">
+              "Ing ngarsa sung tuladha, ing madya mangun karsa, tut wuri
+              handayani." Menuntun kodrat generasi penerus bangsa melalui
+              teknologi dan budi pekerti.
+            </p>
+          </div>
+
+          <!-- Kolom Tengah: Social Media List -->
+          <div class="footer-center-socials reveal-scale delay-200">
+            <h4 class="footer-col-heading">
+              <i class="fa-solid fa-paper-plane"></i> HUBUNGI SAYA
+            </h4>
+            <div class="footer-social-list">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link-card"
+              >
+                <div class="social-link-left">
+                  <div class="social-icon-circle">
+                    <i class="fa-brands fa-instagram"></i>
+                  </div>
+                  <div class="social-info-text">
+                    <strong>Instagram</strong>
+                    <span>@agasta_pratama</span>
+                  </div>
+                </div>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square social-arrow-icon"
+                ></i>
+              </a>
+
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link-card"
+              >
+                <div class="social-link-left">
+                  <div class="social-icon-circle">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                  <div class="social-info-text">
+                    <strong>LinkedIn</strong>
+                    <span>Agasta Pratama Nugraha</span>
+                  </div>
+                </div>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square social-arrow-icon"
+                ></i>
+              </a>
+
+              <a
+                href="mailto:agasta.pratama@email.com"
+                class="social-link-card"
+              >
+                <div class="social-link-left">
+                  <div class="social-icon-circle">
+                    <i class="fa-regular fa-envelope"></i>
+                  </div>
+                  <div class="social-info-text">
+                    <strong>Email Resmi</strong>
+                    <span>agasta.pratama@email.com</span>
+                  </div>
+                </div>
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square social-arrow-icon"
+                ></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Kolom Kanan: Google Maps LPTK UNY -->
+          <div class="footer-right-maps reveal-right delay-300">
+            <h4 class="footer-col-heading">
+              <i class="fa-solid fa-location-dot"></i> LOKASI LPTK PPG UNY
+            </h4>
+            <div class="maps-embed-box">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.1678887467657!2d110.38435137591605!3d-7.771987992247348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59b2d354b679%3A0xb30f8185c8f855d4!2sUniversitas%20Negeri%20Yogyakarta!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Peta Lokasi Universitas Negeri Yogyakarta"
+              >
+              </iframe>
+            </div>
+            <div class="maps-footer-action">
+              <span class="maps-address-text">
+                Jl. Colombo No. 1, Karang Malang, Caturtunggal, Sleman, D.I.
+                Yogyakarta 55281
+              </span>
+              <a
+                href="https://maps.app.goo.gl/DsJsNTya474q8wT76"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-open-maps"
+              >
+                Buka Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-bar">
+          <p>
+            &copy; 2026 Agasta Pratama Nugraha (NIM: 25105260369). All rights
+            reserved.
           </p>
-        </div>
-
-        <!-- Kolom Tengah: Social Media List -->
-        <div class="footer-center-socials reveal-scale delay-200">
-          <h4 class="footer-col-heading">
-            <i class="fa-solid fa-paper-plane"></i> HUBUNGI SAYA
-          </h4>
-          <div class="footer-social-list">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link-card">
-              <div class="social-link-left">
-                <div class="social-icon-circle"><i class="fa-brands fa-instagram"></i></div>
-                <div class="social-info-text">
-                  <strong>Instagram</strong>
-                  <span>@agasta_pratama</span>
-                </div>
-              </div>
-              <i class="fa-solid fa-arrow-up-right-from-square social-arrow-icon"></i>
-            </a>
-
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link-card">
-              <div class="social-link-left">
-                <div class="social-icon-circle"><i class="fa-brands fa-linkedin-in"></i></div>
-                <div class="social-info-text">
-                  <strong>LinkedIn</strong>
-                  <span>Agasta Pratama Nugraha</span>
-                </div>
-              </div>
-              <i class="fa-solid fa-arrow-up-right-from-square social-arrow-icon"></i>
-            </a>
-
-            <a href="mailto:agasta.pratama@email.com" class="social-link-card">
-              <div class="social-link-left">
-                <div class="social-icon-circle"><i class="fa-regular fa-envelope"></i></div>
-                <div class="social-info-text">
-                  <strong>Email Resmi</strong>
-                  <span>agasta.pratama@email.com</span>
-                </div>
-              </div>
-              <i class="fa-solid fa-arrow-up-right-from-square social-arrow-icon"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Kolom Kanan: Google Maps LPTK UNY -->
-        <div class="footer-right-maps reveal-right delay-300">
-          <h4 class="footer-col-heading">
-            <i class="fa-solid fa-location-dot"></i> LOKASI LPTK PPG UNY
-          </h4>
-          <div class="maps-embed-box">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.1678887467657!2d110.38435137591605!3d-7.771987992247348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59b2d354b679%3A0xb30f8185c8f855d4!2sUniversitas%20Negeri%20Yogyakarta!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
-              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade" title="Peta Lokasi Universitas Negeri Yogyakarta">
-            </iframe>
-          </div>
-          <div class="maps-footer-action">
-            <span class="maps-address-text">
-              Jl. Colombo No. 1, Karang Malang, Caturtunggal, Sleman, D.I. Yogyakarta 55281
-            </span>
-            <a href="https://maps.app.goo.gl/DsJsNTya474q8wT76" target="_blank" rel="noopener noreferrer" class="btn-open-maps">
-              Buka Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
+          <div class="footer-legal-links">
+            <a href="#">PPG Calon Guru</a>
+            <span>•</span>
+            <a href="#">Informatika UNY</a>
           </div>
         </div>
       </div>
+    </footer>
 
-      <div class="footer-bottom-bar">
-        <p>
-          &copy; 2026 Agasta Pratama Nugraha (NIM: 25105260369). All rights reserved.
-        </p>
-        <div class="footer-legal-links">
-          <a href="#">PPG Calon Guru</a>
-          <span>•</span>
-          <a href="#">Informatika UNY</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    <!-- INTERACTIVE JAVASCRIPT -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
 
-  <!-- INTERACTIVE JAVASCRIPT -->
-  <script>
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("navLinks");
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          navLinks.classList.toggle("active");
+          hamburger.classList.toggle("active");
+        });
 
-    if (hamburger && navLinks) {
-      hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-        hamburger.classList.toggle("active");
-      });
+        document.querySelectorAll(".nav-links a").forEach((link) => {
+          link.addEventListener("click", () => {
+            navLinks.classList.remove("active");
+            hamburger.classList.remove("active");
+          });
+        });
+      }
 
-      document.querySelectorAll(".nav-links a").forEach((link) => {
-        link.addEventListener("click", () => {
-          navLinks.classList.remove("active");
-          hamburger.classList.remove("active");
+      function openModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.add("active");
+          document.body.style.overflow = "hidden";
+        }
+      }
+
+      function closeModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.remove("active");
+          document.body.style.overflow = "auto";
+        }
+      }
+
+      document.querySelectorAll(".modal-overlay").forEach((overlay) => {
+        overlay.addEventListener("click", (e) => {
+          if (e.target === overlay) {
+            overlay.classList.remove("active");
+            document.body.style.overflow = "auto";
+          }
         });
       });
-    }
 
-    function openModal(modalId) {
-      const modal = document.getElementById(modalId);
-      if (modal) {
-        modal.classList.add("active");
-        document.body.style.overflow = "hidden";
-      }
-    }
-
-    function closeModal(modalId) {
-      const modal = document.getElementById(modalId);
-      if (modal) {
-        modal.classList.remove("active");
-        document.body.style.overflow = "auto";
-      }
-    }
-
-    document.querySelectorAll(".modal-overlay").forEach((overlay) => {
-      overlay.addEventListener("click", (e) => {
-        if (e.target === overlay) {
-          overlay.classList.remove("active");
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          document.querySelectorAll(".modal-overlay.active").forEach((m) => {
+            m.classList.remove("active");
+          });
           document.body.style.overflow = "auto";
         }
       });
-    });
 
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") {
-        document.querySelectorAll(".modal-overlay.active").forEach((m) => {
-          m.classList.remove("active");
-        });
-        document.body.style.overflow = "auto";
+      function switchTab(btn, targetPaneId) {
+        const modalBody = btn.closest(".modal-body");
+        if (!modalBody) return;
+
+        modalBody
+          .querySelectorAll(".modal-tab-btn")
+          .forEach((t) => t.classList.remove("active"));
+        modalBody
+          .querySelectorAll(".tab-pane")
+          .forEach((p) => p.classList.remove("active"));
+
+        btn.classList.add("active");
+        const targetPane = modalBody.querySelector(`#${targetPaneId}`);
+        if (targetPane) {
+          targetPane.classList.add("active");
+        }
       }
-    });
-
-    function switchTab(btn, targetPaneId) {
-      const modalBody = btn.closest(".modal-body");
-      if (!modalBody) return;
-
-      modalBody
-        .querySelectorAll(".modal-tab-btn")
-        .forEach((t) => t.classList.remove("active"));
-      modalBody
-        .querySelectorAll(".tab-pane")
-        .forEach((p) => p.classList.remove("active"));
-
-      btn.classList.add("active");
-      const targetPane = modalBody.querySelector(`#${targetPaneId}`);
-      if (targetPane) {
-        targetPane.classList.add("active");
-      }
-    }
-  </script>
-  <script src="js/interactions.js"></script>
-</body>
-
+    </script>
+    <script src="js/interactions.js"></script>
+  </body>
 </html>
