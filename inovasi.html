@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karya & Inovasi Pembelajaran | E-Portofolio PPG Agasta Pratama Nugraha</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Permanent+Marker&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- CSS External & Interactive Animations -->
+  <link rel="stylesheet" href="css/inovasi.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+
+<body>
+  <!-- STICKY VERTICAL SOCIAL BAR -->
+  <aside class="sticky-social-bar" aria-label="Social Media Bar">
+    <div class="social-icons-vertical">
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:agasta.pratama@email.com" aria-label="Email">
+        <i class="fa-regular fa-envelope"></i>
+      </a>
+    </div>
+    <div class="vertical-text-tag">
+      <span>PENDIDIK INOVATIF & ADAPTIF</span>
+      <span class="sparkle-doodle">✦</span>
+    </div>
+  </aside>
+
+  <!-- FLOATING NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="beranda.html" class="logo">AGASTA<span>.</span></a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="visi.html">VISI PRIBADI</a></li>
+        <li><a href="refleksi-s1.html">REFLEKSI S1</a></li>
+        <li><a href="refleksi-s2.html">REFLEKSI S2</a></li>
+        <li><a href="inovasi.html" class="active">KARYA INOVATIF</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#kontak" class="btn-pill-neon pulse-badge">
+          HUBUNGI SAYA <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 1. HERO INOVASI -->
+  <header class="hero-inovasi" id="hero">
+    <div class="container reveal-scale">
+      <div class="g1-asterisk-badge">
+        <span class="g1-asterisk-icon">✱</span>
+        <span class="g1-badge-pill">SHOWCASE PRODUK INOVATIF PEMBELAJARAN INFORMATIKA</span>
+      </div>
+
+      <h1 class="hero-inovasi-title">
+        KARYA DIGITAL, MODUL & <br />
+        <span class="text-lime">INOVASI PEDAGOGI</span> ABAD 21.
+      </h1>
+      <p class="hero-inovasi-desc">
+        Koleksi produk pembelajaran kreatif yang dikembangkan oleh <strong>Agasta Pratama Nugraha (NIM: 25105260369)</strong> untuk menjawab tantangan rendahnya keterlibatan, pemanfaatan gawai positif, dan penanaman etika digital di era kecerdasan buatan.
+      </p>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs-container">
+        <button class="filter-btn active" onclick="filterInovasi('all', this)">Semua Karya (6)</button>
+        <button class="filter-btn" onclick="filterInovasi('modul', this)">Modul PjBL & Scaffolding</button>
+        <button class="filter-btn" onclick="filterInovasi('lkpd', this)">LKPD Digital Interaktif</button>
+        <button class="filter-btn" onclick="filterInovasi('game', this)">Gamifikasi & Aplikasi</button>
+        <button class="filter-btn" onclick="filterInovasi('media', this)">Video & Portofolio</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. SECTION: SHOWCASE INNOVATION CARDS -->
+  <section class="innovation-section" id="karya-grid">
+    <div class="container">
+      <div class="innovation-grid">
+        <!-- KARYA 1: MODUL AJAR PjBL & HELP CARD -->
+        <div class="innovation-card reveal-scale delay-100 shimmer-hover" data-category="modul">
+          <div class="inovasi-img-box">
+            <img src="foto.png" alt="Modul Ajar Informatika PjBL"
+              onerror="this.src='https://dummyimage.com/600x400/18181c/d4ff32.png&text=Modul+Ajar+PjBL'" />
+            <span class="inovasi-badge-float">MODUL & SCAFFOLDING</span>
+          </div>
+          <div class="inovasi-content-body">
+            <h3>Modul Ajar Informatika Berbasis PjBL & Help Card</h3>
+            <p>
+              Modul pembelajaran berdiferensiasi untuk materi Computational Thinking Kelas X dengan kelompok heterogen, pembagian peran, dan instrumen *Help Card* bertingkat.
+            </p>
+            <div class="inovasi-tags-row">
+              <span class="inovasi-tag">PjBL Inklusif</span>
+              <span class="inovasi-tag">Help Card</span>
+              <span class="inovasi-tag">SMAN 4 YK</span>
+            </div>
+          </div>
+          <div class="inovasi-card-footer">
+            <span class="inovasi-impact-tag"><i class="fa-solid fa-fire text-lime"></i> +250% Keaktifan</span>
+            <a href="pdf/pki/pki3.pdf" target="_blank" class="btn-demo-view">
+              Lihat Modul <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- KARYA 2: LKPD DIGITAL INTERAKTIF -->
+        <div class="innovation-card reveal-scale delay-200 shimmer-hover" data-category="lkpd">
+          <div class="inovasi-img-box">
+            <img src="foto2.png" alt="LKPD Digital Interaktif"
+              onerror="this.src='https://dummyimage.com/600x400/18181c/b8b5ff.png&text=LKPD+Digital+Gawai'" />
+            <span class="inovasi-badge-float" style="background: rgba(184, 181, 255, 0.2); color: var(--pastel-lilac); border-color: var(--pastel-lilac);">LKPD & GAWAI AKTIF</span>
+          </div>
+          <div class="inovasi-content-body">
+            <h3>LKPD Digital Interaktif & Gamifikasi Gawai</h3>
+            <p>
+              Lembar kerja peserta didik berbasis Liveworksheets & kuis interaktif yang mengubah kebiasaan penggunaan gawai pasif menjadi media riset dan praktikum kolaboratif.
+            </p>
+            <div class="inovasi-tags-row">
+              <span class="inovasi-tag">Liveworksheets</span>
+              <span class="inovasi-tag">Kuis Real-Time</span>
+              <span class="inovasi-tag">Formatif UDL</span>
+            </div>
+          </div>
+          <div class="inovasi-card-footer">
+            <span class="inovasi-impact-tag"><i class="fa-solid fa-mobile-screen text-lilac"></i> Solusi Distraksi</span>
+            <a href="pdf/ppdp/ppdp3.pdf" target="_blank" class="btn-demo-view" style="background: var(--pastel-lilac); color: #09090b;">
+              Lihat Desain <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- KARYA 3: GAMIFIKASI CODING BLOCKLY & PYTHON -->
+        <div class="innovation-card reveal-scale delay-300 shimmer-hover" data-category="game">
+          <div class="inovasi-img-box">
+            <img src="foto.png" alt="Gamifikasi Pemrograman Dasar"
+              onerror="this.src='https://dummyimage.com/600x400/18181c/ffd0a8.png&text=Gamifikasi+Coding'" />
+            <span class="inovasi-badge-float" style="background: rgba(255, 208, 168, 0.2); color: #ffd0a8; border-color: #ffd0a8;">APLIKASI & GAME</span>
+          </div>
+          <div class="inovasi-content-body">
+            <h3>Platform Gamifikasi Pemrograman (Blockly to Python)</h3>
+            <p>
+              Media belajar logika komputasi bertahap untuk meredakan *coding anxiety*, memberi umpan balik instan pada sintaks, dan menumbuhkan *Growth Mindset* murid.
+            </p>
+            <div class="inovasi-tags-row">
+              <span class="inovasi-tag">Blockly Visual</span>
+              <span class="inovasi-tag">Python Dasar</span>
+              <span class="inovasi-tag">Growth Mindset</span>
+            </div>
+          </div>
+          <div class="inovasi-card-footer">
+            <span class="inovasi-impact-tag"><i class="fa-solid fa-gamepad text-lime"></i> 94% Retensi</span>
+            <a href="pdf/mindset/mindset3.pdf" target="_blank" class="btn-demo-view">
+              Lihat Skema <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- KARYA 4: INSTRUMEN PROFILING & FISHBONE TOOL -->
+        <div class="innovation-card reveal-scale delay-400 shimmer-hover" data-category="lkpd">
+          <div class="inovasi-img-box">
+            <img src="foto2.png" alt="Instrumen Profiling Remaja Digital"
+              onerror="this.src='https://dummyimage.com/600x400/18181c/9df0d0.png&text=Instrumen+Profiling'" />
+            <span class="inovasi-badge-float" style="background: rgba(157, 240, 208, 0.2); color: #9df0d0; border-color: #9df0d0;">DIAGNOSTIK & PROFILING</span>
+          </div>
+          <div class="inovasi-content-body">
+            <h3>Instrumen Asesmen Diagnostik Remaja Digital</h3>
+            <p>
+              Alat pemetaan gaya belajar visual, auditori, kinestetik, serta kebiasaan bermedia sosial siswa era digital untuk dasar perancangan diferensiasi konten dan proses.
+            </p>
+            <div class="inovasi-tags-row">
+              <span class="inovasi-tag">Fishbone Tool</span>
+              <span class="inovasi-tag">Gaya Belajar</span>
+              <span class="inovasi-tag">Google Forms</span>
+            </div>
+          </div>
+          <div class="inovasi-card-footer">
+            <span class="inovasi-impact-tag"><i class="fa-solid fa-users text-lilac"></i> Pemetaan 100%</span>
+            <a href="pdf/ppdp/ppdp2.pdf" target="_blank" class="btn-demo-view" style="background: #9df0d0; color: #09090b;">
+              Buka Instrumen <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- KARYA 5: SERI VIDEO EDUKASI ETIKA DIGITAL -->
+        <div class="innovation-card reveal-scale delay-500 shimmer-hover" data-category="media">
+          <div class="inovasi-img-box">
+            <img src="foto.png" alt="Video Etika Digital dan Cyber Safety"
+              onerror="this.src='https://dummyimage.com/600x400/18181c/ffd4e5.png&text=Video+Etika+Digital'" />
+            <span class="inovasi-badge-float" style="background: rgba(255, 212, 229, 0.2); color: #ffd4e5; border-color: #ffd4e5;">VIDEO & MULTIMEDIA</span>
+          </div>
+          <div class="inovasi-content-body">
+            <h3>Seri Video Edukasi: Etika Siber & AI Positif Remaja</h3>
+            <p>
+              Media audiovisual edukatif berdurasi ringkas mengenai perlindungan data pribadi, pencegahan *cyberbullying*, dan pemanfaatan generative AI secara bijak di sekolah.
+            </p>
+            <div class="inovasi-tags-row">
+              <span class="inovasi-tag">Cyber Safety</span>
+              <span class="inovasi-tag">AI Literacy</span>
+              <span class="inovasi-tag">Nilai Pancasila</span>
+            </div>
+          </div>
+          <div class="inovasi-card-footer">
+            <span class="inovasi-impact-tag"><i class="fa-solid fa-video text-pink"></i> Diseminasi Publik</span>
+            <a href="pdf/filosofi/filosofi2.pdf" target="_blank" class="btn-demo-view" style="background: #ffd4e5; color: #09090b;">
+              Lihat Materi <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- KARYA 6: WEBSITE E-PORTOFOLIO SP -->
+        <div class="innovation-card reveal-scale delay-600 shimmer-hover" data-category="media">
+          <div class="inovasi-img-box">
+            <img src="foto2.png" alt="Website E-Portofolio Seminar Pendidikan"
+              onerror="this.src='https://dummyimage.com/600x400/18181c/d4ff32.png&text=E-Portofolio+Web'" />
+            <span class="inovasi-badge-float">DIGITAL PLATFORM</span>
+          </div>
+          <div class="inovasi-content-body">
+            <h3>Platform E-Portofolio Seminar Pendidikan Interaktif</h3>
+            <p>
+              Website portofolio digital berbasis animasi interaktif, visual bento modern, tab dokumen PDF terintegrasi, dan struktur refleksi 4C komprehensif PPG UNY.
+            </p>
+            <div class="inovasi-tags-row">
+              <span class="inovasi-tag">HTML5 / Vanilla CSS</span>
+              <span class="inovasi-tag">Interactive 3D</span>
+              <span class="inovasi-tag">Refleksi 4C</span>
+            </div>
+          </div>
+          <div class="inovasi-card-footer">
+            <span class="inovasi-impact-tag"><i class="fa-solid fa-star text-lime"></i> Featured Masterpiece</span>
+            <a href="beranda.html" class="btn-demo-view">
+              Buka Beranda <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SECTION: STATISTIK HASIL UJI COBA & DAMPAK (HITAM) -->
+  <section class="impact-results-section">
+    <div class="container">
+      <div class="section-top-title-group reveal" style="text-align: center; margin-bottom: 35px;">
+        <span class="g1-badge-pill">VALIDASI LAPANGAN & HASIL EVALUASI</span>
+        <h2 style="color: #ffffff; font-size: clamp(28px, 3.5vw, 38px); font-weight: 900; margin-top: 10px;">
+          Dampak Nyata Inovasi di SMA Negeri 4 Yogyakarta 📈
+        </h2>
+        <p style="color: #a1a1aa; max-width: 720px; margin: 10px auto 0;">
+          Data capaian hasil uji coba produk dan modul ajar selama siklus praktik pembelajaran Informatika PPG Prajabatan.
+        </p>
+      </div>
+
+      <div class="impact-grid-4">
+        <div class="impact-stat-box reveal-scale delay-100">
+          <span class="impact-stat-num" data-counter-target="250" data-counter-prefix="+" data-counter-suffix="%">+0%</span>
+          <span class="impact-stat-label">Keaktifan Diskusi</span>
+          <p class="impact-stat-desc">Peningkatan partisipasi aktif murid dalam kelompok kerja PjBL.</p>
+        </div>
+
+        <div class="impact-stat-box reveal-scale delay-200">
+          <span class="impact-stat-num" data-counter-target="92" data-counter-suffix="%">0%</span>
+          <span class="impact-stat-label">Ketuntasan Praktikum</span>
+          <p class="impact-stat-desc">Siswa berhasil menyelesaikan modul coding berbantuan Help Card.</p>
+        </div>
+
+        <div class="impact-stat-box reveal-scale delay-300">
+          <span class="impact-stat-num" data-counter-target="98" data-counter-suffix="%">0%</span>
+          <span class="impact-stat-label">Kepuasan Murid</span>
+          <p class="impact-stat-desc">Merespons positif integrasi kuis gawai dan suasana kelas aman.</p>
+        </div>
+
+        <div class="impact-stat-box reveal-scale delay-400">
+          <span class="impact-stat-num" data-counter-target="100" data-counter-suffix="%">0%</span>
+          <span class="impact-stat-label">Kesesuaian Kurikulum</span>
+          <p class="impact-stat-desc">Tervalidasi sesuai Capaian Pembelajaran Kurikulum Merdeka.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. SECTION: APRESIASI & DISEMINASI KARYA (PUTIH) -->
+  <section class="dissemination-section" id="testimoni">
+    <div class="container">
+      <div class="section-top-title-group reveal" style="text-align: center; margin-bottom: 40px;">
+        <span class="section-tag-badge">APRESIASI & KEBERLANJUTAN</span>
+        <h2 style="color: #09090b; font-size: clamp(28px, 3.5vw, 38px); font-weight: 900;">
+          Umpan Balik & Diseminasi Praktik Baik 💬
+        </h2>
+        <p style="color: #52525b; max-width: 720px; margin: 10px auto 0;">
+          Evaluasi nyata dari Guru Pamong, Dosen Pembimbing, dan Siswa SMAN 4 Yogyakarta atas inovasi pembelajaran yang diterapkan.
+        </p>
+      </div>
+
+      <div class="feedback-grid-3">
+        <!-- Testimoni 1: Guru Pamong -->
+        <div class="feedback-card reveal-scale delay-100">
+          <div class="feedback-top-row">
+            <div class="feedback-avatar-circle" style="background: #ffd4e5; color: #09090b;">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <div>
+              <h4 class="feedback-name">Guru Pamong SMAN 4 YK</h4>
+              <span class="feedback-role">Mitra PPL PPG Informatika</span>
+            </div>
+          </div>
+          <p class="feedback-quote">
+            "Modul PjBL dan strategi scaffolding Help Card yang dirancang Agasta terbukti berhasil mengubah suasana kelas yang tadinya pasif menjadi sangat aktif dan antusias."
+          </p>
+          <div class="feedback-stars">★★★★★</div>
+        </div>
+
+        <!-- Testimoni 2: Dosen Pembimbing -->
+        <div class="feedback-card reveal-scale delay-200">
+          <div class="feedback-top-row">
+            <div class="feedback-avatar-circle" style="background: #d4ff32; color: #09090b;">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div>
+              <h4 class="feedback-name">Dosen Pembimbing UNY</h4>
+              <span class="feedback-role">LPTK PPG Prajabatan</span>
+            </div>
+          </div>
+          <p class="feedback-quote">
+            "Karya inovasi yang dihasilkan menunjukkan kematangan pedagogi Abad 21 dan kemampuan merancang media komputasi kontekstual yang menginspirasi."
+          </p>
+          <div class="feedback-stars">★★★★★</div>
+        </div>
+
+        <!-- Testimoni 3: Siswa Kelas X4 -->
+        <div class="feedback-card reveal-scale delay-300">
+          <div class="feedback-top-row">
+            <div class="feedback-avatar-circle" style="background: #b8b5ff; color: #09090b;">
+              <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <div>
+              <h4 class="feedback-name">Siswa Kelas X4</h4>
+              <span class="feedback-role">Peserta Didik SMAN 4 YK</span>
+            </div>
+          </div>
+          <p class="feedback-quote">
+            "Belajar coding dan logika jadi seru banget, kami tidak takut salah karena ada kuis gawai interaktif dan panduan modul yang sangat jelas!"
+          </p>
+          <div class="feedback-stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FOOTER (HITAM) -->
+  <footer class="main-footer" id="kontak">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Kolom Kiri -->
+        <div class="footer-left-headline reveal-left">
+          <div class="footer-cursive-text">
+            Mari ciptakan<br />
+            pembelajaran<br />
+            <span class="text-lime">menginspirasi!</span>
+          </div>
+          <div class="footer-stars-doodle">✦ ✦</div>
+          <svg class="footer-underline-doodle" viewBox="0 0 200 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 8 Q 50 2 100 8 T 195 8" stroke="#b8b5ff" stroke-width="3" stroke-linecap="round" />
+          </svg>
+          <p class="footer-left-desc">
+            "Ing ngarsa sung tuladha, ing madya mangun karsa, tut wuri handayani." Menuntun kodrat generasi penerus bangsa melalui teknologi dan budi pekerti.
+          </p>
+        </div>
+
+        <!-- Kolom Tengah: Social Media List -->
+        <div class="footer-center-socials reveal-scale delay-200">
+          <h4 class="footer-col-heading">
+            <i class="fa-solid fa-paper-plane"></i> HUBUNGI SAYA
+          </h4>
+          <div class="footer-social-list">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link-card">
+              <div class="social-link-left">
+                <div class="social-icon-circle"><i class="fa-brands fa-instagram"></i></div>
+                <div class="social-info-text">
+                  <strong>Instagram</strong>
+                  <span>@agasta_pratama</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square social-arrow-icon"></i>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link-card">
+              <div class="social-link-left">
+                <div class="social-icon-circle"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="social-info-text">
+                  <strong>LinkedIn</strong>
+                  <span>Agasta Pratama Nugraha</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square social-arrow-icon"></i>
+            </a>
+
+            <a href="mailto:agasta.pratama@email.com" class="social-link-card">
+              <div class="social-link-left">
+                <div class="social-icon-circle"><i class="fa-regular fa-envelope"></i></div>
+                <div class="social-info-text">
+                  <strong>Email Resmi</strong>
+                  <span>agasta.pratama@email.com</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square social-arrow-icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: Google Maps LPTK UNY -->
+        <div class="footer-right-maps reveal-right delay-300">
+          <h4 class="footer-col-heading">
+            <i class="fa-solid fa-location-dot"></i> LOKASI LPTK PPG UNY
+          </h4>
+          <div class="maps-embed-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.1678887467657!2d110.38435137591605!3d-7.771987992247348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59b2d354b679%3A0xb30f8185c8f855d4!2sUniversitas%20Negeri%20Yogyakarta!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Peta Lokasi Universitas Negeri Yogyakarta">
+            </iframe>
+          </div>
+          <div class="maps-footer-action">
+            <span class="maps-address-text">
+              Jl. Colombo No. 1, Karang Malang, Caturtunggal, Sleman, D.I. Yogyakarta 55281
+            </span>
+            <a href="https://maps.app.goo.gl/DsJsNTya474q8wT76" target="_blank" rel="noopener noreferrer" class="btn-open-maps">
+              Buka Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>
+          &copy; 2026 Agasta Pratama Nugraha (NIM: 25105260369). All rights reserved.
+        </p>
+        <div class="footer-legal-links">
+          <a href="#">PPG Calon Guru</a>
+          <span>•</span>
+          <a href="#">Informatika UNY</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE JAVASCRIPT -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    if (hamburger && navLinks) {
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+          hamburger.classList.remove("active");
+        });
+      });
+    }
+
+    function filterInovasi(category, btn) {
+      document.querySelectorAll(".filter-btn").forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const cards = document.querySelectorAll(".innovation-card");
+      cards.forEach((card) => {
+        const cardCat = card.getAttribute("data-category");
+        if (category === "all" || cardCat === category) {
+          card.style.display = "flex";
+          setTimeout(() => {
+            card.classList.add("is-revealed");
+          }, 50);
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
+  </script>
+  <script src="js/interactions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Portofolio PPG | Agasta Pratama Nugraha</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans, Caveat, Bebas Neue, Permanent Marker -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Permanent+Marker&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- CSS External & Interactive Animations -->
+  <link rel="stylesheet" href="css/beranda.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+
+<body>
+  <!-- ==========================================================================
+       INTRO / SPLASH / PRELOADER SCREEN (OPENING ANIMATION)
+       ========================================================================== -->
+  <div class="intro-splash-overlay" id="introSplash">
+    <div class="intro-bg-grid"></div>
+    <div class="intro-content-card">
+      <div class="intro-badge-avatar">
+        <div class="intro-avatar-ring"></div>
+        <div class="intro-avatar-img-wrap">
+          <img src="foto.png" alt="Agasta Pratama Nugraha"
+            onerror="this.src='https://dummyimage.com/180x180/18181c/d4ff32.png&text=Agasta'" />
+        </div>
+      </div>
+
+      <div class="intro-sub-tag">
+        <span class="dot"></span> PPG CALON GURU INFORMATIKA
+      </div>
+
+      <h1 class="intro-name-title">
+        AGASTA PRATAMA <span>NUGRAHA</span>
+      </h1>
+      <p class="intro-desc-role">
+        NIM: 25105260369 • Kelas B/Informatika • Universitas Negeri Yogyakarta
+      </p>
+
+      <div class="intro-progress-container">
+        <div class="intro-progress-bar" id="splashProgressBar"></div>
+      </div>
+      <div class="intro-status-text" id="splashStatusText">
+        Memuat portofolio pembelajaran interaktif...
+      </div>
+
+      <button class="intro-enter-btn" id="splashEnterBtn">
+        MASUK PORTOFOLIO <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- STICKY VERTICAL SOCIAL BAR (Right Side) -->
+  <aside class="sticky-social-bar" aria-label="Social Media Bar">
+    <div class="social-icons-vertical">
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:agasta.pratama@email.com" aria-label="Email">
+        <i class="fa-regular fa-envelope"></i>
+      </a>
+    </div>
+    <div class="vertical-text-tag">
+      <span>PENDIDIK INOVATIF & ADAPTIF</span>
+      <span class="sparkle-doodle">✦</span>
+    </div>
+  </aside>
+
+  <!-- FLOATING NAVBAR (BRAND "AGASTA." AS HOME BUTTON) -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <!-- Brand AGASTA. acts as home button -->
+      <a href="beranda.html" class="logo">AGASTA<span>.</span></a>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="visi.html">VISI PRIBADI</a></li>
+        <li><a href="refleksi-s1.html">REFLEKSI S1</a></li>
+        <li><a href="refleksi-s2.html">REFLEKSI S2</a></li>
+        <li><a href="inovasi.html">KARYA INOVATIF</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#kontak" class="btn-pill-neon pulse-badge">
+          HUBUNGI SAYA <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION (MATCHING EXACT COMPOSITION FROM GAMBAR 1) -->
+  <header class="hero-section" id="hero">
+    <!-- Giant Bold Condensed "PORTFOLIO" spanning the Top (From Gambar 1) -->
+    <div class="hero-giant-top-title">
+      PORTFOLIO
+    </div>
+
+    <!-- Main 3-Column Stage Overlapping Title -->
+    <div class="container hero-g1-stage">
+      <!-- KOLOM KIRI: Asterisk, Bold Statement, Subtext, Blue Smiley Stamp -->
+      <div class="hero-g1-left reveal-left">
+        <div class="g1-asterisk-badge">
+          <span class="g1-asterisk-icon">✱</span>
+          <span class="g1-badge-pill">PENDIDIK PROFESIONAL PPG PRAJABATAN</span>
+        </div>
+
+        <h1 class="g1-mission-title">
+          MENDESAIN PEMBELAJARAN INOVATIF YANG MENGINSPIRASI DAN BERDAMPAK.
+        </h1>
+
+        <p class="g1-mission-desc">
+          Memadukan pedagogi reflektif, integrasi teknologi informatika, dan pendekatan humanis untuk menciptakan
+          pengalaman belajar bermakna yang berpusat pada peserta didik di era digital.
+        </p>
+
+        <div class="g1-divider-line"></div>
+
+        <!-- Bottom Row: CTA Button & Rotating Blue Smiley Stamp (From Gambar 1) -->
+        <div class="g1-left-bottom-row">
+          <div class="g1-smiley-stamp-wrap floating-rotate">
+            <svg viewBox="0 0 160 160" class="g1-stamp-svg">
+              <path id="g1StampPath" d="M 80, 80 m -60, 0 a 60,60 0 1,1 120,0 a 60,60 0 1,1 -120,0" fill="none" />
+              <text>
+                <textPath href="#g1StampPath">
+                  • DISRUPT ORDINARY • FOR CHANGE • DISRUPT ORDINARY
+                </textPath>
+              </text>
+            </svg>
+            <div class="g1-stamp-center-smiley">
+              <i class="fa-regular fa-face-smile"></i>
+            </div>
+          </div>
+
+          <a href="#karya" class="btn-g1-cta">
+            LIHAT KARYA <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- KOLOM TENGAH: Foto Agasta Center Focus Overlapping Title -->
+      <div class="hero-g1-center reveal-scale delay-200">
+        <img src="foto.png" alt="Agasta Pratama Nugraha" class="hero-g1-portrait"
+          onerror="this.src='https://dummyimage.com/600x800/18181c/d4ff32.png&text=Foto+Agasta+(PNG)'" />
+      </div>
+
+      <!-- KOLOM KANAN: Angled Neon Lime Poster with Crown & Graffiti Words (From Gambar 1) -->
+      <div class="hero-g1-right reveal-right delay-300">
+        <div class="g1-neon-card-poster shimmer-hover">
+          <!-- Crown Doodle SVG -->
+          <svg class="poster-crown-icon floating-gentle" viewBox="0 0 50 40" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 32 L 12 12 L 25 24 L 38 12 L 45 32 Z" stroke="#09090b" stroke-width="4" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <circle cx="12" cy="10" r="2.5" fill="#09090b" />
+            <circle cx="25" cy="8" r="2.5" fill="#09090b" />
+            <circle cx="38" cy="10" r="2.5" fill="#09090b" />
+          </svg>
+
+          <!-- Graffiti Words -->
+          <div class="poster-graffiti-words">
+            IDEAS<br />
+            DESIGN<br />
+            IMPACT
+          </div>
+
+          <!-- Blue Brush Underline SVG -->
+          <svg class="poster-brush-underline" viewBox="0 0 140 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 8 Q 40 2 80 8 T 136 7" stroke="#3b82f6" stroke-width="5" stroke-linecap="round" />
+          </svg>
+
+          <div class="poster-footer-text">
+            <i class="fa-solid fa-graduation-cap"></i> PPG PRAJABATAN UNY 2024
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NEON MARQUEE TICKER (PPG, INFORMATIKA, PENDIDIKAN, REFLEKSI, INOVASI) -->
+  <div class="neon-marquee-bar" aria-label="Running ticker banner">
+    <div class="marquee-track">
+      <span><i class="fa-solid fa-star"></i> CALON GURU PROFESIONAL</span>
+      <span><i class="fa-solid fa-asterisk"></i> PENDIDIKAN INFORMATIKA</span>
+      <span><i class="fa-solid fa-star"></i> REFLEKTIF & INOVATIF</span>
+      <span><i class="fa-solid fa-asterisk"></i> PPG PRAJABATAN UNY 2024</span>
+      <span><i class="fa-solid fa-star"></i> PEMBELAJARAN BERDIFERENSIASI</span>
+      <span><i class="fa-solid fa-asterisk"></i> INTEGRASI TEKNOLOGI ABAD 21</span>
+      <span><i class="fa-solid fa-star"></i> MERDEKA BELAJAR</span>
+      <!-- Repeat for smooth loop -->
+      <span><i class="fa-solid fa-star"></i> CALON GURU PROFESIONAL</span>
+      <span><i class="fa-solid fa-asterisk"></i> PENDIDIKAN INFORMATIKA</span>
+      <span><i class="fa-solid fa-star"></i> REFLEKTIF & INOVATIF</span>
+      <span><i class="fa-solid fa-asterisk"></i> PPG PRAJABATAN UNY 2024</span>
+      <span><i class="fa-solid fa-star"></i> PEMBELAJARAN BERDIFERENSIASI</span>
+      <span><i class="fa-solid fa-asterisk"></i> INTEGRASI TEKNOLOGI ABAD 21</span>
+      <span><i class="fa-solid fa-star"></i> MERDEKA BELAJAR</span>
+    </div>
+  </div>
+
+  <!-- SECTION 2: WHITE BENTO (ABOUT ME & WHAT I DO / SERVICES) -->
+  <section class="about-services-section" id="tentang">
+    <div class="container about-services-grid">
+      <!-- LEFT COLUMN: ABOUT ME with POLAROID & STICKY NOTE -->
+      <div class="about-col reveal-left">
+        <span class="badge-lilac">ABOUT ME</span>
+        <h2 class="about-heading">
+          Halo, Saya <span class="about-handwriting">Agasta</span> <span class="heart-doodle">♡</span>
+        </h2>
+
+        <div class="polaroid-sticky-wrapper">
+          <!-- Polaroid Card with Washi Tape -->
+          <div class="polaroid-card shimmer-hover">
+            <div class="washi-tape-pink"></div>
+            <div class="polaroid-img-box">
+              <img src="foto.png" alt="Agasta Pratama"
+                onerror="this.src='https://dummyimage.com/300x300/18181c/ffffff.png&text=Agasta+Polaroid'" />
+            </div>
+            <p class="polaroid-caption">Educator & Creator ✦</p>
+          </div>
+
+          <!-- Yellow Sticky Note -->
+          <div class="sticky-note-yellow floating-gentle">
+            <div class="sticky-note-content">
+              ♡<br />
+              STRATEGI<br />
+              INOVASI<br />
+              GROWTH<br />
+              KOMUNITAS<br />
+              ♡
+            </div>
+          </div>
+        </div>
+
+        <p class="about-bio-text">
+          Calon Guru Profesional dan Pengembang Pembelajaran Inovatif yang berfokus menciptakan pengalaman belajar
+          bermakna, kontekstual, dan berpusat pada peserta didik di era digital.
+        </p>
+        <p class="about-bio-text">
+          Memadukan nilai-nilai luhur filosofi Ki Hajar Dewantara dengan integrasi teknologi interaktif untuk membimbing
+          murid meraih potensi tertingginya.
+        </p>
+
+        <a href="visi.html" class="btn-outline-pill">
+          TENTANG SAYA LEBIH LANJUT <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <!-- RIGHT COLUMN: WHAT I DO / KOMPETENSI -->
+      <div class="services-col reveal-right delay-200">
+        <span class="badge-black">WHAT I DO</span>
+        <h2 class="services-heading">
+          KOMPETENSI UTAMA ⚡
+        </h2>
+
+        <div class="services-list">
+          <!-- Item 1 -->
+          <div class="service-item reveal delay-100">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-pen-ruler"></i>
+            </div>
+            <div class="service-info">
+              <h4>Desain Pembelajaran Inovatif</h4>
+              <p>Merancang modul ajar berdiferensiasi dan berbasis proyek (PjBL & PBL) yang adaptif terhadap profil dan
+                kesiapan belajar murid.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="service-item reveal delay-200">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <div class="service-info">
+              <h4>Pengembangan Media Digital</h4>
+              <p>Menciptakan media interaktif, LKPD digital, dan gamifikasi belajar untuk memantik rasa ingin tahu dan
+                pemahaman mendalam.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="service-item reveal delay-300">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-clipboard-check"></i>
+            </div>
+            <div class="service-info">
+              <h4>Asesmen & Evaluasi Reflektif</h4>
+              <p>Menerapkan asesmen diagnostik, formatif, dan autentik berbasis SOLO Taxonomy untuk pemantauan capaian
+                belajar yang presisi.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="service-item reveal delay-400">
+            <div class="service-icon-box">
+              <i class="fa-solid fa-users-gear"></i>
+            </div>
+            <div class="service-info">
+              <h4>Kepemimpinan & Kolaborasi</h4>
+              <p>Membangun komunitas praktisi, budaya positif lingkungan sekolah, dan refleksi berkelanjutan antar rekan
+                sejawat.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="refleksi-s1.html" class="services-footer-link">
+          LIHAT SEMUA KOMPETENSI & REFLEKSI <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: DARK STATS BAR (REAL STRATEGIES. REAL RESULTS.) -->
+  <section class="results-stats-section">
+    <div class="container results-grid">
+      <div class="results-left reveal-left">
+        <span class="badge-outline-results">THE RESULTS</span>
+        <h2 class="results-title">
+          STRATEGI NYATA.<br />
+          <span class="neon-underline-text">DAMPAK NYATA.</span>
+        </h2>
+      </div>
+
+      <div class="stats-4col">
+        <!-- Metric 1 -->
+        <div class="stat-metric-item reveal-scale delay-100">
+          <i class="fa-solid fa-cubes-stacked stat-icon"></i>
+          <span class="stat-big-num" data-counter-target="32" data-counter-suffix="+">0+</span>
+          <span class="stat-label-text">MODUL & LKPD INOVATIF</span>
+        </div>
+
+        <!-- Metric 2 -->
+        <div class="stat-metric-item reveal-scale delay-200">
+          <i class="fa-solid fa-arrow-trend-up stat-icon"></i>
+          <span class="stat-big-num" data-counter-target="11" data-counter-suffix=" MK">0 MK</span>
+          <span class="stat-label-text">TOTAL REFLEKSI S1 & S2</span>
+        </div>
+
+        <!-- Metric 3 -->
+        <div class="stat-metric-item reveal-scale delay-300">
+          <i class="fa-solid fa-heart stat-icon"></i>
+          <span class="stat-big-num" data-counter-target="100" data-counter-suffix="%">0%</span>
+          <span class="stat-label-text">CAPAIAN PRAKTIK PPL</span>
+        </div>
+
+        <!-- Metric 4 -->
+        <div class="stat-metric-item reveal-scale delay-400">
+          <i class="fa-solid fa-rocket stat-icon"></i>
+          <span class="stat-big-num" data-counter-target="250" data-counter-prefix="+"
+            data-counter-suffix="%">+0%</span>
+          <span class="stat-label-text">KEAKTIFAN SISWA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: FEATURED WORK (MATCHING EXACT COLORFUL CARDS FROM IMAGE 2) -->
+  <section class="featured-work-section" id="karya">
+    <div class="container">
+      <div class="section-top-bar reveal">
+        <div class="featured-heading-wrap">
+          <h2 class="featured-heading">STUDI KASUS & REKAM JEJAK ↙</h2>
+        </div>
+        <a href="inovasi.html" class="btn-pill-light">
+          LIHAT SEMUA KARYA <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+
+      <div class="bento-work-grid">
+        <!-- CARD 1: VISI PRIBADI (PASTEL PINK) -->
+        <a href="visi.html" class="bento-work-card card-pink reveal-scale delay-100 shimmer-hover">
+          <div class="phone-mockup-frame">
+            <div class="mockup-inner-screen">
+              <div class="mockup-top-meta">
+                <i class="fa-solid fa-compass"></i>
+                <span>VISI & STRATEGI</span>
+              </div>
+              <div class="mockup-center-icon">
+                <i class="fa-solid fa-route"></i>
+              </div>
+              <div class="mockup-growth-pill">
+                +100% ROADMAP
+              </div>
+            </div>
+          </div>
+          <div class="card-meta-bottom">
+            <div class="card-title-group">
+              <h3>VISI PRIBADI</h3>
+              <p>Peta jalan filosofis & pandangan masa depan pendidikan.</p>
+            </div>
+            <div class="card-circle-btn">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 2: REFLEKSI SEMESTER 1 (NEON LIME) -->
+        <a href="refleksi-s1.html" class="bento-work-card card-lime reveal-scale delay-200 shimmer-hover">
+          <div class="phone-mockup-frame">
+            <div class="mockup-inner-screen">
+              <div class="mockup-top-meta">
+                <i class="fa-solid fa-book-open"></i>
+                <span>SEMESTER 1</span>
+              </div>
+              <div class="mockup-center-icon">
+                <i class="fa-solid fa-seedling"></i>
+              </div>
+              <div class="mockup-growth-pill">
+                6 MATA KULIAH
+              </div>
+            </div>
+          </div>
+          <div class="card-meta-bottom">
+            <div class="card-title-group">
+              <h3>REFLEKSI SEM 1</h3>
+              <p>Galeri refleksi 6 mata kuliah fondasi utama filosofi & PPL.</p>
+            </div>
+            <div class="card-circle-btn">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 3: REFLEKSI SEMESTER 2 (PASTEL LILAC / LAVENDER) -->
+        <a href="refleksi-s2.html" class="bento-work-card card-lilac reveal-scale delay-300 shimmer-hover">
+          <div class="phone-mockup-frame">
+            <div class="mockup-inner-screen">
+              <div class="mockup-top-meta">
+                <i class="fa-solid fa-brain"></i>
+                <span>SEMESTER 2</span>
+              </div>
+              <div class="mockup-center-icon">
+                <i class="fa-solid fa-tree"></i>
+              </div>
+              <div class="mockup-growth-pill">
+                5 MK SOSIO-EMOSIONAL
+              </div>
+            </div>
+          </div>
+          <div class="card-meta-bottom">
+            <div class="card-title-group">
+              <h3>REFLEKSI SEM 2</h3>
+              <p>Penguatan praktik mandiri, PSE, & kepemimpinan kontekstual.</p>
+            </div>
+            <div class="card-circle-btn">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 4: KARYA INOVATIF (DEEP BLACK) -->
+        <a href="inovasi.html" class="bento-work-card card-dark reveal-scale delay-400 shimmer-hover">
+          <div class="phone-mockup-frame">
+            <div class="mockup-inner-screen">
+              <div class="mockup-top-meta">
+                <i class="fa-solid fa-award"></i>
+                <span>SHOWCASE UTAMA</span>
+              </div>
+              <div class="mockup-center-icon">
+                <i class="fa-solid fa-rocket"></i>
+              </div>
+              <div class="mockup-growth-pill">
+                +220% IMPACT
+              </div>
+            </div>
+          </div>
+          <div class="card-meta-bottom">
+            <div class="card-title-group">
+              <h3>KARYA INOVATIF</h3>
+              <p>Produk media digital, modul interaktif, dan hasil uji lapangan.</p>
+            </div>
+            <div class="card-circle-btn">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: PERJALANAN PERKULIAHAN (SEMESTER 1 VS SEMESTER 2 & APA YG DIDAPAT)
+       ========================================================================== -->
+  <section class="journey-timeline-section" id="perjalanan">
+    <div class="container">
+      <div class="section-top-title-group reveal" style="text-align: center; margin-bottom: 30px;">
+        <span class="g1-badge-pill">KRONOLOGI & TRANSFORMASI AKADEMIK</span>
+        <h2 style="color: #ffffff; font-size: clamp(28px, 3.5vw, 42px); font-weight: 900; margin-top: 10px;">
+          Perjalanan Perkuliahan PPG Prajabatan ⚡
+        </h2>
+        <p style="color: #a1a1aa; max-width: 720px; margin: 12px auto 0;">
+          Evolusi proses belajar dari peletakan fondasi pedagogis hingga kematangan praktik mandiri dan kepemimpinan pendidikan.
+        </p>
+      </div>
+
+      <!-- DUAL SEMESTER COMPARISON CARDS (COMPACT & DIRECT) -->
+      <div class="journey-dual-grid">
+        <!-- SEMESTER 1 CARD -->
+        <div class="journey-card journey-card-s1 reveal-left delay-100">
+          <div class="journey-top-meta">
+            <span class="journey-badge">
+              <i class="fa-solid fa-seedling"></i> SEMESTER 1
+            </span>
+            <span class="journey-status-tag"><i class="fa-solid fa-circle-check text-lime"></i> 6 MATA KULIAH</span>
+          </div>
+
+          <h3>Fondasi Pedagogis & Observasi</h3>
+          <p class="journey-lead">
+            Fokus pada dekonstruksi paradigma mengajar Ki Hajar Dewantara, profiling karakter peserta didik digital, dan observasi terbimbing di SMA Negeri 4 Yogyakarta.
+          </p>
+
+          <a href="refleksi-s1.html" class="btn-journey-view">
+            EKSPLORASI REFLEKSI S1 <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- SEMESTER 2 CARD -->
+        <div class="journey-card journey-card-s2 reveal-right delay-200">
+          <div class="journey-top-meta">
+            <span class="journey-badge">
+              <i class="fa-solid fa-tree"></i> SEMESTER 2
+            </span>
+            <span class="journey-status-tag"><i class="fa-solid fa-circle-check text-lilac"></i> 5 MATA KULIAH</span>
+          </div>
+
+          <h3>Praktik Mandiri & Kepemimpinan</h3>
+          <p class="journey-lead">
+            Fokus pada integrasi kompetensi sosial-emosional (CASEL), eksekusi praktik mengajar mandiri berbasis Lesson Study, dan kepemimpinan proyek literasi digital komunitas.
+          </p>
+
+          <a href="refleksi-s2.html" class="btn-journey-view">
+            EKSPLORASI REFLEKSI S2 <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- WHAT I GOT (APA YANG DIDAPAT) DIRECT 4 CARDS -->
+      <div class="outcomes-wrap-box reveal-scale delay-300">
+        <div class="outcomes-grid-4">
+          <div class="outcome-box">
+            <div class="outcome-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <h4>Pedagogi Berpusat pada Murid</h4>
+            <p>Mampu merancang pembelajaran berbasis UbD dan PjBL yang mengakomodasi keberagaman profil belajar siswa.</p>
+          </div>
+
+          <div class="outcome-box">
+            <div class="outcome-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h4>Integrasi Teknologi & Etika</h4>
+            <p>Mengarahkan gawai siswa dari sumber distraksi menjadi sarana kreasi digital dan pembelajaran bermakna.</p>
+          </div>
+
+          <div class="outcome-box">
+            <div class="outcome-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            <h4>Kecerdasan Sosio-Emosional</h4>
+            <p>Menghadirkan iklim kelas yang aman, bebas dari rasa takut salah (*Growth Mindset*), dan membangun empati.</p>
+          </div>
+
+          <div class="outcome-box">
+            <div class="outcome-icon"><i class="fa-solid fa-users-rays"></i></div>
+            <h4>Kepemimpinan Pembelajaran</h4>
+            <p>Mampu memimpin inisiatif perubahan, berkolaborasi dengan MGMP, dan melakukan refleksi berkelanjutan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: DOKUMENTASI & GALERI KEGIATAN PPG (5-PHOTO EXPANDING ACCORDION)
+       ========================================================================== -->
+  <section class="gallery-section" id="galeri">
+    <div class="container">
+      <div class="gallery-top-bar reveal">
+        <div>
+          <span class="badge-black">REKAM JEJAK VISUAL</span>
+          <h2 style="font-size: clamp(28px, 3.5vw, 38px); font-weight: 900; margin-top: 6px; color: #09090b;">
+            Galeri Dokumentasi & Aksi Nyata 📸
+          </h2>
+          <p style="color: #52525b; font-size: 14px; margin-top: 4px;">
+            Klik foto untuk memperluas rekam jejak praktik mengajar, bimbingan pamong, praktikum Informatika, lokakarya, dan kolaborasi siswa.
+          </p>
+        </div>
+        <a href="inovasi.html" class="btn-outline-pill" style="border-color: #09090b; color: #09090b;">
+          LIHAT PRODUK INOVASI <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- 5-PHOTO EXPANDABLE ACCORDION GALLERY (REFERENSI GAMBAR 1) -->
+      <div class="expand-gallery-container reveal-scale delay-100" id="expandGallery">
+        <!-- Foto 1 (Active by Default) -->
+        <div class="expand-gallery-card active" onclick="activateExpandCard(this)">
+          <img src="foto.png" alt="Kegiatan Kelas - Implementasi Modul Ajar" class="expand-gallery-img" />
+          <div class="expand-card-overlay">
+            <div class="expand-icon-badge">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <div class="expand-card-text">
+              <h4 class="expand-title">Kegiatan Kelas</h4>
+              <p class="expand-subtitle">Implementasi Modul Ajar</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foto 2 -->
+        <div class="expand-gallery-card" onclick="activateExpandCard(this)">
+          <img src="foto2.png" alt="Bimbingan Pamong - Refleksi Lesson Study" class="expand-gallery-img" />
+          <div class="expand-card-overlay">
+            <div class="expand-icon-badge">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <div class="expand-card-text">
+              <h4 class="expand-title">Bimbingan Pamong</h4>
+              <p class="expand-subtitle">Refleksi Lesson Study</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foto 3 -->
+        <div class="expand-gallery-card" onclick="activateExpandCard(this)">
+          <img src="foto3.jpg" alt="Praktikum Coding - Eksplorasi LKPD Digital" class="expand-gallery-img" />
+          <div class="expand-card-overlay">
+            <div class="expand-icon-badge">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="expand-card-text">
+              <h4 class="expand-title">Praktikum Coding</h4>
+              <p class="expand-subtitle">Eksplorasi LKPD Digital</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foto 4 -->
+        <div class="expand-gallery-card" onclick="activateExpandCard(this)">
+          <img src="foto4.jpg" alt="Seminar Karya - Diseminasi Hasil PTK" class="expand-gallery-img" />
+          <div class="expand-card-overlay">
+            <div class="expand-icon-badge">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="expand-card-text">
+              <h4 class="expand-title">Seminar Karya</h4>
+              <p class="expand-subtitle">Diseminasi Hasil PTK</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foto 5 -->
+        <div class="expand-gallery-card" onclick="activateExpandCard(this)">
+          <img src="foto5.jpg" alt="Kolaborasi Siswa - PjBL Komputasi Berkelompok" class="expand-gallery-img" />
+          <div class="expand-card-overlay">
+            <div class="expand-icon-badge">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="expand-card-text">
+              <h4 class="expand-title">Kolaborasi Siswa</h4>
+              <p class="expand-subtitle">PjBL Komputasi Berkelompok</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: NEW 3-COLUMN FOOTER (INSPIRATION, SOCIAL MEDIA LIST, GOOGLE MAPS)
+       ========================================================================== -->
+  <footer class="main-footer" id="kontak">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Kolom Kiri: Headline Cursive & Filosofi -->
+        <div class="footer-left-headline reveal-left">
+          <div class="footer-cursive-text">
+            Mari ciptakan<br />
+            pembelajaran<br />
+            <span class="text-lime">menginspirasi!</span>
+          </div>
+          <div class="footer-stars-doodle">✦ ✦</div>
+          <svg class="footer-underline-doodle" viewBox="0 0 200 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 8 Q 50 2 100 8 T 195 8" stroke="#b8b5ff" stroke-width="3" stroke-linecap="round" />
+          </svg>
+          <p class="footer-left-desc">
+            "Ing ngarsa sung tuladha, ing madya mangun karsa, tut wuri handayani." Menuntun kodrat generasi penerus
+            bangsa melalui teknologi dan budi pekerti.
+          </p>
+        </div>
+
+        <!-- Kolom Tengah: Hubungi Saya (Social Media List) -->
+        <div class="footer-center-socials reveal-scale delay-200">
+          <h4 class="footer-col-heading">
+            <i class="fa-solid fa-paper-plane"></i> HUBUNGI SAYA
+          </h4>
+          <div class="footer-social-list">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link-card">
+              <div class="social-link-left">
+                <div class="social-icon-circle"><i class="fa-brands fa-instagram"></i></div>
+                <div class="social-info-text">
+                  <strong>Instagram</strong>
+                  <span>@agasta_pratama</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square social-arrow-icon"></i>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link-card">
+              <div class="social-link-left">
+                <div class="social-icon-circle"><i class="fa-brands fa-linkedin-in"></i></div>
+                <div class="social-info-text">
+                  <strong>LinkedIn</strong>
+                  <span>Agasta Pratama Nugraha</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square social-arrow-icon"></i>
+            </a>
+
+
+            <a href="mailto:agasta.pratama@email.com" class="social-link-card">
+              <div class="social-link-left">
+                <div class="social-icon-circle"><i class="fa-regular fa-envelope"></i></div>
+                <div class="social-info-text">
+                  <strong>Email Resmi</strong>
+                  <span>agasta.pratama@email.com</span>
+                </div>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square social-arrow-icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: Google Maps LPTK UNY -->
+        <div class="footer-right-maps reveal-right delay-300">
+          <h4 class="footer-col-heading">
+            <i class="fa-solid fa-location-dot"></i> LOKASI LPTK PPG UNY
+          </h4>
+          <div class="maps-embed-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.1678887467657!2d110.38435137591605!3d-7.771987992247348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59b2d354b679%3A0xb30f8185c8f855d4!2sUniversitas%20Negeri%20Yogyakarta!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Peta Lokasi Universitas Negeri Yogyakarta">
+            </iframe>
+          </div>
+          <div class="maps-footer-action">
+            <span class="maps-address-text">
+              Jl. Colombo No. 1, Karang Malang, Caturtunggal, Sleman, D.I. Yogyakarta 55281
+            </span>
+            <a href="https://maps.app.goo.gl/DsJsNTya474q8wT76" target="_blank" rel="noopener noreferrer"
+              class="btn-open-maps">
+              Buka Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Agasta Pratama Nugraha (NIM: 25105260369). All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#">PPG Calon Guru</a>
+          <span>•</span>
+          <a href="#">Informatika UNY</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu & Interactive JS -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    if (hamburger && navLinks) {
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+          hamburger.classList.remove("active");
+        });
+      });
+    }
+  </script>
+  <script src="js/interactions.js"></script>
+</body>
+
+</html>

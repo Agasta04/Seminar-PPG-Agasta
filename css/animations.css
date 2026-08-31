@@ -1,0 +1,461 @@
+/* ==========================================================================
+   E-PORTOFOLIO ANIMATIONS & INTERACTIVE EFFECTS
+   AGASTA PRATAMA NUGRAHA (PPG INFORMATIKA UNY)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. INTRO / SPLASH / PRELOADER SCREEN
+   -------------------------------------------------------------------------- */
+.intro-splash-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background-color: #09090b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: opacity 0.8s cubic-bezier(0.77, 0, 0.175, 1),
+              visibility 0.8s cubic-bezier(0.77, 0, 0.175, 1),
+              transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.intro-splash-overlay.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-30px) scale(1.03);
+  pointer-events: none;
+}
+
+/* Background animated glow grid */
+.intro-bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(212, 255, 50, 0.08) 0%, transparent 60%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+  opacity: 0.8;
+  pointer-events: none;
+  animation: gridFloat 20s linear infinite;
+}
+
+@keyframes gridFloat {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(40px); }
+}
+
+.intro-content-card {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 580px;
+  width: 90%;
+  padding: 36px 30px;
+  background: rgba(18, 18, 21, 0.85);
+  border: 1.5px solid rgba(212, 255, 50, 0.25);
+  border-radius: 28px;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.9), 0 0 40px rgba(212, 255, 50, 0.15);
+  backdrop-filter: blur(16px);
+  animation: introPopIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes introPopIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Avatar / Logo badge in splash */
+.intro-badge-avatar {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 20px;
+}
+
+.intro-avatar-ring {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 2px dashed rgba(212, 255, 50, 0.6);
+  animation: rotateRing 12s linear infinite;
+}
+
+@keyframes rotateRing {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.intro-avatar-img-wrap {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #d4ff32;
+  background: #18181c;
+  box-shadow: 0 0 25px rgba(212, 255, 50, 0.4);
+}
+
+.intro-avatar-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Tag Pill */
+.intro-sub-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(212, 255, 50, 0.12);
+  color: #d4ff32;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid rgba(212, 255, 50, 0.3);
+  margin-bottom: 14px;
+}
+
+.intro-sub-tag span.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #d4ff32;
+  box-shadow: 0 0 8px #d4ff32;
+  animation: pulseDot 1.5s infinite;
+}
+
+@keyframes pulseDot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.6); opacity: 0.5; }
+}
+
+.intro-name-title {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+  line-height: 1.2;
+}
+
+.intro-name-title span {
+  color: #d4ff32;
+}
+
+.intro-desc-role {
+  font-size: 0.9rem;
+  color: #a1a1aa;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+/* Progress bar in intro */
+.intro-progress-container {
+  width: 100%;
+  max-width: 320px;
+  background: rgba(255, 255, 255, 0.08);
+  height: 6px;
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.intro-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #3b82f6, #b8b5ff, #d4ff32);
+  border-radius: 999px;
+  transition: width 0.1s ease-out;
+  box-shadow: 0 0 10px rgba(212, 255, 50, 0.8);
+}
+
+.intro-status-text {
+  font-size: 0.75rem;
+  color: #71717a;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  min-height: 1.2em;
+}
+
+/* Skip / Enter CTA Button */
+.intro-enter-btn {
+  margin-top: 18px;
+  background: #d4ff32;
+  color: #09090b;
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 10px 24px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(212, 255, 50, 0.4);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.intro-enter-btn:hover {
+  background: #ffffff;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+/* --------------------------------------------------------------------------
+   2. SCROLL REVEAL ANIMATIONS (IntersectionObserver Based)
+   -------------------------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+/* Active State for reveals */
+.reveal.is-revealed,
+.reveal-left.is-revealed,
+.reveal-right.is-revealed,
+.reveal-scale.is-revealed {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+/* Stagger item delays */
+.delay-100 { transition-delay: 100ms !important; }
+.delay-200 { transition-delay: 200ms !important; }
+.delay-300 { transition-delay: 300ms !important; }
+.delay-400 { transition-delay: 400ms !important; }
+.delay-500 { transition-delay: 500ms !important; }
+.delay-600 { transition-delay: 600ms !important; }
+
+/* --------------------------------------------------------------------------
+   3. FLOATING MICRO-ANIMATIONS (Doodles, Badges, Stickers)
+   -------------------------------------------------------------------------- */
+.floating-gentle {
+  animation: floatingSinusoid 4s ease-in-out infinite;
+}
+
+.floating-gentle-slow {
+  animation: floatingSinusoid 6s ease-in-out infinite;
+}
+
+.floating-rotate {
+  animation: floatingRotate 8s ease-in-out infinite;
+}
+
+@keyframes floatingSinusoid {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes floatingRotate {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(4deg);
+  }
+}
+
+/* Animated Neon Glow Pulse */
+.glow-pulse-lime {
+  animation: glowPulseLime 3s ease-in-out infinite;
+}
+
+@keyframes glowPulseLime {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(212, 255, 50, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(212, 255, 50, 0.65), 0 0 50px rgba(212, 255, 50, 0.2);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. 3D INTERACTIVE TILT & CARD HOVER ENHANCEMENTS
+   -------------------------------------------------------------------------- */
+.tilt-card {
+  transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.tilt-card:hover {
+  z-index: 5;
+}
+
+/* Shimmer overlay for cards */
+.shimmer-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-hover::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.08) 50%,
+    transparent 70%
+  );
+  transform: rotate(30deg) translateX(-100%);
+  transition: transform 0.75s ease-out;
+  pointer-events: none;
+}
+
+.shimmer-hover:hover::after {
+  transform: rotate(30deg) translateX(100%);
+}
+
+/* --------------------------------------------------------------------------
+   5. BACK TO TOP BUTTON WITH SCROLL PROGRESS
+   -------------------------------------------------------------------------- */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #18181c;
+  color: #d4ff32;
+  border: 1.5px solid rgba(212, 255, 50, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px) scale(0.8);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(212, 255, 50, 0.2);
+}
+
+.back-to-top-btn.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.back-to-top-btn:hover {
+  background: #d4ff32;
+  color: #09090b;
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), 0 0 30px rgba(212, 255, 50, 0.6);
+}
+
+.back-to-top-btn svg.progress-ring {
+  position: absolute;
+  inset: -3px;
+  width: 58px;
+  height: 58px;
+  transform: rotate(-90deg);
+  pointer-events: none;
+}
+
+.back-to-top-btn svg.progress-ring circle {
+  fill: none;
+  stroke: #d4ff32;
+  stroke-width: 2.5;
+  stroke-dasharray: 160;
+  stroke-dashoffset: 160;
+  transition: stroke-dashoffset 0.15s ease-out;
+}
+
+/* --------------------------------------------------------------------------
+   6. SUBTLE CURSOR GLOW TRAIL (Desktop Only)
+   -------------------------------------------------------------------------- */
+.cursor-aura-glow {
+  position: fixed;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 255, 50, 0.045) 0%, rgba(59, 130, 246, 0.02) 40%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease-out, opacity 0.4s ease;
+  mix-blend-mode: screen;
+}
+
+@media (max-width: 991px) {
+  .cursor-aura-glow {
+    display: none !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7. INTERACTIVE ACCENT BADGES & SMOOTH PILL PULSES
+   -------------------------------------------------------------------------- */
+.pulse-badge {
+  position: relative;
+}
+
+.pulse-badge::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: currentColor;
+  opacity: 0.25;
+  animation: badgeRipple 2s infinite cubic-bezier(0.25, 1, 0.5, 1);
+  pointer-events: none;
+}
+
+@keyframes badgeRipple {
+  0% { transform: scale(1); opacity: 0.4; }
+  100% { transform: scale(1.35); opacity: 0; }
+}
