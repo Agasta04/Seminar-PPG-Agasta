@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon Logo UNY -->
+    <link rel="icon" type="image/png" href="logo-uny.png" />
+    <link rel="apple-touch-icon" href="logo-uny.png" />
     <title>Refleksi Semester 2 | E-Portofolio PPG Agasta Pratama Nugraha</title>
 
     <!-- Google Fonts -->
@@ -69,6 +72,7 @@
           <li><a href="visi.html">VISI PRIBADI</a></li>
           <li><a href="refleksi-s1.html">REFLEKSI S1</a></li>
           <li><a href="refleksi-s2.html" class="active">REFLEKSI S2</a></li>
+          <li><a href="refleksi-ppg.html">REFLEKSI PPG</a></li>
           <li><a href="inovasi.html">KARYA INOVATIF</a></li>
         </ul>
 
@@ -140,9 +144,7 @@
           <span class="text-lime">5 MATA KULIAH</span> PPG INFORMATIKA S2.
         </h1>
         <p class="hero-academic-desc">
-          Dokumentasi refleksi kritis pengalaman belajar dan bukti artefak nyata
-          <strong>Agasta Pratama Nugraha (NIM: 25105260369)</strong> • Kelas
-          B/Informatika UNY.
+          Sintesis komprehensif pengalaman belajar lima mata kuliah semester 2, mengintegrasikan kompetensi sosial emosional (CASEL), kepemimpinan projek kolaboratif sekolah, pemahaman regulasi profesi berkelanjutan (PKB), serta kemandirian praktik mengajar penuh di SMA Negeri 4 Yogyakarta.
         </p>
         <div class="hero-academic-actions">
           <a href="#matkul-list" class="btn-academic-cta">
@@ -172,159 +174,646 @@
       </div>
     </header>
 
-    <!-- 2. SECTION: 5 COURSE CARDS (BERJEJER 2 KESAMPING) -->
+    <!-- 2. SECTION: 5 COURSE DIRECT SHOWCASE & LK 3 VIEWER -->
     <section class="courses-showcase-section" id="matkul-list">
       <div class="container">
         <div
           class="section-top-title-group reveal"
-          style="text-align: center; margin-bottom: 35px"
+          style="text-align: center; margin-bottom: 25px"
         >
-          <span class="section-tag-badge">DAFTAR MATA KULIAH S2 PPG</span>
-          <h2>Pilih Mata Kuliah untuk Melihat Detail Refleksi LK 3 ↙</h2>
-          <p style="max-width: 720px; margin: 10px auto 0">
-            Klik kartu di bawah untuk membuka esai refleksi lengkap (4C) dan artefak
-            pembelajaran Semester 2 Agasta Pratama Nugraha.
+          <span class="section-tag-badge">EKSPLORASI REFLEKSI S2 PPG</span>
+          <h2>Detail Refleksi LK 3 &amp; Pratinjau Dokumen Langsung ↙</h2>
+          <p style="max-width: 780px; margin: 10px auto 0">
+            Pilih mata kuliah di bawah untuk langsung meninjau esai refleksi 4C, dokumen resmi LK 3, dan artefak pembelajaran tanpa repot membuka tab baru.
           </p>
         </div>
 
-        <!-- 2-COLUMN GRID (BERJEJER 2 KESAMPING) -->
-        <div class="courses-grid-2col">
-          <!-- CARD 1: PSE -->
-          <div
-            class="course-card-editorial course-lilac reveal-scale delay-100 shimmer-hover"
-            onclick="openModal('modal-pse')"
-          >
-            <div>
-              <div class="course-card-top-meta">
-                <span class="course-step-num">MK 01</span>
-                <div class="course-icon-round">
-                  <i class="fa-solid fa-heart-pulse"></i>
+        <!-- 5-COURSE CARD SELECTOR (3 DI BARIS PERTAMA, 2 DI BARIS KEDUA - WARNA-WARNI SOFT) -->
+        <div class="course-card-selector-grid">
+          <!-- CARD 1: PSE (LILAC SOFT) -->
+          <div class="selector-course-card selector-card-lilac active" id="btn-sel-pse" onclick="selectDirectCourse('panel-pse', this)">
+            <div class="selector-card-header">
+              <span class="selector-step-pill">MK 01</span>
+              <div class="selector-icon-bubble"><i class="fa-solid fa-heart-pulse"></i></div>
+            </div>
+            <div class="selector-card-body">
+              <h3>Pembelajaran Sosial Emosional (PSE)</h3>
+              <p>Penguasaan 5 kompetensi CASEL, kerangka EMC², experiential learning Kolb, dan iklim school well-being di kelas.</p>
+            </div>
+            <div class="selector-card-footer">
+              <span class="selector-tag-pill">3 Artefak LK 3</span>
+              <span class="selector-active-indicator"><i class="fa-solid fa-circle-check"></i> Buka Refleksi</span>
+            </div>
+          </div>
+
+          <!-- CARD 2: PMA LANJUT (LIME SOFT) -->
+          <div class="selector-course-card selector-card-lime" id="btn-sel-pmal" onclick="selectDirectCourse('panel-pmal', this)">
+            <div class="selector-card-header">
+              <span class="selector-step-pill">MK 02</span>
+              <div class="selector-icon-bubble"><i class="fa-solid fa-chart-line"></i></div>
+            </div>
+            <div class="selector-card-body">
+              <h3>Pembelajaran Mendalam Lanjut</h3>
+              <p>Pengelolaan model kejuruan (PBL, TeFa), integrasi asesmen autentik berstandar SOLO, serta diferensiasi TaRL & CRT.</p>
+            </div>
+            <div class="selector-card-footer">
+              <span class="selector-tag-pill">3 Artefak LK 3</span>
+              <span class="selector-active-indicator"><i class="fa-solid fa-circle-check"></i> Buka Refleksi</span>
+            </div>
+          </div>
+
+          <!-- CARD 3: PPL MANDIRI (PINK SOFT) -->
+          <div class="selector-course-card selector-card-pink" id="btn-sel-pplm" onclick="selectDirectCourse('panel-pplm', this)">
+            <div class="selector-card-header">
+              <span class="selector-step-pill">MK 03</span>
+              <div class="selector-icon-bubble"><i class="fa-solid fa-chalkboard-user"></i></div>
+            </div>
+            <div class="selector-card-body">
+              <h3>PPL II Mandiri (SMAN 4 YK)</h3>
+              <p>Praktik mengajar mandiri 4 siklus di SMA Negeri 4 Yogyakarta: algoritma searching/sorting, flowchart, dan data Excel.</p>
+            </div>
+            <div class="selector-card-footer">
+              <span class="selector-tag-pill">4 Artefak LK 3</span>
+              <span class="selector-active-indicator"><i class="fa-solid fa-circle-check"></i> Buka Refleksi</span>
+            </div>
+          </div>
+
+          <!-- CARD 4: PROJEK KEPEMIMPINAN (DARK BENTO WITH NEON) -->
+          <div class="selector-course-card selector-card-dark" id="btn-sel-pkep" onclick="selectDirectCourse('panel-pkep', this)">
+            <div class="selector-card-header">
+              <span class="selector-step-pill">MK 04</span>
+              <div class="selector-icon-bubble"><i class="fa-solid fa-users-gear"></i></div>
+            </div>
+            <div class="selector-card-body">
+              <h3>Projek Kepemimpinan</h3>
+              <p>Inisiasi transformasi digital peminjaman sarpras SMAN 4 Yogyakarta lewat SPACE-IN PATBHE dengan ADDIE & SMART Goals.</p>
+            </div>
+            <div class="selector-card-footer">
+              <span class="selector-tag-pill">3 Artefak LK 3</span>
+              <span class="selector-active-indicator"><i class="fa-solid fa-circle-check"></i> Buka Refleksi</span>
+            </div>
+          </div>
+
+          <!-- CARD 5: PKB & KARYA ILMIAH (PEACH / WARM YELLOW) -->
+          <div class="selector-course-card selector-card-peach" id="btn-sel-pkb" onclick="selectDirectCourse('panel-pkb', this)">
+            <div class="selector-card-header">
+              <span class="selector-step-pill">MK 05</span>
+              <div class="selector-icon-bubble"><i class="fa-solid fa-book-bookmark"></i></div>
+            </div>
+            <div class="selector-card-body">
+              <h3>Pengembangan Keprofesian (PKB)</h3>
+              <p>3 pilar PKB, sarana berpikir ilmiah, analisis best practice guru SMK, metodologi PTK, dan artikel publikasi ilmiah.</p>
+            </div>
+            <div class="selector-card-footer">
+              <span class="selector-tag-pill">3 Artefak LK 3</span>
+              <span class="selector-active-indicator"><i class="fa-solid fa-circle-check"></i> Buka Refleksi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DIRECT VIEWER PANELS CONTAINER -->
+        <div id="direct-viewer-container">
+          <!-- PANEL MK 01: PSE -->
+          <div class="direct-viewer-panel active" id="panel-pse">
+            <div class="direct-panel-header">
+              <div class="direct-panel-title-wrap">
+                <span class="direct-mk-badge" style="background: #9333ea; color: #fff;">MK 01</span>
+                <div class="direct-panel-title">
+                  <h3>Pembelajaran Sosial Emosional (PSE)</h3>
+                  <span>Agasta Pratama Nugraha (NIM: 25105260369) • Kelas B/Informatika UNY</span>
                 </div>
               </div>
-              <div class="course-body-wrap">
-                <h3>Pembelajaran Sosial Emosional (PSE)</h3>
-                <p>
-                  Penguasaan 5 kompetensi CASEL, kerangka EMC², pembelajaran berbasis pengalaman Kolb (experiential learning) materi algoritma, serta iklim school well-being.
-                </p>
+              <span class="g1-badge-pill"><i class="fa-solid fa-circle-check"></i> LK 3 &amp; 3 Artefak Lengkap</span>
+            </div>
+
+            <div class="direct-2col-layout">
+              <!-- Kolom Kiri: 4C Refleksi -->
+              <div class="direct-reflection-box">
+                <div class="direct-c-card">
+                  <div class="direct-c-title"><i class="fa-solid fa-link text-lime"></i> 1. Connection (Keterkaitan)</div>
+                  <div class="direct-c-content">
+                    Mata kuliah Pembelajaran Sosial Emosional memiliki keterkaitan yang erat dengan peran saya sebagai calon guru Informatika karena membantu saya memahami bahwa pembelajaran tidak hanya berkaitan dengan penguasaan materi, tetapi juga dengan kondisi sosial dan emosional murid. Melalui konsep CASEL, saya memahami pentingnya kesadaran diri, pengelolaan diri, kesadaran sosial, keterampilan relasi, dan pengambilan keputusan yang bertanggung jawab. Selain itu, materi EMC² membantu saya memahami pentingnya <em>empathy, mindfulness, compassion,</em> dan <em>critical inquiry</em> saat murid belajar algoritma, flowchart, dan pseudocode di lab komputer.
+                  </div>
+                </div>
+
+                <div class="direct-c-card c-challenge">
+                  <div class="direct-c-title"><i class="fa-solid fa-bolt" style="color: #38bdf8;"></i> 2. Challenge (Perubahan Cara Pandang)</div>
+                  <div class="direct-c-content">
+                    Sebelumnya, ketika menghadapi murid yang kurang aktif atau mengalami kesulitan dalam pembelajaran, saya cenderung lebih berfokus pada perilaku yang terlihat dan penyelesaian tugas semata. Melalui PSE, saya memahami bahwa guru perlu melihat kondisi murid secara lebih utuh serta mengelola respons dirinya sendiri sebelum bertindak. Konsep EMC² membuat saya memahami pentingnya empati, pengendalian emosi guru lewat Teknik STOP (<em>Stop, Take a breath, Observe, Proceed</em>), dan <em>Experiential Learning</em> (David Kolb).
+                  </div>
+                </div>
+
+                <div class="direct-c-card c-concept">
+                  <div class="direct-c-title"><i class="fa-solid fa-brain text-lilac"></i> 3. Concept (Konsep Utama)</div>
+                  <div class="direct-c-content">
+                    Kerangka 5 kompetensi CASEL, kerangka EMC² sebagai kompetensi relasional guru, karakter guru teladan dengan regulasi diri Teknik STOP, 4 siklus Experiential Learning David Kolb (*Concrete Experience, Reflective Observation, Abstract Conceptualization, Active Experimentation*), serta empat dimensi *School Well-being* (*Having, Loving, Being, Health*).
+                  </div>
+                </div>
+
+                <div class="direct-c-card c-change">
+                  <div class="direct-c-title"><i class="fa-solid fa-arrows-rotate" style="color: #f472b6;"></i> 4. Change (Komitmen Perubahan)</div>
+                  <div class="direct-c-content">
+                    Berkomitmen mengintegrasikan kompetensi sosial emosional secara konsisten dalam pembelajaran Informatika: membuka kelas dengan apersepsi dan *mindfulness check-in*, mendampingi murid berdiskusi dengan empati, memberikan ruang aman untuk bereksplorasi sintaks coding, serta mendukung terciptanya lingkungan belajar yang nyaman dan kondusif bagi kesejahteraan mental seluruh murid.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Kolom Kanan: Dokumen & Artefak Langsung Terlihat -->
+              <div class="direct-doc-wrapper">
+                <div class="doc-switcher-bar">
+                  <button class="doc-switch-btn active" onclick="switchLiveDoc(this, 'iframe-pse', 'pdf/pse/LEMBAR KERJA 3_PEMBELAJARAN SOSIAL EMOSIONAL.pdf', 'notice-pse', 'Menampilkan Dokumen Resmi Lembar Kerja 3 Pembelajaran Sosial Emosional.')">
+                    <i class="fa-solid fa-file-pdf"></i> Dokumen PDF LK 3
+                  </button>
+                  <button class="doc-switch-btn" onclick="switchLiveDoc(this, 'iframe-pse', 'pdf/pse/pse1.pdf', 'notice-pse', 'Artefak 1: Analisis dan Sintesis PSE di Lingkungan Sekolah (Teknik STOP &amp; Sesi Well-being).')">
+                    <i class="fa-solid fa-file-lines"></i> Artefak 1
+                  </button>
+                  <button class="doc-switch-btn" onclick="switchLiveDoc(this, 'iframe-pse', 'pdf/pse/pse2.pdf', 'notice-pse', 'Artefak 2: Siklus Penerapan Experiential Learning pada Materi Algoritma &amp; Flowchart.')">
+                    <i class="fa-solid fa-file-lines"></i> Artefak 2
+                  </button>
+                  <button class="doc-switch-btn" onclick="switchLiveDoc(this, 'iframe-pse', 'pdf/pse/pse3.pdf', 'notice-pse', 'Artefak 3: Refleksi Mendalam 4 Dimensi School Well-being (Having, Loving, Being, Health).')">
+                    <i class="fa-solid fa-file-lines"></i> Artefak 3
+                  </button>
+                </div>
+
+                <div class="doc-info-notice" id="notice-pse">
+                  <i class="fa-solid fa-circle-info text-lime"></i> Menampilkan Dokumen Resmi Lembar Kerja 3 Pembelajaran Sosial Emosional.
+                </div>
+
+                <iframe id="iframe-pse" class="live-doc-iframe" src="pdf/pse/LEMBAR KERJA 3_PEMBELAJARAN SOSIAL EMOSIONAL.pdf" title="Dokumen LK 3 PSE"></iframe>
+
+                <div class="doc-action-footer">
+                  <span style="color: #a1a1aa; font-size: 11px;"><i class="fa-solid fa-eye text-lime"></i> Tersemat langsung di halaman</span>
+                  <a href="pdf/pse/LEMBAR KERJA 3_PEMBELAJARAN SOSIAL EMOSIONAL.pdf" target="_blank" class="btn-open-external">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Fullscreen
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="course-bottom-row">
-              <span class="course-badge-pill">CASEL, EMC² &amp; WELL-BEING</span>
-              <div class="course-arrow-btn">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            <!-- PENJELASAN ARTEFAK PEMBELAJARAN MK 01 PSE -->
+            <div class="direct-artifact-explainer">
+              <div class="explainer-title-bar">
+                <span class="explainer-badge-pill" style="background: rgba(147, 51, 234, 0.15); color: #c084fc; border-color: rgba(147, 51, 234, 0.3);"><i class="fa-solid fa-folder-open"></i> BUKTI BELAJAR</span>
+                <h4>Penjelasan Artefak Pembelajaran MK 01 (Pembelajaran Sosial Emosional)</h4>
+              </div>
+              <div class="explainer-cards-grid">
+                <div class="explainer-item-card">
+                  <span class="explainer-item-badge" style="background: rgba(255, 212, 229, 0.2); color: #ffd4e5;"><i class="fa-solid fa-file-pdf"></i> ARTEFAK 01</span>
+                  <h5 class="explainer-item-title">Pemetaan 5 Kompetensi CASEL dalam Pembelajaran Algoritma</h5>
+                  <p class="explainer-item-desc">Rancangan integrasi kesadaran diri (self-awareness), manajemen diri, kesadaran sosial, keterampilan berelasi, dan pengambilan keputusan bertanggung jawab saat praktikum coding kelompok.</p>
+                  <div class="explainer-item-insight"><strong>Makna Reflektif:</strong> Mereduksi stres belajar pemrograman melalui pengelolaan regulasi emosi murid yang terstruktur.</div>
+                </div>
+                <div class="explainer-item-card">
+                  <span class="explainer-item-badge" style="background: rgba(212, 255, 50, 0.2); color: var(--neon-lime);"><i class="fa-solid fa-file-pdf"></i> ARTEFAK 02</span>
+                  <h5 class="explainer-item-title">Integrasi Kerangka EMC² (Empathy, Mindfulness, Compassion)</h5>
+                  <p class="explainer-item-desc">Panduan implementasi teknik STOP (Stop, Take a breath, Observe, Proceed) dan empati komputasional untuk menciptakan suasana kelas yang inklusif dan bebas intimidasi.</p>
+                  <div class="explainer-item-insight"><strong>Makna Reflektif:</strong> Menumbuhkan welas asih dan kepekaan sosial siswa terhadap rekan yang mengalami kesulitan koding.</div>
+                </div>
+                <div class="explainer-item-card">
+                  <span class="explainer-item-badge" style="background: rgba(184, 181, 255, 0.2); color: var(--pastel-lilac);"><i class="fa-solid fa-file-pdf"></i> ARTEFAK 03</span>
+                  <h5 class="explainer-item-title">Refleksi Mendalam 4 Dimensi School Well-being</h5>
+                  <p class="explainer-item-desc">Analisis komprehensif kesejahteraan murid di sekolah mencakup 4 dimensi (Having, Loving, Being, Health) untuk memastikan ruang belajar lab komputer ramah fisik dan mental.</p>
+                  <div class="explainer-item-insight"><strong>Makna Reflektif:</strong> Kebahagiaan dan rasa aman emosional adalah prasyarat mutlak terjadinya pembelajaran mendalam.</div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- CARD 2: PMA LANJUT -->
-          <div
-            class="course-card-editorial course-lime reveal-scale delay-200 shimmer-hover"
-            onclick="openModal('modal-pmal')"
-          >
-            <div>
-              <div class="course-card-top-meta">
-                <span class="course-step-num">MK 02</span>
-                <div class="course-icon-round">
-                  <i class="fa-solid fa-chart-line"></i>
+          <!-- PANEL MK 02: PMAL -->
+          <div class="direct-viewer-panel" id="panel-pmal">
+            <div class="direct-panel-header">
+              <div class="direct-panel-title-wrap">
+                <span class="direct-mk-badge" style="background: #16a34a; color: #fff;">MK 02</span>
+                <div class="direct-panel-title">
+                  <h3>Pembelajaran Mendalam &amp; Asesmen Lanjut</h3>
+                  <span>Agasta Pratama Nugraha (NIM: 25105260369) • Kelas B/Informatika UNY</span>
                 </div>
               </div>
-              <div class="course-body-wrap">
-                <h3>Pembelajaran Mendalam &amp; Asesmen Lanjut</h3>
-                <p>
-                  Pengelolaan model kejuruan (PBL, TeFa, PKL), integrasi Assessment as, for, of Learning, serta diferensiasi TaRL dan CRT berstandar Taksonomi SOLO.
-                </p>
+              <span class="g1-badge-pill"><i class="fa-solid fa-circle-check"></i> LK 3 &amp; 3 Artefak Lengkap</span>
+            </div>
+
+            <div class="direct-2col-layout">
+              <!-- Kolom Kiri: 4C Refleksi -->
+              <div class="direct-reflection-box">
+                <div class="direct-c-card">
+                  <div class="direct-c-title"><i class="fa-solid fa-link text-lime"></i> 1. Connection (Keterkaitan)</div>
+                  <div class="direct-c-content">
+                    Mata kuliah Pembelajaran Mendalam dan Asesmen Lanjut memiliki keterkaitan yang erat dengan peran saya sebagai calon guru Informatika karena membantu saya memahami bahwa pembelajaran tidak hanya berorientasi pada penyampaian materi dan hasil akhir, tetapi pada bagaimana murid membangun pemahaman melalui pengalaman belajar yang berkesadaran, bermakna, dan menggembirakan melalui tahapan kognitif memahami, mengaplikasi, dan merefleksi.
+                  </div>
+                </div>
+
+                <div class="direct-c-card c-challenge">
+                  <div class="direct-c-title"><i class="fa-solid fa-bolt" style="color: #38bdf8;"></i> 2. Challenge (Perubahan Cara Pandang)</div>
+                  <div class="direct-c-content">
+                    Sebelumnya, saya cenderung melihat asesmen sebagai kegiatan untuk mengetahui hasil belajar murid semata di akhir bab. Sedangkan melalui materi ini, saya memahami bahwa asesmen terpadu mencakup *Assessment as Learning*, *Assessment for Learning*, dan *Assessment of Learning*. Konsep TaRL (*Teaching at the Right Level*) dan CRT (*Culturally Responsive Teaching*) membimbing saya melihat bahwa keragaman kesiapan awal murid harus diakomodasi melalui scaffolding.
+                  </div>
+                </div>
+
+                <div class="direct-c-card c-concept">
+                  <div class="direct-c-title"><i class="fa-solid fa-brain text-lilac"></i> 3. Concept (Konsep Utama)</div>
+                  <div class="direct-c-content">
+                    Prinsip Pembelajaran Mendalam, model pembelajaran kejuruan (PBL, TeFa, Kelas Industri), trilogi asesmen autentik (rubrik proporsional), diferensiasi TaRL dan CRT, serta struktur hierarkis Taksonomi SOLO untuk memastikan ketercapaian *mastery learning*.
+                  </div>
+                </div>
+
+                <div class="direct-c-card c-change">
+                  <div class="direct-c-title"><i class="fa-solid fa-arrows-rotate" style="color: #f472b6;"></i> 4. Change (Komitmen Perubahan)</div>
+                  <div class="direct-c-content">
+                    Memanfaatkan asesmen diagnostik bukan untuk melabeli murid, melainkan dasar merancang bimbingan berjenjang (*scaffolding*). Dalam Informatika, murid dibimbing tidak hanya menyelesaikan kode tugas praktikum, tetapi memahami efisiensi algoritma dan merefleksikan proses logikanya.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Kolom Kanan: Dokumen & Artefak Langsung Terlihat -->
+              <div class="direct-doc-wrapper">
+                <div class="doc-switcher-bar">
+                  <button class="doc-switch-btn active" onclick="switchLiveDoc(this, 'iframe-pmal', 'pdf/pmal/LEMBAR KERJA 3_PEMBELAJARAN MENDALAM DAN ASESMEN LANJUT.pdf', 'notice-pmal', 'Menampilkan Dokumen Resmi Lembar Kerja 3 Pembelajaran Mendalam dan Asesmen Lanjut.')">
+                    <i class="fa-solid fa-file-pdf"></i> Dokumen PDF LK 3
+                  </button>
+                  <button class="doc-switch-btn" onclick="switchLiveDoc(this, 'iframe-pmal', 'pdf/pmal/pmal1.pdf', 'notice-pmal', 'Artefak 1: Pengelolaan Model Pembelajaran Kejuruan/Vokasi di SMK.')">
+                    <i class="fa-solid fa-file-lines"></i> Artefak 1
+                  </button>
+                  <button class="doc-switch-btn" onclick="switchLiveDoc(this, 'iframe-pmal', 'pdf/pmal/pmal2.pdf', 'notice-pmal', 'Artefak 2: Perancangan Asesmen Autentik Terintegrasi (Rubrik Holistik &amp; Jurnal Refleksi).')">
+                    <i class="fa-solid fa-file-lines"></i> Artefak 2
+                  </button>
+                  <button class="doc-switch-btn" onclick="switchLiveDoc(this, 'iframe-pmal', 'pdf/pmal/pmal3.pdf', 'notice-pmal', 'Artefak 3: Penerapan TaRL &amp; CRT dalam Pembelajaran Komputasi Kejuruan.')">
+                    <i class="fa-solid fa-file-lines"></i> Artefak 3
+                  </button>
+                </div>
+
+                <div class="doc-info-notice" id="notice-pmal">
+                  <i class="fa-solid fa-circle-info text-lime"></i> Menampilkan Dokumen Resmi Lembar Kerja 3 Pembelajaran Mendalam dan Asesmen Lanjut.
+                </div>
+
+                <iframe id="iframe-pmal" class="live-doc-iframe" src="pdf/pmal/LEMBAR KERJA 3_PEMBELAJARAN MENDALAM DAN ASESMEN LANJUT.pdf" title="Dokumen LK 3 PMAL"></iframe>
+
+                <div class="doc-action-footer">
+                  <span style="color: #a1a1aa; font-size: 11px;"><i class="fa-solid fa-eye text-lime"></i> Tersemat langsung di halaman</span>
+                  <a href="pdf/pmal/LEMBAR KERJA 3_PEMBELAJARAN MENDALAM DAN ASESMEN LANJUT.pdf" target="_blank" class="btn-open-external">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Fullscreen
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="course-bottom-row">
-              <span class="course-badge-pill">ASESMEN AUTENTIK, TaRL &amp; CRT</span>
-              <div class="course-arrow-btn">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            <!-- PENJELASAN ARTEFAK PEMBELAJARAN MK 02 PMAL -->
+            <div class="direct-artifact-explainer">
+              <div class="explainer-title-bar">
+                <span class="explainer-badge-pill" style="background: rgba(22, 163, 74, 0.15); color: #4ade80; border-color: rgba(22, 163, 74, 0.3);"><i class="fa-solid fa-folder-open"></i> BUKTI BELAJAR</span>
+                <h4>Penjelasan Artefak Pembelajaran MK 02 (Pembelajaran Mendalam Lanjut)</h4>
+              </div>
+              <div class="explainer-cards-grid">
+                <div class="explainer-item-card">
+                  <span class="explainer-item-badge" style="background: rgba(255, 212, 229, 0.2); color: #ffd4e5;"><i class="fa-solid fa-file-pdf"></i> ARTEFAK 01</span>
+                  <h5 class="explainer-item-title">Model Pembelajaran Kejuruan Informatika (PBL, TeFa & Magang)</h5>
+                  <p class="explainer-item-desc">Kajian integrasi Project-Based Learning dan simulasi standar industri (Teaching Factory) pada kurikulum teknologi informasi untuk kesiapan karir murid.</p>
+                  <div class="explainer-item-insight"><strong>Makna Reflektif:</strong> Menghubungkan ruang kelas dengan dinamika nyata kebutuhan talenta digital dunia kerja.</div>
+                </div>
+                <div class="explainer-item-card">
+                  <span class="explainer-item-badge" style="background: rgba(212, 255, 50, 0.2); color: var(--neon-lime);"><i class="fa-solid fa-file-pdf"></i> ARTEFAK 02</span>
+                  <h5 class="explainer-item-title">Asesmen Autentik Berjenjang Taksonomi SOLO</h5>
+                  <p class="explainer-item-desc">Perancangan instrumen evaluasi formatif dan sumatif bertingkat dari level unistructural, multistructural, relational, hingga extended abstract pada logika komputasional.</p>
+                  <div class="explainer-item-insight"><strong>Makna Reflektif:</strong> Mendiagnosis kedalaman abstraksi nalar murid secara objektif dan terukur.</div>
+                </div>
+                <div class="explainer-item-card">
+                  <span class="explainer-item-badge" style="background: rgba(184, 181, 255, 0.2); color: var(--pastel-lilac);"><i class="fa-solid fa-file-pdf"></i> ARTEFAK 03</span>
+                  <h5 class="explainer-item-title">Implementasi Diferensiasi TaRL & Culturally Responsive Teaching</h5>
+                  <p class="explainer-item-desc">Rancangan pengajaran tepat level kesiapan siswa (Teaching at the Right Level) yang dipadukan dengan kearifan lokal budaya Yogyakarta (CRT) dalam studi kasus komputasi.</p>
+                  <div class="explainer-item-insight"><strong>Makna Reflektif:</strong> Menghadirkan pembelajaran bermakna yang dekat dengan identitas kultural peserta didik.</div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- CARD 3: PPL MANDIRI -->
-          <div
-            class="course-card-editorial course-pink reveal-scale delay-300 shimmer-hover"
-            onclick="openModal('modal-pplm')"
-          >
-            <div>
-              <div class="course-card-top-meta">
-                <span class="course-step-num">MK 03</span>
-                <div class="course-icon-round">
-                  <i class="fa-solid fa-chalkboard-user"></i>
+          <!-- PANEL MK 03: PPL MANDIRI -->
+          <div class="direct-viewer-panel" id="panel-pplm">
+            <div class="direct-panel-header">
+              <div class="direct-panel-title-wrap">
+                <span class="direct-mk-badge" style="background: #e11d48; color: #fff;">MK 03</span>
+                <div class="direct-panel-title">
+                  <h3>Praktik Pengalaman Lapangan (PPL) Mandiri</h3>
+                  <span>Agasta Pratama Nugraha (NIM: 25105260369) • SMA Negeri 4 Yogyakarta</span>
                 </div>
               </div>
-              <div class="course-body-wrap">
-                <h3>Praktik Pengalaman Lapangan (PPL) Mandiri</h3>
-                <p>
-                  Praktik mengajar mandiri 4 siklus di SMA Negeri 4 Yogyakarta: materi algoritma searching/sorting, flowchart, pseudocode, dan Microsoft Excel lab komputer.
-                </p>
+              <span class="g1-badge-pill"><i class="fa-solid fa-circle-check"></i> LK 3 &amp; 4 Artefak Lengkap</span>
+            </div>
+
+            <div class="direct-2col-layout">
+              <!-- Kolom Kiri: 4C Refleksi -->
+              <div class="direct-reflection-box">
+                <div class="direct-c-card">
+                  <div class="direct-c-title"><i class="fa-solid fa-link text-lime"></i> 1. Connection (Keterkaitan)</div>
+                  <div class="direct-c-content">
+                    Mata kuliah PPL Mandiri memberikan kesempatan untuk menerapkan seluruh pengetahuan pedagogi dan teknologi secara mandiri di SMA Negeri 4 Yogyakarta dari siklus 1 hingga siklus 4. Menjadi guru menuntut integrasi pengelolaan kelas, manajemen waktu, kesiapan mental, dan adaptasi terhadap kondisi nyata murid.
+                  </div>
+                </div>
+
+                <div class="direct-c-card c-challenge">
+                  <div class="direct-c-title"><i class="fa-solid fa-bolt" style="color: #38bdf8;"></i> 2. Challenge (Perubahan Cara Pandang)</div>
+                  <div class="direct-c-content">
+                    Saya menyadari bahwa penggunaan teknologi tidak boleh membuat fokus guru terbagi dari murid. Media bukan sekadar canggih, melainkan harus fungsional dan proporsional terhadap alokasi waktu pembelajaran. Pengelompokan berpasangan (*Paired Learning*) terbukti lebih efektif dibandingkan kelompok besar dalam meratakan partisipasi aktif praktikum lab.
+                  </div>
+                </div>
+
+                <div class="direct-c-card c-concept">
+                  <div class="direct-c-title"><i class="fa-solid fa-brain text-lilac"></i> 3. Concept (Konsep Utama)</div>
+                  <div class="direct-c-content">
+                    Manajemen waktu instruksional yang presisi, pengelompokan berpasangan (*paired learning*), metode praktik langsung (*hands-on lab*) untuk Excel dan simulasi algoritma, serta evaluasi berkelanjutan melalui Lesson Study (Plan-Do-See) bersama Guru Pamong dan Dosen Pembimbing.
+                  </div>
+                </div>
+
+                <div class="direct-c-card c-change">
+                  <div class="direct-c-title"><i class="fa-solid fa-arrows-rotate" style="color: #f472b6;"></i> 4. Change (Komitmen Perubahan)</div>
+                  <div class="direct-c-content">
+                    Menyusun modul ajar dengan estimasi waktu yang lebih realistis, memanfaatkan instrumen scaffolding terarah, serta menyisakan waktu yang memadai di akhir pelajaran untuk penarikan kesimpulan dan refleksi metakognitif bersama peserta didik.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Kolom Kanan: Dokumen & Artefak Langsung Terlihat -->
+              <div class="direct-doc-wrapper">
+                <div class="doc-switcher-bar">
+                  <button class="doc-switch-btn active" onclick="switchLiveDoc(this, 'iframe-pplm', 'pdf/ppl2/LEMBAR KERJA 3_PPL MANDIRI.pdf', 'notice-pplm', 'Menampilkan Dokumen Resmi Lembar Kerja 3 PPL Mandiri.')">
+                    <i class="fa-solid fa-file-pdf"></i> Dokumen PDF LK 3
+                  </button>
+                  <button class="doc-switch-btn" onclick="switchLiveDoc(this, 'iframe-pplm', 'pdf/ppl2/pplm1.pdf', 'notice-pplm', 'Artefak 1: Perangkat Pembelajaran Siklus 1 - Algoritma Searching &amp; Sorting.')">
+                    <i class="fa-solid fa-file-lines"></i> Artefak 1
+                  </button>
+                  <button class="doc-switch-btn" onclick="switchLiveDoc(this, 'iframe-pplm', 'pdf/ppl2/pplm2.pdf', 'notice-pplm', 'Artefak 2: Perangkat Pembelajaran Siklus 2 - Flowchart &amp; Pseudocode.')">
+                    <i class="fa-solid fa-file-lines"></i> Artefak 2
+                  </button>
+                  <button class="doc-switch-btn" onclick="switchLiveDoc(this, 'iframe-pplm', 'pdf/ppl2/pplm3.pdf', 'notice-pplm', 'Artefak 3: Observasi Lesson Study &amp; Rekaman Pembelajaran Terbuka.')">
+                    <i class="fa-solid fa-file-lines"></i> Artefak 3
+                  </button>
+                  <button class="doc-switch-btn" onclick="switchLiveDoc(this, 'iframe-pplm', 'pdf/ppl2/pplm4.pdf', 'notice-pplm', 'Artefak 4: Laporan Komprehensif PPL II Mandiri &amp; Catatan Pamong.')">
+                    <i class="fa-solid fa-file-lines"></i> Artefak 4
+                  </button>
+                </div>
+
+                <div class="doc-info-notice" id="notice-pplm">
+                  <i class="fa-solid fa-circle-info text-lime"></i> Menampilkan Dokumen Resmi Lembar Kerja 3 PPL Mandiri.
+                </div>
+
+                <iframe id="iframe-pplm" class="live-doc-iframe" src="pdf/ppl2/LEMBAR KERJA 3_PPL MANDIRI.pdf" title="Dokumen LK 3 PPL Mandiri"></iframe>
+
+                <div class="doc-action-footer">
+                  <span style="color: #a1a1aa; font-size: 11px;"><i class="fa-solid fa-eye text-lime"></i> Tersemat langsung di halaman</span>
+                  <a href="pdf/ppl2/LEMBAR KERJA 3_PPL MANDIRI.pdf" target="_blank" class="btn-open-external">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Fullscreen
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="course-bottom-row">
-              <span class="course-badge-pill">4 SIKLUS PRAKTIK SMAN 4 YK</span>
-              <div class="course-arrow-btn">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            <!-- PENJELASAN ARTEFAK PEMBELAJARAN MK 03 PPL MANDIRI (4 ARTEFAK) -->
+            <div class="direct-artifact-explainer">
+              <div class="explainer-title-bar">
+                <span class="explainer-badge-pill" style="background: rgba(225, 29, 72, 0.15); color: #f43f5e; border-color: rgba(225, 29, 72, 0.3);"><i class="fa-solid fa-folder-open"></i> BUKTI BELAJAR</span>
+                <h4>Penjelasan Artefak Pembelajaran MK 03 (PPL II Mandiri SMAN 4 Yogyakarta)</h4>
+              </div>
+              <div class="explainer-cards-grid">
+                <div class="explainer-item-card">
+                  <span class="explainer-item-badge" style="background: rgba(255, 212, 229, 0.2); color: #ffd4e5;"><i class="fa-solid fa-file-pdf"></i> ARTEFAK 01</span>
+                  <h5 class="explainer-item-title">Modul Praktik Siklus 1: Algoritma Searching & Sorting</h5>
+                  <p class="explainer-item-desc">Perangkat ajar mandiri pertama yang menguji pemahaman konsep pencarian data linier/biner serta pengurutan data dengan simulasi kartu fisik di kelas.</p>
+                  <div class="explainer-item-insight"><strong>Makna Reflektif:</strong> Mengajarkan logika komputasi abstrak melalui aktivitas kinestetik konkret (unplugged computer science).</div>
+                </div>
+                <div class="explainer-item-card">
+                  <span class="explainer-item-badge" style="background: rgba(212, 255, 50, 0.2); color: var(--neon-lime);"><i class="fa-solid fa-file-pdf"></i> ARTEFAK 02</span>
+                  <h5 class="explainer-item-title">Modul Praktik Siklus 2: Flowchart & Pseudocode</h5>
+                  <p class="explainer-item-desc">Rancangan instruksi koding visual dengan diagram alur logika sebelum menuliskan bahasa pemrograman, dilengkapi instrumen Help Card.</p>
+                  <div class="explainer-item-insight"><strong>Makna Reflektif:</strong> Membantu siswa menyusun sistematika berpikir sebelum terjebak pada eror sintaksis bahasa koding.</div>
+                </div>
+                <div class="explainer-item-card">
+                  <span class="explainer-item-badge" style="background: rgba(184, 181, 255, 0.2); color: var(--pastel-lilac);"><i class="fa-solid fa-file-pdf"></i> ARTEFAK 03</span>
+                  <h5 class="explainer-item-title">Observasi Lesson Study & Praktik Terbuka Lab</h5>
+                  <p class="explainer-item-desc">Rekaman pembelajaran terbuka yang diamati langsung oleh DPL dan Guru Pamong untuk menganalisis keterlibatan aktif siswa dalam interaksi kelompok.</p>
+                  <div class="explainer-item-insight"><strong>Makna Reflektif:</strong> Menerima masukan sejawat secara terbuka untuk menyempurnakan strategi manajemen laboratorium.</div>
+                </div>
+                <div class="explainer-item-card">
+                  <span class="explainer-item-badge" style="background: rgba(255, 208, 168, 0.2); color: #ffd0a8;"><i class="fa-solid fa-file-pdf"></i> ARTEFAK 04</span>
+                  <h5 class="explainer-item-title">Laporan Komprehensif PPL II Mandiri & Evaluasi Siklus</h5>
+                  <p class="explainer-item-desc">Dokumen sintesis 4 siklus mengajar mandiri, data ketuntasan belajar 36 siswa, analisis ketercapaian CP Informatika, dan rekomendasi keberlanjutan.</p>
+                  <div class="explainer-item-insight"><strong>Makna Reflektif:</strong> Bukti utuh kematangan profesional dan kesiapan mengabdi sebagai guru pamong mandiri.</div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- CARD 4: PROJEK KEPEMIMPINAN -->
-          <div
-            class="course-card-editorial course-dark reveal-scale delay-400 shimmer-hover"
-            onclick="openModal('modal-pkep')"
-          >
-            <div>
-              <div class="course-card-top-meta">
-                <span class="course-step-num">MK 04</span>
-                <div class="course-icon-round">
-                  <i class="fa-solid fa-users-gear"></i>
+          <!-- PANEL MK 04: PROJEK KEPEMIMPINAN -->
+          <div class="direct-viewer-panel" id="panel-pkep">
+            <div class="direct-panel-header">
+              <div class="direct-panel-title-wrap">
+                <span class="direct-mk-badge" style="background: #0284c7; color: #fff;">MK 04</span>
+                <div class="direct-panel-title">
+                  <h3>Projek Kepemimpinan (Digitalisasi SPACE-IN)</h3>
+                  <span>Agasta Pratama Nugraha (NIM: 25105260369) • SMA Negeri 4 Yogyakarta</span>
                 </div>
               </div>
-              <div class="course-body-wrap">
-                <h3>Projek Kepemimpinan</h3>
-                <p>
-                  Inisiasi transformasi digital sistem peminjaman sarana prasarana SMAN 4 Yogyakarta melalui website SPACE-IN PATBHE dengan model ADDIE dan SMART Goals.
-                </p>
+              <span class="g1-badge-pill"><i class="fa-solid fa-circle-check"></i> LK 3 &amp; 3 Artefak Lengkap</span>
+            </div>
+
+            <div class="direct-2col-layout">
+              <!-- Kolom Kiri: 4C Refleksi -->
+              <div class="direct-reflection-box">
+                <div class="direct-c-card">
+                  <div class="direct-c-title"><i class="fa-solid fa-link text-lime"></i> 1. Connection (Keterkaitan)</div>
+                  <div class="direct-c-content">
+                    Tanggung jawab guru tidak hanya berkaitan dengan pembelajaran di dalam kelas, melainkan berkontribusi nyata bagi ekosistem sekolah. Hal ini diwujudkan melalui inisiasi proyek <strong>SPACE-IN PATBHE</strong> untuk digitalisasi tata kelola peminjaman sarana dan prasarana di SMAN 4 Yogyakarta.
+                  </div>
+                </div>
+
+                <div class="direct-c-card c-challenge">
+                  <div class="direct-c-title"><i class="fa-solid fa-bolt" style="color: #38bdf8;"></i> 2. Challenge (Perubahan Cara Pandang)</div>
+                  <div class="direct-c-content">
+                    Transformasi digital di sekolah membutuhkan pendekatan Inkuiri Apresiatif (BAGJA) yang melihat kekuatan dan kesiapan pengguna (Waka Sarpras, Tata Usaha, guru, murid). Solusi sistem tidak cukup hanya dibuat secara teknis, tetapi harus didampingi melalui pelatihan langsung dan manual penggunaan.
+                  </div>
+                </div>
+
+                <div class="direct-c-card c-concept">
+                  <div class="direct-c-title"><i class="fa-solid fa-brain text-lilac"></i> 3. Concept (Konsep Utama)</div>
+                  <div class="direct-c-content">
+                    Berpikir Sistem (*Systems Thinking*), tahapan Inkuiri Apresiatif BAGJA, perumusan SMART Goals (100% sistem siap pakai dan minimal 80% kemandirian pengguna), model pengembangan ADDIE, serta penjaminan keberlanjutan (*sustainability*) sistem sekolah.
+                  </div>
+                </div>
+
+                <div class="direct-c-card c-change">
+                  <div class="direct-c-title"><i class="fa-solid fa-arrows-rotate" style="color: #f472b6;"></i> 4. Change (Komitmen Perubahan)</div>
+                  <div class="direct-c-content">
+                    Membudayakan komunikasi persuasif, pembagian peran tim yang adil, serta terus menginisiasi solusi digital yang inklusif dan mudah digunakan oleh seluruh sivitas satuan pendidikan.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Kolom Kanan: Dokumen & Artefak Langsung Terlihat -->
+              <div class="direct-doc-wrapper">
+                <div class="doc-switcher-bar">
+                  <button class="doc-switch-btn active" onclick="switchLiveDoc(this, 'iframe-pkep', 'pdf/proyek/LEMBAR KERJA 3_PROYEK KEPEMIMPINAN.pdf', 'notice-pkep', 'Menampilkan Dokumen Resmi Lembar Kerja 3 Proyek Kepemimpinan.')">
+                    <i class="fa-solid fa-file-pdf"></i> Dokumen PDF LK 3
+                  </button>
+                  <button class="doc-switch-btn" onclick="switchLiveDoc(this, 'iframe-pkep', 'pdf/proyek/proyek1.pdf', 'notice-pkep', 'Artefak 1: Refleksi Y-Chart Why, How, What (SPACE-IN PATBHE).')">
+                    <i class="fa-solid fa-file-lines"></i> Artefak 1
+                  </button>
+                  <button class="doc-switch-btn" onclick="switchLiveDoc(this, 'iframe-pkep', 'pdf/proyek/proyek2.pdf', 'notice-pkep', 'Artefak 2: Proposal Lengkap Transformasi Digital SPACE-IN PATBHE (Model ADDIE).')">
+                    <i class="fa-solid fa-file-lines"></i> Artefak 2
+                  </button>
+                  <button class="doc-switch-btn" onclick="switchLiveDoc(this, 'iframe-pkep', 'pdf/proyek/proyek3.pdf', 'notice-pkep', 'Artefak 3: Perumusan SMART Goals &amp; Monitoring Evaluasi Ketercapaian.')">
+                    <i class="fa-solid fa-file-lines"></i> Artefak 3
+                  </button>
+                </div>
+
+                <div class="doc-info-notice" id="notice-pkep">
+                  <i class="fa-solid fa-circle-info text-lime"></i> Menampilkan Dokumen Resmi Lembar Kerja 3 Proyek Kepemimpinan.
+                </div>
+
+                <iframe id="iframe-pkep" class="live-doc-iframe" src="pdf/proyek/LEMBAR KERJA 3_PROYEK KEPEMIMPINAN.pdf" title="Dokumen LK 3 Proyek Kepemimpinan"></iframe>
+
+                <div class="doc-action-footer">
+                  <span style="color: #a1a1aa; font-size: 11px;"><i class="fa-solid fa-eye text-lime"></i> Tersemat langsung di halaman</span>
+                  <a href="pdf/proyek/LEMBAR KERJA 3_PROYEK KEPEMIMPINAN.pdf" target="_blank" class="btn-open-external">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Fullscreen
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="course-bottom-row">
-              <span class="course-badge-pill">SPACE-IN PATBHE &amp; ADDIE</span>
-              <div class="course-arrow-btn">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            <!-- PENJELASAN ARTEFAK PEMBELAJARAN MK 04 PROJEK KEPEMIMPINAN -->
+            <div class="direct-artifact-explainer">
+              <div class="explainer-title-bar">
+                <span class="explainer-badge-pill" style="background: rgba(2, 132, 199, 0.15); color: #38bdf8; border-color: rgba(2, 132, 199, 0.3);"><i class="fa-solid fa-folder-open"></i> BUKTI BELAJAR</span>
+                <h4>Penjelasan Artefak Pembelajaran MK 04 (Projek Kepemimpinan - SPACE-IN PATBHE)</h4>
+              </div>
+              <div class="explainer-cards-grid">
+                <div class="explainer-item-card">
+                  <span class="explainer-item-badge" style="background: rgba(255, 212, 229, 0.2); color: #ffd4e5;"><i class="fa-solid fa-file-pdf"></i> ARTEFAK 01</span>
+                  <h5 class="explainer-item-title">Refleksi Y-Chart: Urgensi Transformasi Sarpras Digital</h5>
+                  <p class="explainer-item-desc">Analisis 3 dimensi (Looks like, Feels like, Sounds like) terkait kondisi peminjaman sarana prasarana konvensional yang memicu inisiasi inovasi SPACE-IN PATBHE.</p>
+                  <div class="explainer-item-insight"><strong>Makna Reflektif:</strong> Keberanian guru berinisiatif memecahkan tantangan operasional sekolah melalui keahlian komputasi.</div>
+                </div>
+                <div class="explainer-item-card">
+                  <span class="explainer-item-badge" style="background: rgba(212, 255, 50, 0.2); color: var(--neon-lime);"><i class="fa-solid fa-file-pdf"></i> ARTEFAK 02</span>
+                  <h5 class="explainer-item-title">Proposal Sistem SPACE-IN PATBHE Model ADDIE</h5>
+                  <p class="explainer-item-desc">Rancangan arsitektur sistem berbasis web responsif menggunakan kerangka ADDIE dan tahapan Inkuiri Apresiatif BAGJA berkolaborasi dengan pihak sarpras SMAN 4 Yogyakarta.</p>
+                  <div class="explainer-item-insight"><strong>Makna Reflektif:</strong> Menerapkan kepemimpinan transformasional yang merangkul aspirasi seluruh warga sekolah.</div>
+                </div>
+                <div class="explainer-item-card">
+                  <span class="explainer-item-badge" style="background: rgba(184, 181, 255, 0.2); color: var(--pastel-lilac);"><i class="fa-solid fa-file-pdf"></i> ARTEFAK 03</span>
+                  <h5 class="explainer-item-title">Laporan Akuntabilitas & SMART Goals Transformasi</h5>
+                  <p class="explainer-item-desc">Evaluasi ketercapaian target sistem 100% siap pakai dan mandiri digunakan, dilengkapi dokumentasi sosialisasi serta jaminan keberlanjutan produk.</p>
+                  <div class="explainer-item-insight"><strong>Makna Reflektif:</strong> Menunjukkan tanggung jawab kepemimpinan berbasis data dan dampak manfaat berkelanjutan.</div>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- CARD 5: PKB -->
-          <div
-            class="course-card-editorial course-peach reveal-scale delay-500 shimmer-hover"
-            onclick="openModal('modal-pkb')"
-          >
-            <div>
-              <div class="course-card-top-meta">
-                <span class="course-step-num">MK 05</span>
-                <div class="course-icon-round">
-                  <i class="fa-solid fa-book-bookmark"></i>
+          <!-- PANEL MK 05: PKB -->
+          <div class="direct-viewer-panel" id="panel-pkb">
+            <div class="direct-panel-header">
+              <div class="direct-panel-title-wrap">
+                <span class="direct-mk-badge" style="background: #ea580c; color: #fff;">MK 05</span>
+                <div class="direct-panel-title">
+                  <h3>Pengembangan Keprofesian Berkelanjutan (PKB)</h3>
+                  <span>Agasta Pratama Nugraha (NIM: 25105260369) • Kelas B/Informatika UNY</span>
                 </div>
               </div>
-              <div class="course-body-wrap">
-                <h3>Pengembangan Keprofesian Berkelanjutan (PKB)</h3>
-                <p>
-                  Penguasaan 3 pilar PKB, sarana berpikir ilmiah (bahasa, logika, matematika, statistika), analisis best practice guru SMK, dan penulisan artikel PTK.
-                </p>
+              <span class="g1-badge-pill"><i class="fa-solid fa-circle-check"></i> LK 3 &amp; 3 Artefak Lengkap</span>
+            </div>
+
+            <div class="direct-2col-layout">
+              <!-- Kolom Kiri: 4C Refleksi -->
+              <div class="direct-reflection-box">
+                <div class="direct-c-card">
+                  <div class="direct-c-title"><i class="fa-solid fa-link text-lime"></i> 1. Connection (Keterkaitan)</div>
+                  <div class="direct-c-content">
+                    Profesionalisme guru tidak berhenti setelah lulus perkuliahan, melainkan perlu terus dipupuk melalui proses belajar sepanjang hayat. Melalui 3 pilar PKB (Pengembangan Diri, Publikasi Ilmiah, Karya Inovatif), guru Informatika senantiasa adaptif terhadap perkembangan teknologi dan mampu memecahkan kesulitan belajar murid melalui riset.
+                  </div>
+                </div>
+
+                <div class="direct-c-card c-challenge">
+                  <div class="direct-c-title"><i class="fa-solid fa-bolt" style="color: #38bdf8;"></i> 2. Challenge (Perubahan Cara Pandang)</div>
+                  <div class="direct-c-content">
+                    Karya ilmiah guru bukan sekadar pemenuhan angka kredit administratif, tetapi sarana empiris untuk memperbaiki pembelajaran nyata di kelas. Masalah pembelajaran diselesaikan dengan pola pikir ilmiah yang rasional, analitis, dan bebas prasangka subjektif.
+                  </div>
+                </div>
+
+                <div class="direct-c-card c-concept">
+                  <div class="direct-c-title"><i class="fa-solid fa-brain text-lilac"></i> 3. Concept (Konsep Utama)</div>
+                  <div class="direct-c-content">
+                    Kriteria APIK (Asli, Perlu, Ilmiah, Konsisten), 4 sarana berpikir ilmiah (Bahasa, Logika, Matematika, Statistika), metodologi Penelitian Tindakan Kelas (PTK), dan struktur penulisan artikel publikasi ilmiah berbasis data kelas.
+                  </div>
+                </div>
+
+                <div class="direct-c-card c-change">
+                  <div class="direct-c-title"><i class="fa-solid fa-arrows-rotate" style="color: #f472b6;"></i> 4. Change (Komitmen Perubahan)</div>
+                  <div class="direct-c-content">
+                    Secara konsisten melakukan evaluasi diri pasca mengajar, mendokumentasikan best practice inovasi modul Informatika ke dalam artikel ilmiah, serta aktif berpartisipasi dan membagikan praktik baik di komunitas MGMP Informatika.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Kolom Kanan: Dokumen & Artefak Langsung Terlihat -->
+              <div class="direct-doc-wrapper">
+                <div class="doc-switcher-bar">
+                  <button class="doc-switch-btn active" onclick="switchLiveDoc(this, 'iframe-pkb', 'pdf/pkb/LEMBAR KERJA 3_PENGEMBANGAN KEPROFESIAN BERKELANJUTAN.pdf', 'notice-pkb', 'Menampilkan Dokumen Resmi Lembar Kerja 3 Pengembangan Keprofesian Berkelanjutan.')">
+                    <i class="fa-solid fa-file-pdf"></i> Dokumen PDF LK 3
+                  </button>
+                  <button class="doc-switch-btn" onclick="switchLiveDoc(this, 'iframe-pkb', 'pdf/pkb/pkb1.pdf', 'notice-pkb', 'Artefak 1: Analisis Laporan Best Practice &amp; Sarana Berpikir Ilmiah.')">
+                    <i class="fa-solid fa-file-lines"></i> Artefak 1
+                  </button>
+                  <button class="doc-switch-btn" onclick="switchLiveDoc(this, 'iframe-pkb', 'pdf/pkb/pkb2.pdf', 'notice-pkb', 'Artefak 2: Fondasi Karya Tulis Ilmiah &amp; Metode Penelitian Pendidikan.')">
+                    <i class="fa-solid fa-file-lines"></i> Artefak 2
+                  </button>
+                  <button class="doc-switch-btn" onclick="switchLiveDoc(this, 'iframe-pkb', 'pdf/pkb/pkb3.pdf', 'notice-pkb', 'Artefak 3: Penulisan Artikel Publikasi Ilmiah PTK Berbasis Kurikulum Merdeka.')">
+                    <i class="fa-solid fa-file-lines"></i> Artefak 3
+                  </button>
+                </div>
+
+                <div class="doc-info-notice" id="notice-pkb">
+                  <i class="fa-solid fa-circle-info text-lime"></i> Menampilkan Dokumen Resmi Lembar Kerja 3 Pengembangan Keprofesian Berkelanjutan.
+                </div>
+
+                <iframe id="iframe-pkb" class="live-doc-iframe" src="pdf/pkb/LEMBAR KERJA 3_PENGEMBANGAN KEPROFESIAN BERKELANJUTAN.pdf" title="Dokumen LK 3 PKB"></iframe>
+
+                <div class="doc-action-footer">
+                  <span style="color: #a1a1aa; font-size: 11px;"><i class="fa-solid fa-eye text-lime"></i> Tersemat langsung di halaman</span>
+                  <a href="pdf/pkb/LEMBAR KERJA 3_PENGEMBANGAN KEPROFESIAN BERKELANJUTAN.pdf" target="_blank" class="btn-open-external">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Fullscreen
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="course-bottom-row">
-              <span class="course-badge-pill">METODE ILMIAH &amp; ARTIKEL PTK</span>
-              <div class="course-arrow-btn">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            <!-- PENJELASAN ARTEFAK PEMBELAJARAN MK 05 PKB -->
+            <div class="direct-artifact-explainer">
+              <div class="explainer-title-bar">
+                <span class="explainer-badge-pill" style="background: rgba(234, 88, 12, 0.15); color: #fb923c; border-color: rgba(234, 88, 12, 0.3);"><i class="fa-solid fa-folder-open"></i> BUKTI BELAJAR</span>
+                <h4>Penjelasan Artefak Pembelajaran MK 05 (Pengembangan Keprofesian Berkelanjutan)</h4>
+              </div>
+              <div class="explainer-cards-grid">
+                <div class="explainer-item-card">
+                  <span class="explainer-item-badge" style="background: rgba(255, 212, 229, 0.2); color: #ffd4e5;"><i class="fa-solid fa-file-pdf"></i> ARTEFAK 01</span>
+                  <h5 class="explainer-item-title">Analisis Best Practice Guru SMK & Sarana Berpikir Ilmiah</h5>
+                  <p class="explainer-item-desc">Kajian kritis terhadap laporan inovasi pengajaran komputasi dengan membedah 4 sarana berpikir ilmiah: bahasa yang lugas, logika deduktif-induktif, matematika, dan statistika.</p>
+                  <div class="explainer-item-insight"><strong>Makna Reflektif:</strong> Menanamkan integritas ilmiah dalam mengevaluasi efektivitas intervensi kelas.</div>
+                </div>
+                <div class="explainer-item-card">
+                  <span class="explainer-item-badge" style="background: rgba(212, 255, 50, 0.2); color: var(--neon-lime);"><i class="fa-solid fa-file-pdf"></i> ARTEFAK 02</span>
+                  <h5 class="explainer-item-title">Fondasi Metodologi Penelitian Tindakan Kelas (PTK)</h5>
+                  <p class="explainer-item-desc">Rancangan siklus PTK (Perencanaan, Tindakan, Observasi, Refleksi) berprinsip APIK (Asli, Perlu, Ilmiah, Konsisten) untuk mengatasi kendala belajar koding siswa.</p>
+                  <div class="explainer-item-insight"><strong>Makna Reflektif:</strong> Guru sebagai peneliti praktisi yang senantiasa memperbarui kualitas pengajarannya sendiri.</div>
+                </div>
+                <div class="explainer-item-card">
+                  <span class="explainer-item-badge" style="background: rgba(184, 181, 255, 0.2); color: var(--pastel-lilac);"><i class="fa-solid fa-file-pdf"></i> ARTEFAK 03</span>
+                  <h5 class="explainer-item-title">Penulisan Artikel Publikasi Ilmiah PTK Informatika</h5>
+                  <p class="explainer-item-desc">Naskah artikel ilmiah berbasis data empiris tindakan pembelajaran di SMAN 4 Yogyakarta yang siap diseminasi dan dipublikasikan di jurnal/forum MGMP.</p>
+                  <div class="explainer-item-insight"><strong>Makna Reflektif:</strong> Mendiseminasikan praktik baik agar bermanfaat bagi komunitas pendidik yang lebih luas.</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+
+              </div>
     </section>
 
     <!-- 3. SECTION: APA YANG DIDAPAT DI SEMESTER 2 -->
@@ -444,832 +933,7 @@
       </div>
     </section>
 
-    <!-- ==========================================================================
-         MODALS FOR SEMESTER 2 COURSES (4C REFLECTION FRAMEWORK)
-         ========================================================================== -->
-
-    <!-- MODAL 1: PSE -->
-    <div class="modal-overlay" id="modal-pse">
-      <div class="modal-container">
-        <div class="modal-header">
-          <div class="modal-header-left">
-            <div
-              class="modal-icon-badge"
-              style="background: #9333ea; color: #ffffff"
-            >
-              <i class="fa-solid fa-heart-pulse"></i>
-            </div>
-            <div class="modal-title-wrap">
-              <h2>Pembelajaran Sosial Emosional (PSE)</h2>
-              <p>
-                Agasta Pratama Nugraha (NIM: 25105260369) • Kelas B/Informatika UNY
-              </p>
-            </div>
-          </div>
-          <button class="modal-close-btn" onclick="closeModal('modal-pse')">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </div>
-
-        <div class="modal-body">
-          <div class="modal-tabs">
-            <button
-              class="modal-tab-btn active"
-              onclick="switchTab(this, 'pse-tab-desc')"
-            >
-              Ringkasan Refleksi LK 3
-            </button>
-            <button
-              class="modal-tab-btn"
-              onclick="switchTab(this, 'pse-tab-pdf')"
-            >
-              Dokumen PDF LK 3
-            </button>
-            <button
-              class="modal-tab-btn"
-              onclick="switchTab(this, 'pse-tab-artefak')"
-            >
-              Artefak Pembelajaran
-            </button>
-          </div>
-
-          <!-- TAB 1: 4C REFLEKSI -->
-          <div class="tab-pane active" id="pse-tab-desc">
-            <div class="reflection-4c-container">
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-link"></i> 1. Connection (Keterkaitan)
-                </div>
-                <div class="c-block-content">
-                  Mata kuliah Pembelajaran Sosial Emosional memiliki keterkaitan yang erat dengan peran saya sebagai calon guru Informatika karena membantu saya memahami bahwa pembelajaran tidak hanya berkaitan dengan penguasaan materi, tetapi juga dengan kondisi sosial dan emosional murid. Melalui konsep CASEL, saya memahami pentingnya kesadaran diri, pengelolaan diri, kesadaran sosial, keterampilan relasi, dan pengambilan keputusan yang bertanggung jawab dalam proses pembelajaran. Selain itu, materi EMC² membantu saya memahami pentingnya <em>empathy, mindfulness, compassion,</em> dan <em>critical inquiry</em> dalam membangun hubungan yang baik dengan murid. Pemahaman ini sangat relevan dengan pembelajaran Informatika yang saya lakukan, terutama ketika murid belajar algoritma, flowchart, dan pseudocode melalui diskusi, eksplorasi simulasi, kerja kelompok, penyampaian pendapat, serta refleksi. Dalam kegiatan tersebut, murid tidak hanya dituntut memahami logika algoritma, tetapi juga perlu bekerja sama, menghargai pendapat, berani menyampaikan pemikiran, dan tetap tenang ketika menemukan bagian yang belum dipahami.
-                </div>
-              </div>
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-bolt"></i> 2. Challenge (Perubahan Cara Pandang)
-                </div>
-                <div class="c-block-content">
-                  Selama mempelajari mata kuliah ini, saya mengalami perubahan cara pandang dalam memahami perilaku murid dan peran guru. Sebelumnya, ketika menghadapi murid yang kurang aktif atau mengalami kesulitan dalam pembelajaran, saya cenderung lebih berfokus pada perilaku yang terlihat dan penyelesaian tugas semata. Melalui PSE, saya memahami bahwa guru perlu melihat kondisi murid secara lebih utuh serta mengelola respons dirinya sendiri sebelum memberikan tindakan. Konsep EMC² membuat saya memahami pentingnya empati, kesadaran diri, pengendalian emosi, kepedulian, dan penalaran sebelum merespons suatu situasi di kelas. <em>Empathy</em> membantu guru memahami kondisi dan perspektif murid, <em>compassion</em> membantu guru tetap peduli tanpa terbawa emosi berlebihan, <em>mindfulness</em> membantu guru menyadari kondisi diri dan emosinya, sedangkan <em>critical inquiry</em> membantu guru mengamati dan menganalisis situasi sebelum mengambil keputusan. Selain itu, saya sebelumnya lebih banyak melihat pembelajaran dari kegiatan dan hasil belajar, sedangkan <em>experiential learning</em> membuat saya memahami bahwa pengalaman, refleksi, pembentukan konsep, dan penerapan kembali juga merupakan bagian penting dari proses belajar.
-                </div>
-              </div>
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-brain"></i> 3. Concept (Konsep Utama)
-                </div>
-                <div class="c-block-content">
-                  Melalui mata kuliah ini, saya mempelajari beberapa konsep kunci:
-                  <ul style="margin: 8px 0 0 18px; line-height: 1.6;">
-                    <li><strong>Kerangka CASEL:</strong> Lima kompetensi sosial emosional (<em>Self-Awareness, Self-Management, Social Awareness, Relationship Skills, Responsible Decision-Making</em>) yang dikembangkan terintegrasi dalam pembelajaran dan budaya sekolah.</li>
-                    <li><strong>Kerangka EMC²:</strong> <em>Empathy, Mindfulness, Compassion,</em> dan <em>Critical Inquiry</em> sebagai kompetensi relasional guru.</li>
-                    <li><strong>Karakter Guru Teladan &amp; Regulasi Diri:</strong> Pengelolaan emosi guru dengan Teknik STOP (<em>Stop, Take a breath, Observe, Proceed</em>) dan sinyal tanda diam.</li>
-                    <li><strong>Experiential Learning (David Kolb):</strong> Empat tahapan belajar (<em>Concrete Experience, Reflective Observation, Abstract Conceptualization, Active Experimentation</em>) yang diterapkan dalam logika komputasi.</li>
-                    <li><strong>School Well-being:</strong> Empat dimensi kesejahteraan sekolah (<em>Having, Loving, Being, Health</em>) yang membuktikan bahwa kenyamanan belajar mencakup fasilitas, kehangatan hubungan sosial, ruang aktualisasi diri, dan kesehatan mental murid maupun guru.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-arrows-rotate"></i> 4. Change (Komitmen Perubahan)
-                </div>
-                <div class="c-block-content">
-                  Setelah mengikuti mata kuliah ini, saya berkomitmen untuk lebih memperhatikan kondisi sosial dan emosional murid dalam merancang dan melaksanakan pembelajaran Informatika. Saya ingin lebih mengenali kondisi diri dan mengelola emosi sebelum memberikan respons terhadap situasi kelas, serta membangun komunikasi yang ramah dan tidak menghakimi. Dalam pembelajaran, saya ingin terus memberikan ruang bagi murid untuk berdiskusi, bekerja sama, berani menyampaikan pemikiran, dan merefleksikan proses belajarnya. Contohnya pada materi algoritma dan pemrograman dasar (flowchart dan pseudocode), murid tidak hanya diajak mempelajari konsep, tetapi juga mencoba menyusun langkah pemecahan masalah, berdiskusi kelompok, menjelaskan temuan, dan merefleksikan bagian yang masih sulit tanpa rasa cemas (*debugging with growth mindset*). Saya juga berkomitmen memperhatikan <em>school well-being</em> dengan menciptakan suasana laboratorium komputer yang aman, nyaman, dan saling menghargai agar murid berkembang optimal.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- TAB 2: PDF VIEWER -->
-          <div class="tab-pane" id="pse-tab-pdf">
-            <div class="pdf-viewer-wrap">
-              <iframe
-                src="pdf/pse/LEMBAR KERJA 3_PEMBELAJARAN SOSIAL EMOSIONAL.pdf"
-                title="Refleksi LK 3 Pembelajaran Sosial Emosional"
-              ></iframe>
-              <div class="pdf-action-bar">
-                <span class="pdf-name-tag">
-                  <i class="fa-solid fa-file-pdf"></i> LEMBAR KERJA 3_PEMBELAJARAN SOSIAL EMOSIONAL.pdf
-                </span>
-                <a
-                  href="pdf/pse/LEMBAR KERJA 3_PEMBELAJARAN SOSIAL EMOSIONAL.pdf"
-                  target="_blank"
-                  class="btn-open-pdf"
-                >
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Fullscreen
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- TAB 3: ARTEFAK -->
-          <div class="tab-pane" id="pse-tab-artefak">
-            <div class="artefak-grid-modal">
-              <div class="artefak-card-box">
-                <div>
-                  <h5>Artefak 1 – Analisis dan Sintesis PSE di Lingkungan Sekolah (LK 1.1)</h5>
-                  <p>
-                    Rencana integrasi 5 kompetensi CASEL pada pembelajaran Informatika SMK/SMA (produksi konten digital), strategi pengelolaan emosi guru lewat Teknik STOP &amp; Sinyal Tanda Diam, serta program "Sesi Sering Bulanan" untuk well-being pendidik.
-                  </p>
-                </div>
-                <div class="artefak-btn-row">
-                  <a href="pdf/pse/pse1.pdf" target="_blank" class="btn-mini-view">
-                    <i class="fa-solid fa-eye"></i> Lihat Dokumen
-                  </a>
-                </div>
-              </div>
-
-              <div class="artefak-card-box">
-                <div>
-                  <h5>Artefak 2 – Siklus Penerapan Experiential Learning pada Informatika (LK 3.1)</h5>
-                  <p>
-                    Penerapan 4 siklus Kolb (Concrete Experience, Reflective Observation, Abstract Conceptualization, Active Experimentation) pada materi Algoritma dan Flowchart SMA Kelas X berbasis studi kasus peminjaman sarana sekolah, dilengkapi rubrik penilaian proses dan produk.
-                  </p>
-                </div>
-                <div class="artefak-btn-row">
-                  <a href="pdf/pse/pse2.pdf" target="_blank" class="btn-mini-view">
-                    <i class="fa-solid fa-eye"></i> Lihat Dokumen
-                  </a>
-                </div>
-              </div>
-
-              <div class="artefak-card-box">
-                <div>
-                  <h5>Artefak 3 – Refleksi School Well-being (LK 4.3)</h5>
-                  <p>
-                    Analisis mendalam 4 dimensi school well-being (having, loving, being, health), pemetaan faktor penentu iklim psikososial di sekolah, serta peran guru mata pelajaran dalam menghadirkan lingkungan belajar yang sehat fisik dan mental bagi murid.
-                  </p>
-                </div>
-                <div class="artefak-btn-row">
-                  <a href="pdf/pse/pse3.pdf" target="_blank" class="btn-mini-view">
-                    <i class="fa-solid fa-eye"></i> Lihat Dokumen
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- MODAL 2: PMA LANJUT -->
-    <div class="modal-overlay" id="modal-pmal">
-      <div class="modal-container">
-        <div class="modal-header">
-          <div class="modal-header-left">
-            <div
-              class="modal-icon-badge"
-              style="background: #15803d; color: #ffffff"
-            >
-              <i class="fa-solid fa-chart-line"></i>
-            </div>
-            <div class="modal-title-wrap">
-              <h2>Pembelajaran Mendalam &amp; Asesmen Lanjut</h2>
-              <p>
-                Agasta Pratama Nugraha (NIM: 25105260369) • Kelas B/Informatika UNY
-              </p>
-            </div>
-          </div>
-          <button class="modal-close-btn" onclick="closeModal('modal-pmal')">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </div>
-
-        <div class="modal-body">
-          <div class="modal-tabs">
-            <button
-              class="modal-tab-btn active"
-              onclick="switchTab(this, 'pmal-tab-desc')"
-            >
-              Ringkasan Refleksi LK 3
-            </button>
-            <button
-              class="modal-tab-btn"
-              onclick="switchTab(this, 'pmal-tab-pdf')"
-            >
-              Dokumen PDF LK 3
-            </button>
-            <button
-              class="modal-tab-btn"
-              onclick="switchTab(this, 'pmal-tab-artefak')"
-            >
-              Artefak Pembelajaran
-            </button>
-          </div>
-
-          <!-- TAB 1: 4C REFLEKSI -->
-          <div class="tab-pane active" id="pmal-tab-desc">
-            <div class="reflection-4c-container">
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-link"></i> 1. Connection (Keterkaitan)
-                </div>
-                <div class="c-block-content">
-                  Mata kuliah Pembelajaran Mendalam dan Asesmen Lanjut memiliki keterkaitan yang erat dengan peran saya sebagai calon guru Informatika karena membantu saya memahami bahwa pembelajaran tidak hanya berorientasi pada penyampaian materi dan hasil akhir, tetapi pada bagaimana murid membangun pemahaman melalui pengalaman belajar yang berkesadaran, bermakna, dan menggembirakan. Saya memahami bahwa murid perlu melalui proses memahami, mengaplikasi, dan merefleksi agar pengetahuan yang diperoleh dapat digunakan dalam konteks lain. Pemahaman ini sangat relevan dengan pembelajaran Informatika yang saya lakukan selama PPL, terutama ketika murid belajar algoritma searching, sorting, flowchart, dan pseudocode melalui masalah kontekstual, diskusi, simulasi digital, kerja kelompok, presentasi, serta refleksi. Guru tidak hanya berperan sebagai penyampai materi, tetapi juga sebagai perancang pengalaman belajar (*learning experience designer*) yang memfasilitasi murid mencapai pemahaman mendalam.
-                </div>
-              </div>
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-bolt"></i> 2. Challenge (Perubahan Cara Pandang)
-                </div>
-                <div class="c-block-content">
-                  Selama mempelajari mata kuliah ini, saya mengalami perubahan cara pandang terhadap perencanaan dan asesmen pembelajaran. Sebelumnya, saya cenderung melihat asesmen sebagai kegiatan untuk mengetahui hasil belajar murid semata di akhir bab. Sedangkan melalui materi ini, saya memahami bahwa asesmen juga berfungsi untuk memahami kondisi awal murid, memberikan umpan balik selama proses, dan membantu murid merefleksikan perkembangan belajarnya. Konsep <em>Assessment as Learning</em>, <em>Assessment for Learning</em>, dan <em>Assessment of Learning</em> membuat saya memahami bahwa asesmen harus terintegrasi menyatu dengan proses belajar. Saya juga memperoleh wawasan yang luas mengenai pendekatan TaRL (*Teaching at the Right Level*), CRT (*Culturally Responsive Teaching*), *mastery learning*, dan Taksonomi SOLO yang membantu saya melihat bahwa keragaman kemampuan awal dan pengalaman murid harus menjadi pertimbangan utama saat menyusun diferensiasi kegiatan ajar.
-                </div>
-              </div>
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-brain"></i> 3. Concept (Konsep Utama)
-                </div>
-                <div class="c-block-content">
-                  Konsep-konsep esensial yang saya pelajari meliputi:
-                  <ul style="margin: 8px 0 0 18px; line-height: 1.6;">
-                    <li><strong>Prinsip Pembelajaran Mendalam:</strong> Belajar berkesadaran, bermakna, dan menggembirakan melalui tahapan kognitif memahami, mengaplikasi, dan merefleksi.</li>
-                    <li><strong>Model Pembelajaran Kejuruan/Vokasi:</strong> Pengelolaan PBL, PjBL, <em>Teaching Factory</em> (TeFa), Kelas Industri, Kelas Wirausaha, dan PKL untuk menghadirkan pengalaman belajar imersif yang selaras dengan DUDI.</li>
-                    <li><strong>Trilogi Asesmen Autentik:</strong> <em>Assessment as Learning</em> (jurnal refleksi diri &amp; peer assessment), <em>Assessment for Learning</em> (observasi formatif &amp; feedback langsung), dan <em>Assessment of Learning</em> (rubrik unjuk kerja transparan).</li>
-                    <li><strong>TaRL &amp; CRT:</strong> Menyesuaikan pembelajaran dengan tingkat kesiapan murid (peran bertingkat Kepala &amp; Asisten Mekanik) serta menjadikan latar belakang budaya dan bahasa lokal murid sebagai jembatan menuju penguasaan standar industri formal.</li>
-                    <li><strong>Taksonomi SOLO &amp; Mastery Learning:</strong> Struktur hierarkis capaian kompetensi agar pembelajaran diarahkan hingga murid mampu menghubungkan pengetahuan dan menerapkannya pada situasi baru secara tuntas.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-arrows-rotate"></i> 4. Change (Komitmen Perubahan)
-                </div>
-                <div class="c-block-content">
-                  Setelah mengikuti mata kuliah ini, saya ingin lebih memperhatikan keterkaitan terpadu antara asesmen awal diagnostik, proses pembelajaran, asesmen formatif berkala, dan tindak lanjut. Saya ingin memanfaatkan hasil asesmen awal bukan untuk melabeli murid, tetapi sebagai dasar merancang bimbingan berjenjang (*scaffolding*) dan pengayaan. Dalam pembelajaran Informatika, saya tetap menggunakan masalah kontekstual dan simulasi digital karena keduanya membantu murid menghubungkan materi dengan situasi konkret dan melihat dinamika algoritma secara visual. Namun ke depan, saya ingin mengembangkan kegiatan belajar agar murid tidak berhenti pada menyelesaikan kode/tugas, tetapi juga memahami alasan di balik langkah yang dipilih, membandingkan efisiensi algoritma, merefleksikan proses belajarnya, dan mengaplikasikan logika tersebut pada kasus baru.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- TAB 2: PDF VIEWER -->
-          <div class="tab-pane" id="pmal-tab-pdf">
-            <div class="pdf-viewer-wrap">
-              <iframe
-                src="pdf/pmal/LEMBAR KERJA 3_PEMBELAJARAN MENDALAM DAN ASESMEN LANJUT.pdf"
-                title="Refleksi LK 3 Pembelajaran Mendalam dan Asesmen Lanjut"
-              ></iframe>
-              <div class="pdf-action-bar">
-                <span class="pdf-name-tag">
-                  <i class="fa-solid fa-file-pdf"></i> LEMBAR KERJA 3_PEMBELAJARAN MENDALAM DAN ASESMEN LANJUT.pdf
-                </span>
-                <a
-                  href="pdf/pmal/LEMBAR KERJA 3_PEMBELAJARAN MENDALAM DAN ASESMEN LANJUT.pdf"
-                  target="_blank"
-                  class="btn-open-pdf"
-                >
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Fullscreen
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- TAB 3: ARTEFAK -->
-          <div class="tab-pane" id="pmal-tab-artefak">
-            <div class="artefak-grid-modal">
-              <div class="artefak-card-box">
-                <div>
-                  <h5>Artefak 1 – Pengelolaan Model Pembelajaran di SMK (Aktivitas 2.1 &amp; 2.2)</h5>
-                  <p>
-                    Analisis perbandingan mata pelajaran KIK, TeFa, Kelas Industri, dan PKL, sinkronisasi kurikulum sekolah dengan kebutuhan DUDI, serta strategi pengelolaan PjBL imersif berbasis alur kerja industri untuk mencapai mastery learning.
-                  </p>
-                </div>
-                <div class="artefak-btn-row">
-                  <a href="pdf/pmal/pmal1.pdf" target="_blank" class="btn-mini-view">
-                    <i class="fa-solid fa-eye"></i> Lihat Dokumen
-                  </a>
-                </div>
-              </div>
-
-              <div class="artefak-card-box">
-                <div>
-                  <h5>Artefak 2 – Perancangan Asesmen Autentik Terintegrasi (Aktivitas 3.3)</h5>
-                  <p>
-                    Pengembangan perangkat asesmen komprehensif pada kasus kejuruan: Rubrik Kinerja holistik proporsional (30% pengetahuan, 40% keterampilan, 30% sikap kerja), Lembar Observasi AfL berkolom umpan balik, dan format Jurnal Refleksi &amp; Peer Assessment (AaL).
-                  </p>
-                </div>
-                <div class="artefak-btn-row">
-                  <a href="pdf/pmal/pmal2.pdf" target="_blank" class="btn-mini-view">
-                    <i class="fa-solid fa-eye"></i> Lihat Dokumen
-                  </a>
-                </div>
-              </div>
-
-              <div class="artefak-card-box">
-                <div>
-                  <h5>Artefak 3 – Penerapan TaRL &amp; CRT dalam Pembelajaran Vokasi (Aktivitas 4.3)</h5>
-                  <p>
-                    Desain integrasi PjBL, TaRL (pembagian peran heterogen: Kepala Mekanik/tutor sebaya &amp; Asisten Mekanik), dan CRT (kontekstualisasi istilah lokal/jalanan warga dipadankan dengan buku manual resmi servis) pada kasus perbaikan motor injeksi.
-                  </p>
-                </div>
-                <div class="artefak-btn-row">
-                  <a href="pdf/pmal/pmal3.pdf" target="_blank" class="btn-mini-view">
-                    <i class="fa-solid fa-eye"></i> Lihat Dokumen
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- MODAL 3: PPL MANDIRI -->
-    <div class="modal-overlay" id="modal-pplm">
-      <div class="modal-container">
-        <div class="modal-header">
-          <div class="modal-header-left">
-            <div
-              class="modal-icon-badge"
-              style="background: #e11d48; color: #ffffff"
-            >
-              <i class="fa-solid fa-chalkboard-user"></i>
-            </div>
-            <div class="modal-title-wrap">
-              <h2>Praktik Pengalaman Lapangan (PPL) Mandiri</h2>
-              <p>Agasta Pratama Nugraha (NIM: 25105260369) • SMA Negeri 4 Yogyakarta</p>
-            </div>
-          </div>
-          <button class="modal-close-btn" onclick="closeModal('modal-pplm')">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </div>
-
-        <div class="modal-body">
-          <div class="modal-tabs">
-            <button
-              class="modal-tab-btn active"
-              onclick="switchTab(this, 'pplm-tab-desc')"
-            >
-              Ringkasan Refleksi LK 3
-            </button>
-            <button
-              class="modal-tab-btn"
-              onclick="switchTab(this, 'pplm-tab-pdf')"
-            >
-              Dokumen PDF LK 3
-            </button>
-            <button
-              class="modal-tab-btn"
-              onclick="switchTab(this, 'pplm-tab-artefak')"
-            >
-              Artefak Pembelajaran
-            </button>
-          </div>
-
-          <!-- TAB 1: 4C REFLEKSI -->
-          <div class="tab-pane active" id="pplm-tab-desc">
-            <div class="reflection-4c-container">
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-link"></i> 1. Connection (Keterkaitan)
-                </div>
-                <div class="c-block-content">
-                  Mata kuliah PPL Mandiri memiliki keterkaitan erat dengan peran saya sebagai calon guru Informatika karena memberikan kesempatan untuk menerapkan pengetahuan dan keterampilan yang telah dipelajari ke dalam praktik pembelajaran secara langsung. Melalui praktik mengajar di SMA Negeri 4 Yogyakarta dari siklus pertama hingga keempat, saya belajar bahwa menjadi guru tidak hanya berkaitan dengan kemampuan menyampaikan materi, tetapi juga kemampuan merancang pembelajaran, mengelola kelas dan waktu, memahami kebutuhan murid, serta mengevaluasi proses pembelajaran. Pengalaman ini membantu saya memahami bahwa perencanaan yang baik di atas kertas perlu disertai kemampuan menyesuaikan pelaksanaan pembelajaran dengan kondisi nyata di kelas. Saya juga belajar bahwa refleksi dan umpan balik berkala dari Guru Pamong (Ibu Titis Widowati, S.T.) dan DPL (Dr. Nuryake Fajaryati, M.Pd.) merupakan bagian penting untuk mengenali kekurangan dan menentukan perbaikan pada siklus pembelajaran berikutnya.
-                </div>
-              </div>
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-bolt"></i> 2. Challenge (Perubahan Cara Pandang)
-                </div>
-                <div class="c-block-content">
-                  Selama mengikuti PPL Mandiri, saya menyadari bahwa pelaksanaan pembelajaran di kelas tidak selalu berjalan sesuai dengan rencana yang telah disusun. Sebelumnya, saya berharap penggunaan teknologi, seperti website administrasi kelas dengan sistem poin dan leaderboard, dapat membantu meningkatkan keaktifan murid. Namun dalam praktiknya, penggunaan website tersebut membuat perhatian saya terbagi antara mengelola administrasi keaktifan dan mendampingi proses belajar murid. Saya juga menemukan bahwa pembagian kelompok beranggotakan 4 orang belum mendorong partisipasi yang merata karena beberapa murid dominan sedangkan sebagian lainnya pasif. Selain itu, kegiatan inti yang berlangsung terlalu lama dapat memotong waktu untuk asesmen dan refleksi penutup. Pengalaman tersebut mengubah pemahaman saya bahwa media yang digunakan tidak cukup hanya menarik atau inovatif, tetapi harus fungsional dan proporsional terhadap waktu serta tujuan pembelajaran.
-                </div>
-              </div>
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-brain"></i> 3. Concept (Konsep Utama)
-                </div>
-                <div class="c-block-content">
-                  Melalui PPL Mandiri, saya menguasai beberapa konsep penting dalam pelaksanaan pembelajaran nyata:
-                  <ul style="margin: 8px 0 0 18px; line-height: 1.6;">
-                    <li><strong>Manajemen Waktu Instruksional:</strong> Merancang setiap tahapan pembelajaran (pembukaan, tujuan, apersepsi, kegiatan inti, LKPD, presentasi, post-test, dan penutup) dengan alokasi waktu yang proporsional dan disiplin.</li>
-                    <li><strong>Pengelompokan Berpasangan (Paired Learning):</strong> Alternatif pengaturan kelompok 2 orang yang terbukti jauh lebih efektif dalam mendorong partisipasi aktif dan tanggung jawab murid secara merata.</li>
-                    <li><strong>Metode Praktik Langsung (Hands-On Lab):</strong> Pembelajaran aplikasi konkret di laboratorium komputer (seperti Microsoft Excel dan simulasi algoritma) yang memberikan pengalaman langsung kepada murid.</li>
-                    <li><strong>Siklus Evaluasi Berkelanjutan:</strong> Evaluasi pembelajaran komprehensif yang tidak hanya melihat skor akhir, melainkan mengamati proses kerja, respons murid, kendala teknis, dan umpan balik pembimbing sebagai landasan perbaikan siklus berikutnya.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-arrows-rotate"></i> 4. Change (Komitmen Perubahan)
-                </div>
-                <div class="c-block-content">
-                  Setelah mengikuti PPL Mandiri, saya berkomitmen untuk lebih cermat dalam mengatur alokasi waktu dan menyiapkan daftar periksa tahapan pembelajaran agar seluruh sintaks (termasuk pre-test, post-test, dan refleksi bersama) terlaksana tanpa terburu-buru. Saya ingin lebih bijak dalam memanfaatkan teknologi digital agar media yang digunakan benar-benar membantu pembelajaran tanpa mengalihkan perhatian saya dari pendampingan murid. Dalam kegiatan kelompok, saya akan memprioritaskan bentuk pengelompokan berpasangan guna memastikan partisipasi aktif yang merata. Selain itu, saya berkomitmen mempertahankan metode praktik langsung di laboratorium komputer untuk materi Informatika terapan, serta membiasakan diri mengevaluasi pembelajaran secara berkala berdasarkan fakta kelas dan masukan rekan sejawat demi peningkatan kualitas pembelajaran yang berkelanjutan.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- TAB 2: PDF VIEWER -->
-          <div class="tab-pane" id="pplm-tab-pdf">
-            <div class="pdf-viewer-wrap">
-              <iframe
-                src="pdf/ppl2/LEMBAR KERJA 3_PPL MANDIRI.pdf"
-                title="Refleksi LK 3 PPL Mandiri"
-              ></iframe>
-              <div class="pdf-action-bar">
-                <span class="pdf-name-tag">
-                  <i class="fa-solid fa-file-pdf"></i> LEMBAR KERJA 3_PPL MANDIRI.pdf
-                </span>
-                <a
-                  href="pdf/ppl2/LEMBAR KERJA 3_PPL MANDIRI.pdf"
-                  target="_blank"
-                  class="btn-open-pdf"
-                >
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Fullscreen
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- TAB 3: ARTEFAK -->
-          <div class="tab-pane" id="pplm-tab-artefak">
-            <div class="artefak-grid-modal">
-              <div class="artefak-card-box">
-                <div>
-                  <h5>Artefak 1 – Refleksi Siklus 1 PPL Mandiri (LK 4)</h5>
-                  <p>
-                    Praktik materi Algoritma Searching &amp; Sorting di SMAN 4 Yogyakarta menggunakan website simulasi dan LKPD digital, serta refleksi evaluasi pengelolaan website administrasi poin/leaderboard agar tidak memecah konsentrasi mengajar.
-                  </p>
-                </div>
-                <div class="artefak-btn-row">
-                  <a href="pdf/ppl2/pplm1.pdf" target="_blank" class="btn-mini-view">
-                    <i class="fa-solid fa-eye"></i> Lihat Dokumen
-                  </a>
-                </div>
-              </div>
-
-              <div class="artefak-card-box">
-                <div>
-                  <h5>Artefak 2 – Refleksi Siklus 2 PPL Mandiri (LK 4)</h5>
-                  <p>
-                    Praktik materi Flowchart diagram alir, penguatan penyampaian tujuan pembelajaran, evaluasi kendala pembagian tugas pada kelompok 4 orang, serta penyusunan perbaikan alokasi waktu pelaksanaan post-test.
-                  </p>
-                </div>
-                <div class="artefak-btn-row">
-                  <a href="pdf/ppl2/pplm2.pdf" target="_blank" class="btn-mini-view">
-                    <i class="fa-solid fa-eye"></i> Lihat Dokumen
-                  </a>
-                </div>
-              </div>
-
-              <div class="artefak-card-box">
-                <div>
-                  <h5>Artefak 3 – Refleksi Siklus 3 PPL Mandiri (LK 4)</h5>
-                  <p>
-                    Praktik materi Pseudocode dengan inovasi pengelompokan berpasangan (paired learning), keberhasilan pelaksanaan presentasi hasil karya murid, dan evaluasi penjagaan konsentrasi belajar murid hingga akhir jam pelajaran.
-                  </p>
-                </div>
-                <div class="artefak-btn-row">
-                  <a href="pdf/ppl2/pplm3.pdf" target="_blank" class="btn-mini-view">
-                    <i class="fa-solid fa-eye"></i> Lihat Dokumen
-                  </a>
-                </div>
-              </div>
-
-              <div class="artefak-card-box">
-                <div>
-                  <h5>Artefak 4 – Refleksi Siklus 4 PPL Mandiri (LK 4)</h5>
-                  <p>
-                    Praktik materi Microsoft Excel terstruktur di laboratorium komputer SMA Negeri 4 Yogyakarta: pengolahan tabel, rumus dasar, dan grafik secara aplikatif berpasangan, penerapan SOP K3, serta pelaksanaan asesmen yang tertib dan tuntas.
-                  </p>
-                </div>
-                <div class="artefak-btn-row">
-                  <a href="pdf/ppl2/pplm4.pdf" target="_blank" class="btn-mini-view">
-                    <i class="fa-solid fa-eye"></i> Lihat Dokumen
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- MODAL 4: PROJEK KEPEMIMPINAN -->
-    <div class="modal-overlay" id="modal-pkep">
-      <div class="modal-container">
-        <div class="modal-header">
-          <div class="modal-header-left">
-            <div
-              class="modal-icon-badge"
-              style="background: #ea580c; color: #ffffff"
-            >
-              <i class="fa-solid fa-users-gear"></i>
-            </div>
-            <div class="modal-title-wrap">
-              <h2>Projek Kepemimpinan</h2>
-              <p>
-                Agasta Pratama Nugraha (NIM: 25105260369) • Kelas B/Informatika UNY
-              </p>
-            </div>
-          </div>
-          <button class="modal-close-btn" onclick="closeModal('modal-pkep')">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </div>
-
-        <div class="modal-body">
-          <div class="modal-tabs">
-            <button
-              class="modal-tab-btn active"
-              onclick="switchTab(this, 'pkep-tab-desc')"
-            >
-              Ringkasan Refleksi LK 3
-            </button>
-            <button
-              class="modal-tab-btn"
-              onclick="switchTab(this, 'pkep-tab-pdf')"
-            >
-              Dokumen PDF LK 3
-            </button>
-            <button
-              class="modal-tab-btn"
-              onclick="switchTab(this, 'pkep-tab-artefak')"
-            >
-              Artefak Pembelajaran
-            </button>
-          </div>
-
-          <!-- TAB 1: 4C REFLEKSI -->
-          <div class="tab-pane active" id="pkep-tab-desc">
-            <div class="reflection-4c-container">
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-link"></i> 1. Connection (Keterkaitan)
-                </div>
-                <div class="c-block-content">
-                  Mata kuliah Proyek Kepemimpinan berkaitan erat dengan peran saya sebagai calon guru Informatika karena memberikan pemahaman bahwa tanggung jawab guru tidak hanya berkaitan dengan kegiatan pembelajaran di kelas, tetapi juga dengan kontribusi nyata terhadap ekosistem sekolah. Melalui mata kuliah ini, saya belajar bahwa seorang guru perlu memiliki inisiatif, mampu mengenali kebutuhan lingkungan di sekitarnya, bekerja sama dengan berbagai pihak (*stakeholders*), dan merancang solusi yang sesuai dengan kondisi yang dihadapi. Pemahaman tersebut mengubah pandangan saya bahwa kepemimpinan bukan sekadar mengarahkan orang lain, melainkan kemampuan mengajak dan menggerakkan komunitas sekolah untuk mencapai tujuan bersama. Hal ini saya terapkan secara nyata melalui inisiasi proyek <strong>SPACE-IN PATBHE</strong> sebagai upaya mendukung optimalisasi tata kelola sarana dan prasarana di SMA Negeri 4 Yogyakarta.
-                </div>
-              </div>
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-bolt"></i> 2. Challenge (Perubahan Cara Pandang)
-                </div>
-                <div class="c-block-content">
-                  Sebelumnya, ketika melihat suatu permasalahan di lingkungan sekolah, saya cenderung lebih berfokus pada kendala yang perlu diselesaikan dan langsung membuat solusi teknologi dari sudut pandang pembuat sistem. Melalui mata kuliah Proyek Kepemimpinan, saya memperoleh pemahaman bahwa proses transformasi sistem juga memerlukan pertimbangan terhadap potensi yang dimiliki serta keterlibatan aktif pihak-pihak terkait. Hal ini saya pelajari melalui pendekatan Inkuiri Apresiatif (*Appreciative Inquiry*), yang mengarahkan saya untuk tidak hanya melihat kekurangan, tetapi juga mengenali aset dan kekuatan yang dapat mendukung perubahan. Dalam proyek SPACE-IN PATBHE, saya menyadari bahwa pengembangan sistem berbasis web saja tidak cukup; pihak sekolah (Waka Sarpras, Staf Tata Usaha, guru, dan murid) juga perlu memahami tujuan, alur penggunaan, dan merasa didampingi. Keberhasilan proyek tidak hanya ditentukan oleh kualitas aplikasi yang dibuat, melainkan oleh kolaborasi, komunikasi, dan kesiapan pengguna dalam mengadaptasi sistem baru.
-                </div>
-              </div>
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-brain"></i> 3. Concept (Konsep Utama)
-                </div>
-                <div class="c-block-content">
-                  Konsep-konsep penting yang saya pelajari dan terapkan dalam mata kuliah ini:
-                  <ul style="margin: 8px 0 0 18px; line-height: 1.6;">
-                    <li><strong>Berpikir Sistem (Systems Thinking):</strong> Memahami bahwa pengelolaan sekolah adalah sistem terintegrasi yang melibatkan regulasi (Permendikbudristek No 22/2023), peran pengelola (Waka Sarpras &amp; TU), dan pengguna fasilitas (guru &amp; murid).</li>
-                    <li><strong>Inkuiri Apresiatif melalui Tahapan BAGJA:</strong> Menggali aset dan potensi sekolah sebagai landasan merancang inovasi yang berdampak positif dan berkelanjutan.</li>
-                    <li><strong>Perumusan SMART Goals:</strong> Merumuskan tujuan terukur: 100% sistem siap pakai dan minimal 80% pengguna internal mahir mengoperasikan sistem peminjaman sarpras secara mandiri.</li>
-                    <li><strong>Model Pengembangan ADDIE:</strong> Menerapkan siklus <em>Analysis, Design, Development, Implementation,</em> dan <em>Evaluation</em> yang dipadukan dengan metode partisipatif, pelatihan langsung, dan pendampingan lapangan.</li>
-                    <li><strong>Keberlanjutan Proyek (Sustainability):</strong> Menjamin sistem tetap berjalan melalui penyerahan buku panduan (*User Manual*), alih kelola kepada Staf TU, dan integrasi mekanisme digital ke dalam tata kelola resmi sekolah.</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-arrows-rotate"></i> 4. Change (Komitmen Perubahan)
-                </div>
-                <div class="c-block-content">
-                  Setelah mengikuti mata kuliah Proyek Kepemimpinan, saya ingin lebih terbiasa mengenali kebutuhan dan potensi lingkungan sebelum merumuskan solusi. Saya juga ingin membudayakan kebiasaan berdiskusi dan melibatkan pihak-pihak terkait dalam perencanaan maupun pelaksanaan program sekolah. Melalui peran saya sebagai Koordinator Implementasi, Pelatihan, dan Pendampingan proyek SPACE-IN PATBHE, saya belajar bahwa solusi inovatif harus adaptif terhadap penggunanya dan tidak cukup hanya unggul secara teknis. Ke depannya, ketika merancang kegiatan pembelajaran Informatika maupun program kemajuan di lingkungan sekolah, saya akan lebih memperhatikan pembagian peran yang adil, komunikasi yang persuasif, serta konsensus bersama agar tercipta kepemimpinan yang berorientasi pada kemitraan dan kebermanfaatan jangka panjang.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- TAB 2: PDF VIEWER -->
-          <div class="tab-pane" id="pkep-tab-pdf">
-            <div class="pdf-viewer-wrap">
-              <iframe
-                src="pdf/proyek/LEMBAR KERJA 3_PROYEK KEPEMIMPINAN.pdf"
-                title="Refleksi LK 3 Proyek Kepemimpinan"
-              ></iframe>
-              <div class="pdf-action-bar">
-                <span class="pdf-name-tag">
-                  <i class="fa-solid fa-file-pdf"></i> LEMBAR KERJA 3_PROYEK KEPEMIMPINAN.pdf
-                </span>
-                <a
-                  href="pdf/proyek/LEMBAR KERJA 3_PROYEK KEPEMIMPINAN.pdf"
-                  target="_blank"
-                  class="btn-open-pdf"
-                >
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Fullscreen
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- TAB 3: ARTEFAK -->
-          <div class="tab-pane" id="pkep-tab-artefak">
-            <div class="artefak-grid-modal">
-              <div class="artefak-card-box">
-                <div>
-                  <h5>Artefak 1 – Refleksi Y-Chart Why, How, What (SPACE-IN PATBHE)</h5>
-                  <p>
-                    Pemetaan refleksi individual latar belakang perlunya transformasi sistem manual sarana prasarana SMAN 4 Yogyakarta (Why), metode observasi dan perancangan sistem terintegrasi (How), serta spesifikasi fitur sistem digital SPACE-IN PATBHE (What).
-                  </p>
-                </div>
-                <div class="artefak-btn-row">
-                  <a href="pdf/proyek/proyek1.pdf" target="_blank" class="btn-mini-view">
-                    <i class="fa-solid fa-eye"></i> Lihat Dokumen
-                  </a>
-                </div>
-              </div>
-
-              <div class="artefak-card-box">
-                <div>
-                  <h5>Artefak 2 – Proposal Lengkap Transformasi Digital SPACE-IN PATBHE</h5>
-                  <p>
-                    Proposal komprehensif transformasi digital peminjaman sarpras SMAN 4 YK berbasis model ADDIE: profil tim kerja, penyelarasan SDG 4, sasaran pengguna, metode partisipatif-pelatihan-pendampingan, timeline kegiatan, dan rencana anggaran biaya.
-                  </p>
-                </div>
-                <div class="artefak-btn-row">
-                  <a href="pdf/proyek/proyek2.pdf" target="_blank" class="btn-mini-view">
-                    <i class="fa-solid fa-eye"></i> Lihat Dokumen
-                  </a>
-                </div>
-              </div>
-
-              <div class="artefak-card-box">
-                <div>
-                  <h5>Artefak 3 – Perumusan SMART Goals Projek Kepemimpinan</h5>
-                  <p>
-                    Perumusan indikator keberhasilan terukur (Specific, Measurable, Achievable, Relevant, Time-bound): pencapaian 100% sistem siap pakai, target minimal 80% kemandirian pengguna internal, serta instrumen validasi kuesioner evaluasi dan rekomendasi keberlanjutan.
-                  </p>
-                </div>
-                <div class="artefak-btn-row">
-                  <a href="pdf/proyek/proyek3.pdf" target="_blank" class="btn-mini-view">
-                    <i class="fa-solid fa-eye"></i> Lihat Dokumen
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- MODAL 5: PKB -->
-    <div class="modal-overlay" id="modal-pkb">
-      <div class="modal-container">
-        <div class="modal-header">
-          <div class="modal-header-left">
-            <div
-              class="modal-icon-badge"
-              style="background: #0284c7; color: #ffffff"
-            >
-              <i class="fa-solid fa-book-bookmark"></i>
-            </div>
-            <div class="modal-title-wrap">
-              <h2>Pengembangan Keprofesian Berkelanjutan (PKB)</h2>
-              <p>
-                Agasta Pratama Nugraha (NIM: 25105260369) • Kelas B/Informatika UNY
-              </p>
-            </div>
-          </div>
-          <button class="modal-close-btn" onclick="closeModal('modal-pkb')">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </div>
-
-        <div class="modal-body">
-          <div class="modal-tabs">
-            <button
-              class="modal-tab-btn active"
-              onclick="switchTab(this, 'pkb-tab-desc')"
-            >
-              Ringkasan Refleksi LK 3
-            </button>
-            <button
-              class="modal-tab-btn"
-              onclick="switchTab(this, 'pkb-tab-pdf')"
-            >
-              Dokumen PDF LK 3
-            </button>
-            <button
-              class="modal-tab-btn"
-              onclick="switchTab(this, 'pkb-tab-artefak')"
-            >
-              Artefak Pembelajaran
-            </button>
-          </div>
-
-          <!-- TAB 1: 4C REFLEKSI -->
-          <div class="tab-pane active" id="pkb-tab-desc">
-            <div class="reflection-4c-container">
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-link"></i> 1. Connection (Keterkaitan)
-                </div>
-                <div class="c-block-content">
-                  Mata kuliah Pengembangan Keprofesian Berkelanjutan (PKB) memiliki keterkaitan yang sangat erat dengan peran saya sebagai calon guru Informatika karena membantu saya memahami bahwa profesionalisme guru tidak berhenti setelah memiliki kompetensi mengajar atau sertifikat pendidik, tetapi perlu terus dikembangkan melalui proses belajar dan evaluasi secara berkelanjutan. Melalui materi Penilaian Kinerja Guru (PKG) dan tiga unsur utama PKB, yaitu Pengembangan Diri, Publikasi Ilmiah, dan Karya Inovatif, saya memahami bahwa guru perlu terus meningkatkan kompetensi sesuai kebutuhan dan perkembangan profesinya. Pemahaman ini sangat krusial dalam bidang Informatika yang terus mengalami perkembangan teknologi sangat pesat, sehingga saya sebagai pendidik perlu selalu belajar hal baru, mengevaluasi pembelajaran, serta mengembangkan solusi inovatif ketika menemukan kesulitan belajar murid di kelas.
-                </div>
-              </div>
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-bolt"></i> 2. Challenge (Perubahan Cara Pandang)
-                </div>
-                <div class="c-block-content">
-                  Selama mempelajari mata kuliah ini, saya mengalami perubahan cara pandang mendasar dalam memahami pengembangan profesi dan karya tulis ilmiah. Sebelumnya, saya cenderung menganggap pengembangan profesi guru dan karya tulis ilmiah sebagai sesuatu yang lebih banyak berkaitan dengan kewajiban administrasi atau pemenuhan angka kredit semata. Melalui perkuliahan ini, saya memahami bahwa pengembangan keprofesian seharusnya berangkat dari kebutuhan nyata dan digunakan secara langsung untuk memperbaiki praktik pembelajaran di kelas. Saya juga memahami bahwa penyelesaian masalah pembelajaran perlu didukung oleh cara berpikir ilmiah yang rasional, sistematis, dan empiris, sehingga kesimpulan yang diambil tidak hanya berdasarkan asumsi atau kesan pribadi. Selain itu, saya sebelumnya melihat karya ilmiah sebagai tulisan yang panjang dan rumit, sedangkan materi publikasi ilmiah membuat saya memahami bahwa hasil penelitian atau gagasan pembelajaran dapat disajikan secara lebih ringkas, komunikatif, dan berfokus pada kontribusi utama melalui artikel ilmiah.
-                </div>
-              </div>
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-brain"></i> 3. Concept (Konsep Utama)
-                </div>
-                <div class="c-block-content">
-                  Konsep-konsep ilmiah dan keprofesian yang saya pelajari meliputi:
-                  <ul style="margin: 8px 0 0 18px; line-height: 1.6;">
-                    <li><strong>PKG &amp; Tiga Unsur PKB:</strong> Penilaian Kinerja Guru serta 3 pilar: Pengembangan Diri (diklat/kolektif guru), Publikasi Ilmiah (buku/jurnal/artikel PTK), dan Karya Inovatif (karya teknologi/alat peraga praktikum).</li>
-                    <li><strong>Kriteria APIK:</strong> Syarat mutu karya ilmiah guru: Asli, Perlu, Ilmiah, dan Konsisten.</li>
-                    <li><strong>Ciri Metode Ilmiah &amp; Berpikir Ilmiah:</strong> Tiga ciri utama metode ilmiah (Rasional, Sistematis, Empiris) serta tiga sifat berpikir ilmiah (Skeptik, Analitik, Kritis) dengan prinsip bebas dari prasangka subjektif.</li>
-                    <li><strong>Empat Sarana Berpikir Ilmiah:</strong> Bahasa (komunikatif &amp; simbolik), Logika (penalaran deduktif &amp; induktif), Matematika (pengukuran kuantitatif), dan Statistika (pengumpulan, pengolahan, dan interpretasi data empiris).</li>
-                    <li><strong>Metodologi PTK &amp; Struktur Artikel Ilmiah:</strong> Tahapan siklus Penelitian Tindakan Kelas (identifikasi masalah, tindakan, observasi, refleksi) serta diseminasi hasilnya ke dalam artikel jurnal berstruktur baku (IMRAD: Pendahuluan, Tinjauan Pustaka, Metode, Hasil, Diskusi, Kesimpulan).</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="c-block">
-                <div class="c-block-title">
-                  <i class="fa-solid fa-arrows-rotate"></i> 4. Change (Komitmen Perubahan)
-                </div>
-                <div class="c-block-content">
-                  Setelah mengikuti mata kuliah ini, saya berkomitmen untuk lebih rutin melakukan evaluasi diri dan refleksi terhadap proses pembelajaran Informatika yang saya lakukan di sekolah. Saya ingin lebih peka dalam mengidentifikasi kesulitan belajar murid (misalnya ketika murid mengalami kesulitan memahami alur logika flowchart dan pseudocode) dan tidak berhenti pada menemukan masalah, tetapi berusaha mencari tindakan perbaikan melalui strategi pembelajaran, media interaktif, atau penelitian tindakan kelas. Saya juga ingin membiasakan diri mendokumentasikan proses dan hasil perbaikan tersebut secara sistematis dengan bukti data yang valid agar dapat dikembangkan menjadi laporan *best practice* atau artikel ilmiah publikasi. Dengan demikian, pengembangan keprofesian saya tidak hanya berhenti pada keikutsertaan pelatihan, tetapi menghasilkan pembelajaran bermutu tinggi yang terus disempurnakan berdasarkan fakta kelas.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- TAB 2: PDF VIEWER -->
-          <div class="tab-pane" id="pkb-tab-pdf">
-            <div class="pdf-viewer-wrap">
-              <iframe
-                src="pdf/pkb/LEMBAR KERJA 3_PENGEMBANGAN KEPROFESIAN BERKELANJUTAN.pdf"
-                title="Refleksi LK 3 Pengembangan Keprofesian Berkelanjutan"
-              ></iframe>
-              <div class="pdf-action-bar">
-                <span class="pdf-name-tag">
-                  <i class="fa-solid fa-file-pdf"></i> LEMBAR KERJA 3_PENGEMBANGAN KEPROFESIAN BERKELANJUTAN.pdf
-                </span>
-                <a
-                  href="pdf/pkb/LEMBAR KERJA 3_PENGEMBANGAN KEPROFESIAN BERKELANJUTAN.pdf"
-                  target="_blank"
-                  class="btn-open-pdf"
-                >
-                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Fullscreen
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- TAB 3: ARTEFAK -->
-          <div class="tab-pane" id="pkb-tab-artefak">
-            <div class="artefak-grid-modal">
-              <div class="artefak-card-box">
-                <div>
-                  <h5>Artefak 1 – Analisis Laporan Best Practice &amp; Sarana Berpikir Ilmiah (Bab 5)</h5>
-                  <p>
-                    Analisis sistematika laporan Best Practice guru SMK Negeri 3 Tuban berbasis Problem Based Learning HOTS pada materi sasis kendaraan, logika penarikan kesimpulan berbasis bukti empiris, serta penguasaan 4 sarana berpikir ilmiah (Bahasa, Logika, Matematika, Statistika).
-                  </p>
-                </div>
-                <div class="artefak-btn-row">
-                  <a href="pdf/pkb/pkb1.pdf" target="_blank" class="btn-mini-view">
-                    <i class="fa-solid fa-eye"></i> Lihat Dokumen
-                  </a>
-                </div>
-              </div>
-
-              <div class="artefak-card-box">
-                <div>
-                  <h5>Artefak 2 – Fondasi Karya Tulis Ilmiah &amp; Metode Penelitian (Bab 6)</h5>
-                  <p>
-                    Penguasaan komprehensif ciri utama metode ilmiah (rasional, sistematis, empiris), sikap berpikir ilmiah (skeptik, analitik, kritis), prinsip bebas prasangka, peran kuantifikasi data penelitian pendidikan, serta komparasi skripsi, tesis, dan disertasi.
-                  </p>
-                </div>
-                <div class="artefak-btn-row">
-                  <a href="pdf/pkb/pkb2.pdf" target="_blank" class="btn-mini-view">
-                    <i class="fa-solid fa-eye"></i> Lihat Dokumen
-                  </a>
-                </div>
-              </div>
-
-              <div class="artefak-card-box">
-                <div>
-                  <h5>Artefak 3 – Penyusunan Laporan PTK &amp; Naskah Artikel Ilmiah (Bab 7)</h5>
-                  <p>
-                    Langkah operasional menyusun laporan siklus PTK, struktur baku bagian artikel ilmiah publikasi (IMRAD), komparasi format laporan PTK vs artikel ilmiah, serta rancangan pendahuluan PTK model membaca berpasangan (paired reading).
-                  </p>
-                </div>
-                <div class="artefak-btn-row">
-                  <a href="pdf/pkb/pkb3.pdf" target="_blank" class="btn-mini-view">
-                    <i class="fa-solid fa-eye"></i> Lihat Dokumen
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 5. NEW 3-COLUMN FOOTER -->
+      <!-- 5. NEW 3-COLUMN FOOTER -->
     <footer class="main-footer" id="kontak">
       <div class="container">
         <div class="footer-top-grid">
@@ -1435,58 +1099,42 @@
         });
       }
 
-      function openModal(modalId) {
-        const modal = document.getElementById(modalId);
-        if (modal) {
-          modal.classList.add("active");
-          document.body.style.overflow = "hidden";
+      function selectDirectCourse(panelId, btn) {
+        document.querySelectorAll(".course-select-btn").forEach((b) => b.classList.remove("active"));
+        document.querySelectorAll(".direct-viewer-panel").forEach((p) => p.classList.remove("active"));
+
+        if (btn) btn.classList.add("active");
+        const targetPanel = document.getElementById(panelId);
+        if (targetPanel) {
+          targetPanel.classList.add("active");
+          targetPanel.scrollIntoView({ behavior: "smooth", block: "start" });
         }
       }
 
-      function closeModal(modalId) {
-        const modal = document.getElementById(modalId);
-        if (modal) {
-          modal.classList.remove("active");
-          document.body.style.overflow = "auto";
+      function switchLiveDoc(btn, iframeId, pdfSrc, noticeId, noticeText) {
+        const wrapper = btn.closest(".direct-doc-wrapper");
+        if (wrapper) {
+          wrapper.querySelectorAll(".doc-switch-btn").forEach((b) => b.classList.remove("active"));
         }
-      }
-
-      document.querySelectorAll(".modal-overlay").forEach((overlay) => {
-        overlay.addEventListener("click", (e) => {
-          if (e.target === overlay) {
-            overlay.classList.remove("active");
-            document.body.style.overflow = "auto";
-          }
-        });
-      });
-
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") {
-          document.querySelectorAll(".modal-overlay.active").forEach((m) => {
-            m.classList.remove("active");
-          });
-          document.body.style.overflow = "auto";
-        }
-      });
-
-      function switchTab(btn, targetPaneId) {
-        const modalBody = btn.closest(".modal-body");
-        if (!modalBody) return;
-
-        modalBody
-          .querySelectorAll(".modal-tab-btn")
-          .forEach((t) => t.classList.remove("active"));
-        modalBody
-          .querySelectorAll(".tab-pane")
-          .forEach((p) => p.classList.remove("active"));
-
         btn.classList.add("active");
-        const targetPane = modalBody.querySelector(`#${targetPaneId}`);
-        if (targetPane) {
-          targetPane.classList.add("active");
+
+        const iframe = document.getElementById(iframeId);
+        if (iframe) {
+          iframe.src = pdfSrc;
+        }
+
+        const notice = document.getElementById(noticeId);
+        if (notice && noticeText) {
+          notice.innerHTML = `<i class="fa-solid fa-circle-info text-lime"></i> ${noticeText}`;
+        }
+
+        const extBtn = wrapper ? wrapper.querySelector(".btn-open-external") : null;
+        if (extBtn) {
+          extBtn.href = pdfSrc;
         }
       }
-    </script>
+
+      </script>
     <script src="js/interactions.js"></script>
   </body>
 </html>

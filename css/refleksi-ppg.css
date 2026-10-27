@@ -1,0 +1,1281 @@
+/* ==========================================================================
+   REFLEKSI PPG CSS - E-PORTOFOLIO AGASTA PRATAMA NUGRAHA (INFORMATIKA UNY)
+   Aligned with refleksi-s1.css & visi.css:
+   - Hero matching refleksi-s1.html with Custom Lilac Worm Animation
+   - Integrasi Siklus: 5 Content Cards (Tanpa Navigasi)
+   - Penampil Dokumen LK 3: Format A4 Tinggi Elongated (1050px) dengan Judul Header
+   - Footer: 3 Kolom Lengkap dengan Google Maps UNY
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Bebas+Neue&family=Permanent+Marker&display=swap");
+
+:root {
+  --bg-dark: #09090b;
+  --bg-dark-surface: #111115;
+  --bg-dark-card: #18181c;
+  --bg-dark-elevated: #22222a;
+  
+  --bg-light: #f8f8fa;
+  --bg-white: #ffffff;
+  --bg-light-surface: #f3f3f7;
+
+  --neon-lime: #d4ff32;
+  --neon-lime-hover: #c0ea25;
+  --neon-lime-glow: rgba(212, 255, 50, 0.45);
+
+  --pastel-lilac: #b8b5ff;
+  --pastel-pink: #ffd4e5;
+  --pastel-yellow: #fff07c;
+  --pastel-peach: #ffd0a8;
+  --pastel-mint: #9df0d0;
+
+  --text-white: #ffffff;
+  --text-dark: #09090b;
+  --text-gray-light: #a1a1aa;
+  --text-gray-dark: #52525b;
+  --text-muted: #71717a;
+
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-hand: "Caveat", cursive, sans-serif;
+  --font-marker: "Permanent Marker", cursive, sans-serif;
+  --font-condensed: "Bebas Neue", sans-serif;
+
+  --transition: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.text-lime { color: var(--neon-lime) !important; }
+.text-lilac { color: var(--pastel-lilac) !important; }
+.font-hand { font-family: var(--font-hand) !important; }
+
+/* SAFETY VISIBILITY: Never allow reveal classes to keep content blank/hidden */
+.reveal, .reveal-left, .reveal-right, .reveal-scale {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
+
+/* Sticky Social Bar */
+.sticky-social-bar {
+  position: fixed;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-icons-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-icons-vertical a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(24, 24, 28, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d1d1d6;
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.social-icons-vertical a:hover {
+  background: var(--neon-lime);
+  color: var(--text-dark);
+  border-color: var(--neon-lime);
+  transform: scale(1.15) rotate(8deg);
+  box-shadow: 0 0 18px var(--neon-lime-glow);
+}
+
+.vertical-text-tag {
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vertical-text-tag::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 26px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.sparkle-doodle {
+  color: var(--neon-lime);
+  font-size: 14px;
+  animation: pulseSparkle 2s infinite ease-in-out;
+}
+
+@keyframes pulseSparkle {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.3); opacity: 1; filter: drop-shadow(0 0 8px var(--neon-lime)); }
+}
+
+/* ==========================================================================
+   NAVBAR (EXACT MATCH WITH visi.css & index.css)
+   ========================================================================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 68px;
+  z-index: 1000;
+  background: rgba(9, 9, 11, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  max-width: 1380px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.logo span {
+  color: var(--neon-lime);
+}
+
+.logo:hover {
+  transform: scale(1.04);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 4px 6px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-links li a {
+  display: block;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  color: var(--text-gray-light);
+  transition: var(--transition);
+}
+
+.nav-links li a:hover {
+  color: var(--text-white);
+}
+
+.nav-links li a.active {
+  background: var(--neon-lime);
+  color: var(--text-dark);
+}
+
+.nav-cta .btn-pill-neon {
+  background: var(--neon-lime);
+  color: var(--text-dark);
+  font-size: 11.5px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  padding: 10px 22px;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 0 20px var(--neon-lime-glow);
+  transition: var(--transition);
+  border: none;
+}
+
+.nav-cta .btn-pill-neon:hover {
+  background: var(--neon-lime-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 0 26px var(--neon-lime-glow);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background: var(--text-white);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+/* ==========================================================================
+   1. HERO ACADEMIC BANNER (EXACT SAME COMPOSITION AS refleksi-s1.html)
+   ========================================================================== */
+.hero-academic {
+  position: relative;
+  height: 100vh;
+  min-height: 680px;
+  padding-top: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #09090b;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-academic-content {
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.g1-asterisk-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.g1-asterisk-icon {
+  font-size: 26px;
+  color: var(--neon-lime);
+  line-height: 1;
+  font-weight: 900;
+  animation: rotateAsterisk 12s linear infinite;
+  display: inline-block;
+}
+
+@keyframes rotateAsterisk {
+  100% { transform: rotate(360deg); }
+}
+
+.g1-badge-pill {
+  background: rgba(212, 255, 50, 0.12);
+  border: 1px solid rgba(212, 255, 50, 0.4);
+  color: var(--neon-lime);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: 0 0 14px rgba(212, 255, 50, 0.18);
+}
+
+.hero-academic-title {
+  font-family: var(--font-sans);
+  font-size: clamp(36px, 4.5vw, 60px);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+  color: var(--text-white);
+  margin-bottom: 20px;
+}
+
+.hero-academic-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-gray-light);
+  max-width: 800px;
+  margin: 0 auto 34px;
+}
+
+.hero-academic-desc strong {
+  color: #ffffff;
+}
+
+.hero-academic-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.btn-academic-cta {
+  background: var(--neon-lime);
+  color: var(--text-dark);
+  font-size: 12px;
+  font-weight: 900;
+  padding: 14px 32px;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+  transition: var(--transition);
+  box-shadow: 0 4px 20px rgba(212, 255, 50, 0.3);
+}
+
+.btn-academic-cta:hover {
+  background: var(--neon-lime-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px var(--neon-lime-glow);
+}
+
+/* WORM ANIMATION */
+.hero-bottom-worm-track {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.worm-svg-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.worm-faint-track {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.05);
+  stroke-width: 3px;
+  stroke-linecap: round;
+}
+
+.worm-slither-body {
+  fill: none;
+  stroke: #ff70a6;
+  stroke-width: 15px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 460 2200;
+  animation: slitherWormLtr 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  filter: drop-shadow(0 0 16px rgba(255, 112, 166, 0.45));
+}
+
+@keyframes slitherWormLtr {
+  0% {
+    stroke-dashoffset: 460;
+  }
+  75% {
+    stroke-dashoffset: -1750;
+  }
+  100% {
+    stroke-dashoffset: -1750;
+  }
+}
+
+/* DECORATIVE DECO (EXACT SAME AS refleksi-s1.css) */
+.deco-floating-crown {
+  position: absolute;
+  top: 18%;
+  left: 9%;
+  width: 44px;
+  height: 38px;
+  opacity: 0.45;
+  animation: floatDeco 8s ease-in-out infinite alternate;
+}
+
+.deco-floating-smiley {
+  position: absolute;
+  top: 22%;
+  right: 10%;
+  width: 48px;
+  height: 48px;
+  opacity: 0.4;
+  animation: floatDeco 9s ease-in-out 1.5s infinite alternate;
+}
+
+.deco-sparkle-1 {
+  position: absolute;
+  top: 28%;
+  right: 20%;
+  font-size: 18px;
+  color: var(--pastel-lilac);
+  opacity: 0.55;
+  animation: pulseDeco 4s ease-in-out infinite alternate;
+}
+
+.deco-sparkle-2 {
+  position: absolute;
+  bottom: 30%;
+  left: 14%;
+  font-size: 20px;
+  color: var(--neon-lime);
+  opacity: 0.6;
+  animation: pulseDeco 5s ease-in-out 1s infinite alternate;
+}
+
+@keyframes floatDeco {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(6deg);
+  }
+  100% {
+    transform: translateY(8px) rotate(-5deg);
+  }
+}
+
+@keyframes pulseDeco {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.25;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.35;
+  }
+}
+
+/* ==========================================================================
+   ALTERNATING SECTION RHYTHM ARCHITECTURE
+   ========================================================================== */
+.section-rhythm-light {
+  background-color: var(--bg-white);
+  color: var(--text-dark);
+  padding: 100px 0;
+  position: relative;
+}
+
+.section-rhythm-dark {
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  padding: 100px 0;
+  position: relative;
+}
+
+.section-rhythm-dark-surface {
+  background-color: #0d0d12;
+  color: var(--text-white);
+  padding: 100px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  position: relative;
+}
+
+.section-tag-pill-dark {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.06);
+  color: #4b5563;
+  margin-bottom: 12px;
+}
+
+.section-tag-pill-light {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: rgba(212, 255, 50, 0.15);
+  color: var(--neon-lime);
+  border: 1px solid rgba(212, 255, 50, 0.3);
+  margin-bottom: 12px;
+}
+
+.section-center-head {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 52px;
+}
+
+.section-center-head h2 {
+  font-size: clamp(30px, 3.8vw, 44px);
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.section-rhythm-light .section-center-head h2 { color: #09090b; }
+.section-rhythm-dark .section-center-head h2,
+.section-rhythm-dark-surface .section-center-head h2 { color: #ffffff; }
+
+.section-center-head p {
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.section-rhythm-light .section-center-head p { color: #52525b; }
+.section-rhythm-dark .section-center-head p,
+.section-rhythm-dark-surface .section-center-head p { color: #a1a1aa; }
+
+/* ==========================================================================
+   SECTION 1: BAGAIMANA SEHARUSNYA PENDIDIKAN DI INDONESIA? (LIGHT)
+   6 Soft Pastel Cards Grid matching Agasta's LK 3
+   ========================================================================== */
+.pendidikan-soft-grid-6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  margin-bottom: 44px;
+}
+
+.soft-pastel-card {
+  border-radius: 22px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.soft-pastel-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.09);
+}
+
+/* Pastel Theme Colors */
+.card-theme-pink { background: #ffd4e5; color: #18181c; }
+.card-theme-lime { background: #e2ff66; color: #18181c; }
+.card-theme-lilac { background: #cfcdff; color: #18181c; }
+.card-theme-peach { background: #ffd0a8; color: #18181c; }
+.card-theme-mint { background: #cbfbf0; color: #18181c; }
+.card-theme-yellow { background: #fef08a; color: #18181c; }
+
+.soft-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.soft-step-pill {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.soft-icon-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.soft-card-body h3 {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.soft-card-body p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  opacity: 0.88;
+  margin-bottom: 16px;
+}
+
+.soft-card-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.soft-card-bullets li {
+  font-size: 12.5px;
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-weight: 600;
+}
+
+.soft-card-bullets li i {
+  margin-top: 2px;
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+/* Callout Quote Editorial */
+.callout-quote-editorial {
+  background: #f4f4f8;
+  border-left: 5px solid #09090b;
+  border-radius: 18px;
+  padding: 26px 32px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.quote-khd-icon {
+  font-size: 32px;
+  color: #18181c;
+  opacity: 0.4;
+  flex-shrink: 0;
+}
+
+.quote-khd-text {
+  font-size: 15px;
+  line-height: 1.65;
+  color: #3f3f46;
+}
+
+.quote-khd-text strong {
+  color: #09090b;
+}
+
+/* ==========================================================================
+   SECTION 2: MENJADI GURU PROFESIONAL (DARK BENTO GRID)
+   ========================================================================== */
+.bento-kompetensi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
+}
+
+.bento-kompetensi-card {
+  background: #141418;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-kompetensi-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+}
+
+.bento-card-icon-bubble {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.bento-card-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 6px 0 12px;
+}
+
+.bento-card-desc {
+  font-size: 14px;
+  color: #a1a1aa;
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+
+.bento-check-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.bento-check-list li {
+  font-size: 13px;
+  color: #d1d5db;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.5;
+}
+
+.bento-check-list li i {
+  color: var(--neon-lime);
+  margin-top: 3px;
+  font-size: 13px;
+}
+
+/* ==========================================================================
+   SECTION 3: TIGA LANGKAH AWAL MEMULAI KARIER GURU (LIGHT)
+   ========================================================================== */
+.tiga-langkah-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+.langkah-card-item {
+  border-radius: 22px;
+  padding: 32px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  position: relative;
+}
+
+.langkah-card-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.09);
+}
+
+.langkah-num-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.langkah-title {
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 12px;
+  color: #18181c;
+}
+
+.langkah-desc {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #3f3f46;
+  margin-bottom: 22px;
+}
+
+.langkah-action-box {
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
+  padding: 16px;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.langkah-action-box strong {
+  display: block;
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  color: #09090b;
+}
+
+/* ==========================================================================
+   SECTION 4: INTEGRASI SIKLUS REFLEKSI PERKULIAHAN PPG (5 CARDS TANPA NAVIGASI)
+   ========================================================================== */
+.siklus-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.siklus-content-card {
+  background: #141418;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 26px 30px;
+  transition: var(--transition);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.siklus-content-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.siklus-content-card.active-kulminasi {
+  background: #181914;
+  border: 1.5px solid var(--neon-lime);
+  box-shadow: 0 0 25px rgba(212, 255, 50, 0.15);
+}
+
+.siklus-card-tag {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 14px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.tag-pink { background: rgba(255, 212, 229, 0.15); color: #ffd4e5; border: 1px solid rgba(255, 212, 229, 0.3); }
+.tag-lime { background: rgba(212, 255, 50, 0.15); color: var(--neon-lime); border: 1px solid rgba(212, 255, 50, 0.3); }
+.tag-lilac { background: rgba(184, 181, 255, 0.15); color: var(--pastel-lilac); border: 1px solid rgba(184, 181, 255, 0.3); }
+.tag-peach { background: rgba(255, 208, 168, 0.15); color: #ffd0a8; border: 1px solid rgba(255, 208, 168, 0.3); }
+.tag-mint { background: rgba(157, 240, 208, 0.15); color: #9df0d0; border: 1px solid rgba(157, 240, 208, 0.3); }
+
+.siklus-card-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-top: 4px;
+}
+
+.siklus-card-desc {
+  font-size: 14.5px;
+  color: #a1a1aa;
+  line-height: 1.65;
+}
+
+/* ==========================================================================
+   PENAMPIL DOKUMEN LK 3 (FORMAT A4 ELONGATED TALL VIEW 1050px)
+   ========================================================================== */
+.doc-section-header-box {
+  text-align: center;
+  max-width: 860px;
+  margin: 50px auto 26px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.doc-section-header-box h3 {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.doc-section-header-box p {
+  font-size: 14.5px;
+  color: #a1a1aa;
+  line-height: 1.6;
+}
+
+.lk-embed-viewer-wrapper {
+  background: #131317;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.lk-embed-header-bar {
+  background: #1a1a20;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.lk-embed-title-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--neon-lime);
+  background: rgba(212, 255, 50, 0.12);
+  border: 1px solid rgba(212, 255, 50, 0.3);
+  padding: 6px 18px;
+  border-radius: 30px;
+}
+
+.lk-embed-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lk-action-btn-pill {
+  font-size: 12px;
+  font-weight: 800;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: #24242c;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition);
+}
+
+.lk-action-btn-pill:hover {
+  transform: translateY(-2px);
+}
+
+.lk-iframe-viewport {
+  width: 100%;
+  height: 1050px; /* Format A4 Tampilan Panjang agar tidak kepotong */
+  min-height: 980px;
+  background: #202026;
+  position: relative;
+}
+
+.lk-iframe-viewport iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ==========================================================================
+   FOOTER (EXACT MATCH WITH visi.css & index.css)
+   ========================================================================== */
+.main-footer {
+  background: #09090b;
+  color: #ffffff;
+  padding-top: 90px;
+  padding-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-top-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1fr;
+  gap: 36px;
+  align-items: start;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-left-headline {
+  position: relative;
+}
+
+.footer-cursive-text {
+  font-family: var(--font-hand);
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.footer-cursive-text .text-lime {
+  color: var(--neon-lime) !important;
+}
+
+.footer-stars-doodle {
+  color: var(--pastel-lilac);
+  font-size: 22px;
+  display: inline-block;
+}
+
+.footer-underline-doodle {
+  width: 160px;
+  margin-top: 6px;
+}
+
+.footer-left-desc {
+  font-size: 13px;
+  color: #a1a1aa;
+  line-height: 1.6;
+  margin-top: 14px;
+  max-width: 320px;
+}
+
+.footer-center-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-col-heading {
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-col-heading i {
+  color: var(--neon-lime);
+}
+
+.footer-social-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.social-link-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #18181c;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px 18px;
+  border-radius: 16px;
+  color: #ffffff;
+  transition: var(--transition);
+}
+
+.social-link-card:hover {
+  background: #232329;
+  border-color: var(--neon-lime);
+  transform: translateX(5px);
+  color: var(--neon-lime);
+}
+
+.social-link-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.social-icon-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  transition: var(--transition);
+}
+
+.social-link-card:hover .social-icon-circle {
+  background: var(--neon-lime);
+  color: #09090b;
+}
+
+.social-info-text strong {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.social-info-text span {
+  font-size: 11px;
+  color: #a1a1aa;
+}
+
+.social-arrow-icon {
+  font-size: 12px;
+  color: #71717a;
+  transition: var(--transition);
+}
+
+.social-link-card:hover .social-arrow-icon {
+  color: var(--neon-lime);
+  transform: translate(2px, -2px);
+}
+
+.footer-right-maps {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.maps-embed-box {
+  width: 100%;
+  height: 180px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1.5px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.maps-embed-box iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.maps-footer-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.maps-address-text {
+  font-size: 11px;
+  color: #a1a1aa;
+  line-height: 1.4;
+}
+
+.btn-open-maps {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(212, 255, 50, 0.12);
+  color: var(--neon-lime);
+  border: 1px solid rgba(212, 255, 50, 0.3);
+  font-size: 11px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: var(--transition);
+}
+
+.btn-open-maps:hover {
+  background: var(--neon-lime);
+  color: #09090b;
+  box-shadow: 0 0 15px var(--neon-lime-glow);
+}
+
+.footer-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 30px;
+  font-size: 12px;
+  color: #71717a;
+}
+
+.footer-legal-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-legal-links a {
+  color: #a1a1aa;
+  transition: var(--transition);
+}
+
+.footer-legal-links a:hover {
+  color: var(--neon-lime);
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 1080px) {
+  .pendidikan-soft-grid-6 { grid-template-columns: repeat(2, 1fr); }
+  .footer-top-grid { grid-template-columns: 1fr 1fr; }
+  .footer-right-maps { grid-column: span 2; }
+}
+
+@media (max-width: 860px) {
+  .bento-kompetensi-grid { grid-template-columns: 1fr; }
+  .tiga-langkah-grid { grid-template-columns: 1fr; }
+  .footer-top-grid { grid-template-columns: 1fr; gap: 36px; }
+  .footer-right-maps { grid-column: span 1; }
+  .sticky-social-bar { display: none; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+}
+
+@media (max-width: 640px) {
+  .pendidikan-soft-grid-6 { grid-template-columns: 1fr; }
+  .lk-iframe-viewport { height: 750px; }
+}

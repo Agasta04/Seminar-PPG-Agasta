@@ -3,59 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Karya & Inovasi Pembelajaran | E-Portofolio PPG Agasta Pratama Nugraha
-    </title>
+    <!-- Favicon Logo UNY -->
+    <link rel="icon" type="image/png" href="logo-uny.png" />
+    <link rel="apple-touch-icon" href="logo-uny.png" />
+    <title>Karya Inovatif Pembelajaran - Agasta Pratama Nugraha</title>
+    <meta
+      name="description"
+      content="Karya inovasi pembelajaran Informatika terpadu: Inovasi Web KomputasiKita dengan simulasi visual dan gamifikasi leaderboard di SMAN 4 Yogyakarta."
+    />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Permanent+Marker&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Permanent+Marker&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;700;800&display=swap"
       rel="stylesheet"
     />
 
-    <!-- FontAwesome Icons -->
+    <!-- Font Awesome Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
-    <!-- CSS External & Interactive Animations -->
+    <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="css/inovasi.css" />
-    <link rel="stylesheet" href="css/animations.css" />
   </head>
 
   <body>
-    <!-- STICKY VERTICAL SOCIAL BAR -->
-    <aside class="sticky-social-bar" aria-label="Social Media Bar">
-      <div class="social-icons-vertical">
-        <a
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Instagram"
-        >
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-        >
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="mailto:agasta.pratama@email.com" aria-label="Email">
-          <i class="fa-regular fa-envelope"></i>
-        </a>
-      </div>
-      <div class="vertical-text-tag">
-        <span>PENDIDIK INOVATIF & ADAPTIF</span>
-        <span class="sparkle-doodle">✦</span>
-      </div>
-    </aside>
-
     <!-- FLOATING NAVBAR -->
     <nav class="navbar">
       <div class="nav-container">
@@ -71,6 +46,7 @@
           <li><a href="visi.html">VISI PRIBADI</a></li>
           <li><a href="refleksi-s1.html">REFLEKSI S1</a></li>
           <li><a href="refleksi-s2.html">REFLEKSI S2</a></li>
+          <li><a href="refleksi-ppg.html">REFLEKSI PPG</a></li>
           <li><a href="inovasi.html" class="active">KARYA INOVATIF</a></li>
         </ul>
 
@@ -82,534 +58,1928 @@
       </div>
     </nav>
 
-    <!-- 1. HERO INOVASI -->
-    <header class="hero-inovasi" id="hero">
-      <div class="container reveal-scale">
+    <!-- 1. HERO ACADEMIC BANNER (HITAM) -->
+    <header class="hero-academic" id="hero">
+      <!-- Floating Doodles -->
+      <svg
+        class="deco-floating-crown floating-gentle"
+        viewBox="0 0 50 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5 32 L 12 12 L 25 24 L 38 12 L 45 32 Z"
+          stroke="#d4ff32"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <circle cx="12" cy="10" r="2.5" fill="#d4ff32" />
+        <circle cx="25" cy="8" r="2.5" fill="#d4ff32" />
+        <circle cx="38" cy="10" r="2.5" fill="#d4ff32" />
+      </svg>
+
+      <svg
+        class="deco-floating-smiley floating-rotate"
+        viewBox="0 0 100 100"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="50"
+          cy="50"
+          r="45"
+          stroke="#9df0d0"
+          stroke-width="5"
+          stroke-dasharray="8 6"
+        />
+        <circle cx="36" cy="40" r="5" fill="#9df0d0" />
+        <circle cx="64" cy="40" r="5" fill="#9df0d0" />
+        <path
+          d="M30 65 Q 50 82 70 65"
+          stroke="#9df0d0"
+          stroke-width="5"
+          stroke-linecap="round"
+        />
+      </svg>
+
+      <div class="deco-sparkle-1">✦</div>
+      <div class="deco-sparkle-2">★</div>
+
+      <div class="container hero-academic-content reveal-scale">
         <div class="g1-asterisk-badge">
           <span class="g1-asterisk-icon">✱</span>
           <span class="g1-badge-pill"
-            >SHOWCASE PRODUK INOVATIF PEMBELAJARAN INFORMATIKA</span
+            >LEMBAR KERJA 4 • KARYA INOVATIF PEMBELAJARAN INFORMATIKA</span
           >
         </div>
 
-        <h1 class="hero-inovasi-title">
-          KARYA DIGITAL, MODUL & <br />
-          <span class="text-lime">INOVASI PEDAGOGI</span> ABAD 21.
+        <h1 class="hero-academic-title">
+          INOVASI WEB KOMPUTASIKITA <br />
+          <span class="text-lime">SIMULASI VISUAL &amp; LEADERBOARD</span>.
         </h1>
-        <p class="hero-inovasi-desc">
-          Koleksi produk pembelajaran kreatif yang dikembangkan oleh
-          <strong>Agasta Pratama Nugraha (NIM: 25105260369)</strong> untuk
-          menjawab tantangan rendahnya keterlibatan, pemanfaatan gawai positif,
-          dan penanaman etika digital di era kecerdasan buatan.
+
+        <p class="hero-academic-desc">
+          Inovasi media pembelajaran Informatika terpadu berbasis web yang
+          memadukan simulasi visual interaktif, mini-game edukatif, serta
+          gamifikasi poin keaktifan real-time untuk mengatasi materi abstrak dan
+          meningkatkan partisipasi aktif murid Kelas X E5 SMA Negeri 4
+          Yogyakarta.
         </p>
 
-        <!-- Category Filter Tabs -->
-        <div class="filter-tabs-container">
-          <button
-            class="filter-btn active"
-            onclick="filterInovasi('all', this)"
-          >
-            Semua Karya (6)
-          </button>
-          <button class="filter-btn" onclick="filterInovasi('modul', this)">
-            Modul PjBL & Scaffolding
-          </button>
-          <button class="filter-btn" onclick="filterInovasi('lkpd', this)">
-            LKPD Digital Interaktif
-          </button>
-          <button class="filter-btn" onclick="filterInovasi('game', this)">
-            Gamifikasi & Aplikasi
-          </button>
-          <button class="filter-btn" onclick="filterInovasi('media', this)">
-            Video & Portofolio
-          </button>
+        <div class="hero-academic-actions">
+          <a href="#slide-showcase" class="btn-academic-cta">
+            JELAJAHI INOVASI KOMPUTASIKITA
+            <i class="fa-solid fa-arrow-down-long"></i>
+          </a>
         </div>
+      </div>
+
+      <!-- Animasi Cacing Bawah (Warna Mint Lembut untuk Karya Inovasi) -->
+      <div class="hero-bottom-worm-track" aria-hidden="true">
+        <svg
+          class="worm-svg-canvas"
+          viewBox="0 0 1440 160"
+          preserveAspectRatio="none"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="worm-faint-track"
+            d="M -100 100 Q 150 130 350 70 Q 500 10 650 60 Q 800 110 980 50 Q 1150 -10 1300 80 Q 1420 130 1560 70"
+          />
+          <path
+            class="worm-slither-body"
+            d="M -100 100 Q 150 130 350 70 Q 500 10 650 60 Q 800 110 980 50 Q 1150 -10 1300 80 Q 1420 130 1560 70"
+          />
+        </svg>
       </div>
     </header>
 
-    <!-- 2. SECTION: SHOWCASE INNOVATION CARDS -->
-    <section class="innovation-section" id="karya-grid">
+    <!-- 2. SECTION 0: SLIDE PRESENTASI DESAIN KARYA INOVATIF (LIGHT SECTION - PUTIH BERSIH) -->
+    <section
+      class="section-rhythm-light"
+      id="slide-showcase"
+      style="padding-top: 60px"
+    >
       <div class="container">
-        <div class="innovation-grid">
-          <!-- KARYA 1: MODUL AJAR PjBL & HELP CARD -->
-          <div
-            class="innovation-card reveal-scale delay-100 shimmer-hover"
-            data-category="modul"
+        <div class="section-center-head">
+          <span class="section-tag-pill-dark"
+            >SLIDE DECK RESMI SEMINAR PENDIDIKAN</span
           >
-            <div class="inovasi-img-box">
-              <img
-                src="foto.png"
-                alt="Modul Ajar Informatika PjBL"
-                onerror="
-                  this.src =
-                    'https://dummyimage.com/600x400/18181c/d4ff32.png&text=Modul+Ajar+PjBL'
-                "
-              />
-              <span class="inovasi-badge-float">MODUL & SCAFFOLDING</span>
-            </div>
-            <div class="inovasi-content-body">
-              <h3>Modul Ajar Informatika Berbasis PjBL & Help Card</h3>
-              <p>
-                Modul pembelajaran berdiferensiasi untuk materi Computational
-                Thinking Kelas X dengan kelompok heterogen, pembagian peran, dan
-                instrumen *Help Card* bertingkat.
-              </p>
-              <div class="inovasi-tags-row">
-                <span class="inovasi-tag">PjBL Inklusif</span>
-                <span class="inovasi-tag">Help Card</span>
-                <span class="inovasi-tag">SMAN 4 YK</span>
-              </div>
-            </div>
-            <div class="inovasi-card-footer">
-              <span class="inovasi-impact-tag"
-                ><i class="fa-solid fa-fire text-lime"></i> +250%
-                Keaktifan</span
-              >
-              <a href="pdf/pki/pki3.pdf" target="_blank" class="btn-demo-view">
-                Lihat Modul
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-            </div>
-          </div>
+          <h2>Slide Presentasi Desain Karya Inovasi KomputasiKita 🖥️</h2>
+          <p>
+            Paparan slide presentasi resmi Seminar Pendidikan karya inovatif Web
+            KomputasiKita di Kelas X E5 SMAN 4 Yogyakarta. Disajikan langsung
+            melalui sematan presentasi interaktif Canva di bawah ini.
+          </p>
+        </div>
 
-          <!-- KARYA 2: LKPD DIGITAL INTERAKTIF -->
+        <!-- CANVA PRESENTATION VIEWER CONTAINER -->
+        <div
+          class="canva-presentation-wrapper"
+          style="
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+            border: 1.5px solid #e2e8f0;
+            border-radius: 24px;
+            overflow: hidden;
+            background: #ffffff;
+          "
+        >
           <div
-            class="innovation-card reveal-scale delay-200 shimmer-hover"
-            data-category="lkpd"
+            class="canva-header-bar"
+            style="
+              background: #18181c;
+              padding: 14px 24px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              gap: 12px;
+            "
           >
-            <div class="inovasi-img-box">
-              <img
-                src="foto2.png"
-                alt="LKPD Digital Interaktif"
-                onerror="
-                  this.src =
-                    'https://dummyimage.com/600x400/18181c/b8b5ff.png&text=LKPD+Digital+Gawai'
-                "
-              />
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #ffffff;
+                font-weight: 700;
+                font-size: 13.5px;
+              "
+            >
               <span
-                class="inovasi-badge-float"
                 style="
-                  background: rgba(184, 181, 255, 0.2);
-                  color: var(--pastel-lilac);
-                  border-color: var(--pastel-lilac);
+                  background: #00c4cc;
+                  color: #ffffff;
+                  padding: 4px 10px;
+                  border-radius: 999px;
+                  font-size: 11px;
+                  font-weight: 800;
+                  letter-spacing: 0.5px;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 6px;
                 "
-                >LKPD & GAWAI AKTIF</span
               >
+                <i class="fa-solid fa-palette"></i> CANVA
+              </span>
+              <span>SLIDE PRESENTASI INOVASI WEB KOMPUTASIKITA</span>
             </div>
-            <div class="inovasi-content-body">
-              <h3>LKPD Digital Interaktif & Gamifikasi Gawai</h3>
-              <p>
-                Lembar kerja peserta didik berbasis Liveworksheets & kuis
-                interaktif yang mengubah kebiasaan penggunaan gawai pasif
-                menjadi media riset dan praktikum kolaboratif.
-              </p>
-              <div class="inovasi-tags-row">
-                <span class="inovasi-tag">Liveworksheets</span>
-                <span class="inovasi-tag">Kuis Real-Time</span>
-                <span class="inovasi-tag">Formatif UDL</span>
-              </div>
-            </div>
-            <div class="inovasi-card-footer">
-              <span class="inovasi-impact-tag"
-                ><i class="fa-solid fa-mobile-screen text-lilac"></i> Solusi
-                Distraksi</span
+            <div style="display: flex; align-items: center; gap: 10px">
+              <button
+                class="btn-canva-action"
+                onclick="toggleCanvaFullscreen()"
               >
+                <i class="fa-solid fa-expand"></i> Layar Penuh
+              </button>
               <a
-                href="pdf/ppdp/ppdp3.pdf"
+                id="canva-open-btn"
+                href="https://www.canva.com"
                 target="_blank"
-                class="btn-demo-view"
-                style="background: var(--pastel-lilac); color: #09090b"
+                rel="noopener noreferrer"
+                class="btn-canva-open"
               >
-                Lihat Desain
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka di
+                Canva
               </a>
             </div>
           </div>
 
-          <!-- KARYA 3: GAMIFIKASI CODING BLOCKLY & PYTHON -->
-          <div
-            class="innovation-card reveal-scale delay-300 shimmer-hover"
-            data-category="game"
-          >
-            <div class="inovasi-img-box">
-              <img
-                src="foto.png"
-                alt="Gamifikasi Pemrograman Dasar"
-                onerror="
-                  this.src =
-                    'https://dummyimage.com/600x400/18181c/ffd0a8.png&text=Gamifikasi+Coding'
-                "
-              />
-              <span
-                class="inovasi-badge-float"
-                style="
-                  background: rgba(255, 208, 168, 0.2);
-                  color: #ffd0a8;
-                  border-color: #ffd0a8;
-                "
-                >APLIKASI & GAME</span
-              >
-            </div>
-            <div class="inovasi-content-body">
-              <h3>Platform Gamifikasi Pemrograman (Blockly to Python)</h3>
-              <p>
-                Media belajar logika komputasi bertahap untuk meredakan *coding
-                anxiety*, memberi umpan balik instan pada sintaks, dan
-                menumbuhkan *Growth Mindset* murid.
-              </p>
-              <div class="inovasi-tags-row">
-                <span class="inovasi-tag">Blockly Visual</span>
-                <span class="inovasi-tag">Python Dasar</span>
-                <span class="inovasi-tag">Growth Mindset</span>
-              </div>
-            </div>
-            <div class="inovasi-card-footer">
-              <span class="inovasi-impact-tag"
-                ><i class="fa-solid fa-gamepad text-lime"></i> 94% Retensi</span
-              >
-              <a
-                href="pdf/mindset/mindset3.pdf"
-                target="_blank"
-                class="btn-demo-view"
-              >
-                Lihat Skema
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-            </div>
+          <!-- =========================================================================
+             TEMPAT MENARUH LINK CANVA:
+             Ganti URL src di bawah ini dengan Link Sematan (Embed Link) Canva Anda.
+             Contoh: src="https://www.canva.com/design/DAxxxxxx/view?embed"
+             ========================================================================= -->
+          <div class="canva-iframe-container" id="canva-iframe-box">
+            <iframe
+              id="canva-slide-iframe"
+              src="https://www.canva.com/design/DAHZNmp5qzg/xYwwx40czMrKqNqOaMzTXA/view?embed"
+              loading="lazy"
+              allowfullscreen="allowfullscreen"
+              allow="fullscreen"
+              title="Slide Presentasi Inovasi Pembelajaran KomputasiKita"
+            >
+            </iframe>
           </div>
 
-          <!-- KARYA 4: INSTRUMEN PROFILING & FISHBONE TOOL -->
-          <div
-            class="innovation-card reveal-scale delay-400 shimmer-hover"
-            data-category="lkpd"
-          >
-            <div class="inovasi-img-box">
-              <img
-                src="foto2.png"
-                alt="Instrumen Profiling Remaja Digital"
-                onerror="
-                  this.src =
-                    'https://dummyimage.com/600x400/18181c/9df0d0.png&text=Instrumen+Profiling'
-                "
-              />
-              <span
-                class="inovasi-badge-float"
-                style="
-                  background: rgba(157, 240, 208, 0.2);
-                  color: #9df0d0;
-                  border-color: #9df0d0;
-                "
-                >DIAGNOSTIK & PROFILING</span
+          <div class="canva-footer-bar">
+            <div>
+              <strong style="color: #0f172a"
+                >Agasta Pratama Nugraha (NIM: 25105260369)</strong
               >
+              • PPG Prajabatan Informatika UNY
             </div>
-            <div class="inovasi-content-body">
-              <h3>Instrumen Asesmen Diagnostik Remaja Digital</h3>
-              <p>
-                Alat pemetaan gaya belajar visual, auditori, kinestetik, serta
-                kebiasaan bermedia sosial siswa era digital untuk dasar
-                perancangan diferensiasi konten dan proses.
-              </p>
-              <div class="inovasi-tags-row">
-                <span class="inovasi-tag">Fishbone Tool</span>
-                <span class="inovasi-tag">Gaya Belajar</span>
-                <span class="inovasi-tag">Google Forms</span>
-              </div>
-            </div>
-            <div class="inovasi-card-footer">
-              <span class="inovasi-impact-tag"
-                ><i class="fa-solid fa-users text-lilac"></i> Pemetaan
-                100%</span
+            <div>
+              <span style="color: #059669; font-weight: 700"
+                ><i class="fa-solid fa-circle-check"></i> Sematan Slide Canva
+                Terintegrasi</span
               >
-              <a
-                href="pdf/ppdp/ppdp2.pdf"
-                target="_blank"
-                class="btn-demo-view"
-                style="background: #9df0d0; color: #09090b"
-              >
-                Buka Instrumen
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- KARYA 5: SERI VIDEO EDUKASI ETIKA DIGITAL -->
-          <div
-            class="innovation-card reveal-scale delay-500 shimmer-hover"
-            data-category="media"
-          >
-            <div class="inovasi-img-box">
-              <img
-                src="foto.png"
-                alt="Video Etika Digital dan Cyber Safety"
-                onerror="
-                  this.src =
-                    'https://dummyimage.com/600x400/18181c/ffd4e5.png&text=Video+Etika+Digital'
-                "
-              />
-              <span
-                class="inovasi-badge-float"
-                style="
-                  background: rgba(255, 212, 229, 0.2);
-                  color: #ffd4e5;
-                  border-color: #ffd4e5;
-                "
-                >VIDEO & MULTIMEDIA</span
-              >
-            </div>
-            <div class="inovasi-content-body">
-              <h3>Seri Video Edukasi: Etika Siber & AI Positif Remaja</h3>
-              <p>
-                Media audiovisual edukatif berdurasi ringkas mengenai
-                perlindungan data pribadi, pencegahan *cyberbullying*, dan
-                pemanfaatan generative AI secara bijak di sekolah.
-              </p>
-              <div class="inovasi-tags-row">
-                <span class="inovasi-tag">Cyber Safety</span>
-                <span class="inovasi-tag">AI Literacy</span>
-                <span class="inovasi-tag">Nilai Pancasila</span>
-              </div>
-            </div>
-            <div class="inovasi-card-footer">
-              <span class="inovasi-impact-tag"
-                ><i class="fa-solid fa-video text-pink"></i> Diseminasi
-                Publik</span
-              >
-              <a
-                href="pdf/filosofi/filosofi2.pdf"
-                target="_blank"
-                class="btn-demo-view"
-                style="background: #ffd4e5; color: #09090b"
-              >
-                Lihat Materi
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- KARYA 6: WEBSITE E-PORTOFOLIO SP -->
-          <div
-            class="innovation-card reveal-scale delay-600 shimmer-hover"
-            data-category="media"
-          >
-            <div class="inovasi-img-box">
-              <img
-                src="foto2.png"
-                alt="Website E-Portofolio Seminar Pendidikan"
-                onerror="
-                  this.src =
-                    'https://dummyimage.com/600x400/18181c/d4ff32.png&text=E-Portofolio+Web'
-                "
-              />
-              <span class="inovasi-badge-float">DIGITAL PLATFORM</span>
-            </div>
-            <div class="inovasi-content-body">
-              <h3>Platform E-Portofolio Seminar Pendidikan Interaktif</h3>
-              <p>
-                Website portofolio digital berbasis animasi interaktif, visual
-                bento modern, tab dokumen PDF terintegrasi, dan struktur
-                refleksi 4C komprehensif PPG UNY.
-              </p>
-              <div class="inovasi-tags-row">
-                <span class="inovasi-tag">HTML5 / Vanilla CSS</span>
-                <span class="inovasi-tag">Interactive 3D</span>
-                <span class="inovasi-tag">Refleksi 4C</span>
-              </div>
-            </div>
-            <div class="inovasi-card-footer">
-              <span class="inovasi-impact-tag"
-                ><i class="fa-solid fa-star text-lime"></i> Featured
-                Masterpiece</span
-              >
-              <a href="index.html" class="btn-demo-view">
-                Buka Beranda
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 3. SECTION: STATISTIK HASIL UJI COBA & DAMPAK (HITAM) -->
-    <section class="impact-results-section">
+    <!-- 3. SECTION 0.5: UJI COBA KARYA INOVASI (DARK SECTION - HITAM ELEGAN) -->
+    <section class="section-rhythm-dark" id="uji-coba">
       <div class="container">
+        <div class="section-center-head">
+          <span class="section-tag-pill-light"
+            >LIVE DEMO • INTERACTIVE EXPERIENCE</span
+          >
+          <h2>Uji Coba Karya Inovasi: Web KomputasiKita 🚀</h2>
+          <p>
+            Uji coba langsung ekosistem web inovasi pembelajaran Informatika
+            yang diterapkan di Kelas X E5 SMAN 4 Yogyakarta. Akses seluruh fitur
+            simulasi visual, alur belajar mandiri, dan leaderboard pada
+            simulator di bawah ini.
+          </p>
+        </div>
+
+        <!-- BROWSER MOCKUP CONTAINER -->
         <div
-          class="section-top-title-group reveal"
-          style="text-align: center; margin-bottom: 35px"
+          class="browser-mockup-wrapper"
+          style="
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+            border: 1.5px solid rgba(255, 255, 255, 0.12);
+            border-radius: 24px;
+            overflow: hidden;
+            background: #141418;
+          "
         >
-          <span class="g1-badge-pill">VALIDASI LAPANGAN & HASIL EVALUASI</span>
-          <h2
+          <div
+            class="browser-mockup-header"
             style="
+              background: #1f1f26;
+              padding: 14px 22px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              gap: 14px;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            "
+          >
+            <div class="browser-header-left">
+              <div class="browser-window-dots">
+                <span class="browser-dot dot-red"></span>
+                <span class="browser-dot dot-yellow"></span>
+                <span class="browser-dot dot-green"></span>
+              </div>
+              <div class="browser-url-pill">
+                <i class="fa-solid fa-lock" style="color: #10b981"></i>
+                <span>https://belajarinformatika.vercel.app/</span>
+              </div>
+            </div>
+
+            <div class="browser-header-actions">
+              <button class="btn-browser-action" onclick="reloadInovasiWeb()">
+                <i class="fa-solid fa-rotate-right"></i> Muat Ulang
+              </button>
+              <button
+                class="btn-browser-action"
+                onclick="toggleInovasiWebFullscreen()"
+              >
+                <i class="fa-solid fa-expand"></i> Layar Penuh
+              </button>
+              <a
+                href="https://belajarinformatika.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-browser-open"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Kunjungi
+                Website
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="browser-iframe-holder"
+            id="browser-iframe-wrap"
+            style="height: 720px; background: #ffffff"
+          >
+            <iframe
+              id="inovasi-live-web-iframe"
+              src="https://belajarinformatika.vercel.app/"
+              loading="lazy"
+              allowfullscreen="allowfullscreen"
+              title="Aplikasi Web KomputasiKita Live Demo"
+            >
+            </iframe>
+          </div>
+
+          <div
+            class="browser-mockup-footer"
+            style="
+              background: #18181c;
+              border-top: 1px solid rgba(255, 255, 255, 0.08);
+              color: #a1a1aa;
+            "
+          >
+            <div>
+              <strong style="color: #ffffff"
+                >Agasta Pratama Nugraha (NIM: 25105260369)</strong
+              >
+              • Karya Inovasi Seminar Pendidikan UNY
+            </div>
+            <div>
+              <span class="text-lime" style="font-weight: 800"
+                ><i class="fa-solid fa-circle-check"></i> Server Live &amp;
+                Aktif di Vercel</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SECTION 1: IDENTIFIKASI KEBUTUHAN & TANTANGAN (LIGHT SECTION - PUTIH BERSIH) -->
+    <section class="section-rhythm-light" id="latar-belakang">
+      <div class="container">
+        <div class="section-center-head">
+          <span class="section-tag-pill-dark"
+            >BAGIAN 01 • URGENSI PEDAGOGIS KELAS X E5</span
+          >
+          <h2>Identifikasi Kebutuhan &amp; Tantangan Nyata Kelas 💡</h2>
+          <p>
+            Selama melaksanakan PPL di SMAN 4 Yogyakarta khususnya di kelas X
+            E5, observasi langsung pada proses pembelajaran Informatika
+            menemukan kendala fundamental yang menghambat keterlibatan aktif dan
+            pemahaman murid.
+          </p>
+        </div>
+
+        <div class="soft-pastel-grid-3">
+          <!-- Card 1: Rendahnya Motivasi & Partisipasi Aktif (Pink Soft) -->
+          <div class="soft-pastel-card card-soft-pink">
+            <div>
+              <div class="soft-card-top">
+                <span class="soft-step-pill">01 // TANTANGAN PSIKOLOGIS</span>
+                <div class="soft-icon-circle">
+                  <i class="fa-solid fa-users-slash"></i>
+                </div>
+              </div>
+              <div class="soft-card-body">
+                <h3>Motivasi Rendah &amp; Siswa Pasif</h3>
+                <p>
+                  Ketika sesi penjelasan materi maupun diskusi tanya jawab
+                  berlangsung, murid cenderung pasif, enggan bertanya, takut
+                  salah dalam menjawab, dan lebih banyak diam sehingga kelas
+                  berlangsung hening dan monoton.
+                </p>
+              </div>
+            </div>
+            <ul class="soft-card-bullets">
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Murid enggan merespons
+                pertanyaan pemantik
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Takut salah dan cemas
+                saat diminta berpendapat
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Ketiadaan pemicu
+                apresiasi yang mendorong keberanian
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Keabstrakan Materi Informatika (Lilac Soft) -->
+          <div class="soft-pastel-card card-soft-lilac">
+            <div>
+              <div class="soft-card-top">
+                <span class="soft-step-pill">02 // KENDALA KONSEPTUAL</span>
+                <div class="soft-icon-circle">
+                  <i class="fa-solid fa-brain"></i>
+                </div>
+              </div>
+              <div class="soft-card-body">
+                <h3>Materi Abstrak &amp; Prosedural</h3>
+                <p>
+                  Murid sering kebingungan saat harus membayangkan pertukaran
+                  data pada algoritma Searching &amp; Sorting, merangkai logika
+                  simbol Flowchart, menulis notasi Pseudocode, serta memahami
+                  siklus Input-Proses-Output (I-P-O) Arsitektur Von Neumann di
+                  balik layar.
+                </p>
+              </div>
+            </div>
+            <ul class="soft-card-bullets">
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Pertukaran data
+                komputasi tidak terlihat kasat mata
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Bingung menghubungkan
+                alur percabangan simbol Flowchart
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Kesulitan memahami cara
+                kerja Sistem Operasi internal
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Keterbatasan Media Konvensional (Yellow Soft) -->
+          <div class="soft-pastel-card card-soft-yellow">
+            <div>
+              <div class="soft-card-top">
+                <span class="soft-step-pill">03 // KETERBATASAN MEDIA</span>
+                <div class="soft-icon-circle">
+                  <i class="fa-solid fa-chalkboard"></i>
+                </div>
+              </div>
+              <div class="soft-card-body">
+                <h3>Kelemahan Ceramah &amp; Slide PPT Statis</h3>
+                <p>
+                  Penyampaian materi abstrak melalui ceramah atau sekadar
+                  menampilkan gambar diam di slide PPT membuat murid kesulitan
+                  menangkap alur logika dan cepat bosan. Kuis evaluasi terpisah
+                  (seperti Google Form biasa) belum terintegrasi dengan
+                  laboratorium simulasi.
+                </p>
+              </div>
+            </div>
+            <ul class="soft-card-bullets">
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Gambar diam PPT tidak
+                memvisualisasikan pergerakan data
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Kuis terpisah tanpa
+                apresiasi skor keaktifan langsung
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i> Pembelajaran satu arah
+                minim keterlibatan murid
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SECTION 2: GAGASAN KREATIF SOLUSI INOVATIF (DARK SECTION - HITAM) -->
+    <section class="section-rhythm-dark" id="gagasan-kreatif">
+      <div class="container">
+        <div class="section-center-head">
+          <span class="section-tag-pill-light"
+            >BAGIAN 02 • PERUMUSAN SOLUSI INOVATIF</span
+          >
+          <h2>Gagasan Kreatif: Website Terpadu KomputasiKita 🧠</h2>
+          <p>
+            Menjawab permasalahan di Kelas X E5 dengan mengembangkan website
+            pembelajaran Informatika terpadu <strong>KomputasiKita</strong> yang
+            diterapkan langsung sebagai media utama saat proses pembelajaran di
+            kelas.
+          </p>
+        </div>
+
+        <div class="soft-pastel-grid-3">
+          <!-- Solusi 1: Simulasi Visual Interaktif & Mini-Game (Mint Soft) -->
+          <div
+            class="soft-pastel-card card-soft-mint"
+            style="border-top: 5px solid #059669"
+          >
+            <div>
+              <div class="soft-card-top">
+                <span class="soft-step-pill">SOLUSI 01 // MATERI ABSTRAK</span>
+                <div class="soft-icon-circle">
+                  <i class="fa-solid fa-vr-cardboard"></i>
+                </div>
+              </div>
+              <div class="soft-card-body">
+                <h3 class="bento-card-title">
+                  Simulasi Visual &amp; Mini-Game Edukatif
+                </h3>
+                <p class="bento-card-desc">
+                  Merancang menu simulasi visual interaktif dan permainan
+                  edukatif di dalam website agar murid bisa mencoba dan
+                  mengamati langsung materi secara konkret: simulator Searching
+                  &amp; Sorting, Flowchart Builder interaktif, game kode semu
+                  Pseudocode, serta simulator siklus CPU I-P-O Arsitektur Von
+                  Neumann.
+                </p>
+              </div>
+            </div>
+            <div class="card-inner-box-soft">
+              <strong>Hasil Nyata:</strong> Menghilangkan kebosanan dan membuat
+              alur logika komputasi mudah dipahami.
+            </div>
+          </div>
+
+          <!-- Solusi 2: Gamifikasi Leaderboard Poin Keaktifan Real-Time (Yellow Soft) -->
+          <div
+            class="soft-pastel-card card-soft-yellow"
+            style="border-top: 5px solid #d97706"
+          >
+            <div>
+              <div class="soft-card-top">
+                <span class="soft-step-pill">SOLUSI 02 // KEPASIFAN MURID</span>
+                <div class="soft-icon-circle">
+                  <i class="fa-solid fa-trophy"></i>
+                </div>
+              </div>
+              <div class="soft-card-body">
+                <h3 class="bento-card-title">
+                  Live Leaderboard &amp; Reward +1 Poin
+                </h3>
+                <p class="bento-card-desc">
+                  Membangun sistem gamifikasi berupa Leaderboard Poin Keaktifan.
+                  Setiap kali guru memberikan pertanyaan pemantik atau studi
+                  kasus di kelas dan ada murid yang berani mengacungkan tangan
+                  untuk menjawab, guru langsung memberikan reward +1 poin
+                  keaktifan melalui Portal Guru yang detik itu juga memperbarui
+                  peringkat di Leaderboard murid.
+                </p>
+              </div>
+            </div>
+            <div class="card-inner-box-soft">
+              <strong>Hasil Nyata:</strong> Suasana kelas hening berubah drastis
+              menjadi kompetisi aktif dan antusias berebut menjawab.
+            </div>
+          </div>
+
+          <!-- Solusi 3: Spin Wheel Interaktif & Manajemen Terpadu (Lilac Soft) -->
+          <div
+            class="soft-pastel-card card-soft-lilac"
+            style="border-top: 5px solid #7c3aed"
+          >
+            <div>
+              <div class="soft-card-top">
+                <span class="soft-step-pill"
+                  >SOLUSI 03 // PARTISIPASI ADIL</span
+                >
+                <div class="soft-icon-circle">
+                  <i class="fa-solid fa-dharmachakra"></i>
+                </div>
+              </div>
+              <div class="soft-card-body">
+                <h3 class="bento-card-title">
+                  Spin Wheel &amp; Integrasi Cloud
+                </h3>
+                <p class="bento-card-desc">
+                  Menyediakan fitur Spin Wheel pengacak nama murid untuk
+                  menunjuk siswa menjawab pertanyaan (*cold-calling*) atau
+                  menentukan giliran presentasi secara adil. Dilengkapi
+                  integrasi Google Apps Script (Code.gs) yang otomatis
+                  menyinkronkan data presensi dan nilai asesmen ke Google
+                  Spreadsheet.
+                </p>
+              </div>
+            </div>
+            <div class="card-inner-box-soft">
+              <strong>Hasil Nyata:</strong> Pengelolaan kelas transparan, adil,
+              dan efisiensi waktu rekapitulasi penilaian bagi guru.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. SECTION 3: RUMUSAN TUJUAN KARYA INOVASI (LIGHT SECTION - PUTIH BERSIH) -->
+    <section class="section-rhythm-light" id="tujuan-inovasi">
+      <div class="container">
+        <div class="section-center-head">
+          <span class="section-tag-pill-dark"
+            >BAGIAN 03 • RUMUSAN FORMAL TUJUAN LK 4</span
+          >
+          <h2>Tiga Rumusan Tujuan Pengembangan Karya Inovasi 🎯</h2>
+          <p>
+            Karya inovatif KomputasiKita disusun berpijak pada tiga rumusan
+            tujuan strategis untuk mentransformasi mutu pembelajaran Informatika
+            di SMA Negeri 4 Yogyakarta.
+          </p>
+        </div>
+
+        <div class="soft-pastel-grid-3">
+          <!-- Tujuan 1 -->
+          <div
+            class="soft-pastel-card card-soft-mint"
+            style="border-top: 5px solid #059669"
+          >
+            <div>
+              <div class="soft-card-top">
+                <span class="soft-step-pill">TUJUAN 01 // KONSEPTUAL</span>
+                <div class="soft-icon-circle">
+                  <i class="fa-solid fa-bullseye"></i>
+                </div>
+              </div>
+              <div class="soft-card-body">
+                <h3>Pemahaman Materi Abstrak</h3>
+                <p>
+                  Membantu murid kelas X E5 memahami materi Informatika yang
+                  bersifat abstrak dan prosedural (Searching, Sorting,
+                  Flowchart, Pseudocode, CPU Von Neumann) melalui simulasi
+                  visual interaktif.
+                </p>
+              </div>
+            </div>
+            <div class="card-inner-box-soft">
+              <strong>Target:</strong> Visualisasi proses koding nyata &amp;
+              penguatan konsep logika.
+            </div>
+          </div>
+
+          <!-- Tujuan 2 -->
+          <div
+            class="soft-pastel-card card-soft-lilac"
+            style="border-top: 5px solid #7c3aed"
+          >
+            <div>
+              <div class="soft-card-top">
+                <span class="soft-step-pill">TUJUAN 02 // MOTIVASI</span>
+                <div class="soft-icon-circle">
+                  <i class="fa-solid fa-fire"></i>
+                </div>
+              </div>
+              <div class="soft-card-body">
+                <h3>Peningkatan Keberanian Siswa</h3>
+                <p>
+                  Meningkatkan fokus dan keberanian murid untuk aktif bertanya
+                  maupun menjawab studi kasus lewat pemicu reward instan +1 poin
+                  keaktifan di Leaderboard Realtime yang diproyeksikan di depan
+                  kelas.
+                </p>
+              </div>
+            </div>
+            <div class="card-inner-box-soft">
+              <strong>Target:</strong> Menghilangkan ketakutan salah &amp;
+              memicu iklim kompetisi positif.
+            </div>
+          </div>
+
+          <!-- Tujuan 3 -->
+          <div
+            class="soft-pastel-card card-soft-peach"
+            style="border-top: 5px solid #ea580c"
+          >
+            <div>
+              <div class="soft-card-top">
+                <span class="soft-step-pill">TUJUAN 03 // INTEGRASI</span>
+                <div class="soft-icon-circle">
+                  <i class="fa-solid fa-cubes"></i>
+                </div>
+              </div>
+              <div class="soft-card-body">
+                <h3>Pembelajaran Terpusat &amp; Efisien</h3>
+                <p>
+                  Memfasilitasi siklus pembelajaran terpusat mulai dari asesmen
+                  awal (Pre-Test), materi terpadu, LKPD digital, evaluasi
+                  (Post-Test), hingga manajemen kelas dan rekapitulasi nilai
+                  otomatis via Google Spreadsheet.
+                </p>
+              </div>
+            </div>
+            <div class="card-inner-box-soft">
+              <strong>Target:</strong> Ekosistem belajar komputasi all-in-one
+              bagi siswa dan guru.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. SECTION 4: 5 PRINSIP KARYA INOVASI PENDIDIKAN (DARK SECTION - HITAM) -->
+    <section class="section-rhythm-dark" id="prinsip-inovasi">
+      <div class="container">
+        <div class="section-center-head">
+          <span class="section-tag-pill-light"
+            >BAGIAN 04 • 5 PRINSIP INOVASI PENDIDIKAN LK 4</span
+          >
+          <h2>Lima Prinsip Keunggulan Inovasi Pendidikan ⭐</h2>
+          <p>
+            Rancangan Web KomputasiKita memenuhi lima prinsip standar kualitas
+            karya inovasi pendidikan nasional untuk menjamin keberlanjutan dan
+            dampak belajar nyata.
+          </p>
+        </div>
+
+        <!-- 5 Prinsip Bento Grid (Soft Pastel Cards with Crisp Readability) -->
+        <div class="prinsip-5-grid">
+          <!-- Prinsip 1 -->
+          <div
+            class="prinsip-card-item card-soft-mint"
+            style="border-top: 5px solid #059669"
+          >
+            <span
+              class="prinsip-badge-num"
+              style="color: #065f46; font-size: 20px"
+              >01</span
+            >
+            <h4 class="prinsip-name">Kebaharuan (Novelty)</h4>
+            <p class="prinsip-desc">
+              Menghadirkan penerapan baru di kelas X E5 SMAN 4 Yogyakarta yang
+              menyatukan materi, simulasi interaktif, LKPD digital, asesmen, dan
+              pantauan poin keaktifan real-time dalam satu platform terbuka
+              (menggantikan slide PPT satu arah dan kuis terpisah).
+            </p>
+          </div>
+
+          <!-- Prinsip 2 -->
+          <div
+            class="prinsip-card-item card-soft-lilac"
+            style="border-top: 5px solid #7c3aed"
+          >
+            <span
+              class="prinsip-badge-num"
+              style="color: #5b21b6; font-size: 20px"
+              >02</span
+            >
+            <h4 class="prinsip-name">Kreativitas (Creativity)</h4>
+            <p class="prinsip-desc">
+              Mengombinasikan Ide (visualisasi abstrak + live leaderboard),
+              Teori Pedagogik (Problem-Based Learning &amp; Deep Learning
+              analogi keseharian mie instan, pesan kantin, laptop lemot), dan
+              Teknologi (HTML/CSS/JS + Google Apps Script Code.gs).
+            </p>
+          </div>
+
+          <!-- Prinsip 3 -->
+          <div
+            class="prinsip-card-item card-soft-peach"
+            style="border-top: 5px solid #ea580c"
+          >
+            <span
+              class="prinsip-badge-num"
+              style="color: #9a3412; font-size: 20px"
+              >03</span
+            >
+            <h4 class="prinsip-name">Relevan &amp; Kontekstual</h4>
+            <p class="prinsip-desc">
+              Sangat relevan dengan karakteristik murid kelas X E5 yang
+              merupakan pembelajar visual dan gemar berinteraksi menggunakan
+              smartphone/laptop, serta selaras dengan Capaian Pembelajaran
+              Kurikulum Merdeka Fase E.
+            </p>
+          </div>
+
+          <!-- Prinsip 4 -->
+          <div
+            class="prinsip-card-item card-soft-lime"
+            style="border-top: 5px solid #65a30d"
+          >
+            <span
+              class="prinsip-badge-num"
+              style="color: #365314; font-size: 20px"
+              >04</span
+            >
+            <h4 class="prinsip-name">Kebermanfaatan (Utility)</h4>
+            <p class="prinsip-desc">
+              Bagi murid, simulasi dan mini-game mempermudah menelusuri logika
+              tanpa membosankan serta memicu kompetisi sehat. Bagi guru, Portal
+              Guru sangat membantu mengelola kelas dan merekap penilaian secara
+              efisien.
+            </p>
+          </div>
+
+          <!-- Prinsip 5 -->
+          <div
+            class="prinsip-card-item card-soft-pink"
+            style="border-top: 5px solid #e11d48"
+          >
+            <span
+              class="prinsip-badge-num"
+              style="color: #9f1239; font-size: 20px"
+              >05</span
+            >
+            <h4 class="prinsip-name">Efektivitas Terbukti</h4>
+            <p class="prinsip-desc">
+              Teruji nyata saat mengajar di Kelas X E5 SMAN 4 Yogyakarta: murid
+              pasif berubah menjadi sangat antusias berebut menjawab pertanyaan
+              untuk poin Leaderboard, penyelesaian LKPD lancar, dan skor
+              Post-Test meningkat drastis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. SECTION 5: LANDASAN RISET ILMIAH & KAJIAN TEORETIS (LIGHT SECTION - PUTIH BERSIH) -->
+    <section class="section-rhythm-light" id="riset-pengembangan">
+      <div class="container">
+        <div class="section-center-head">
+          <span class="section-tag-pill-dark"
+            >BAGIAN 05 • LANDASAN RISET &amp; PENGEMBANGAN</span
+          >
+          <h2>Landasan Riset Ilmiah &amp; Kajian Teoretis 🔬</h2>
+          <p>
+            Pengembangan inovasi KomputasiKita didasarkan pada analisis empiris
+            permasalahan di kelas serta didukung oleh sejumlah hasil penelitian
+            ilmiah bereputasi.
+          </p>
+        </div>
+
+        <div class="riset-grid-3">
+          <!-- Riset 1: Analisis Media Kelas (Yellow Soft) -->
+          <div
+            class="riset-card-dark card-soft-yellow"
+            style="padding: 28px; border-radius: 22px"
+          >
+            <div>
+              <span
+                class="riset-tag-year"
+                style="
+                  background: rgba(0, 0, 0, 0.08);
+                  color: #713f12;
+                  font-weight: 800;
+                "
+                >ANALISIS EMPIRIS</span
+              >
+              <h3
+                style="
+                  font-size: 19px;
+                  font-weight: 800;
+                  color: #09090b;
+                  margin: 10px 0;
+                "
+              >
+                Studi Kasus Media Statis Kelas X Informatika
+              </h3>
+              <p style="font-size: 13.5px; color: #27272a; line-height: 1.6">
+                Berdasarkan observasi di SMAN 4 Yogyakarta, slide PPT statis dan
+                ceramah konvensional kurang efektif untuk materi abstrak. Kuis
+                evaluasi standar (Google Form biasa) belum terintegrasi dengan
+                laboratorium simulasi praktik maupun sistem apresiasi keaktifan
+                langsung.
+              </p>
+            </div>
+            <div
+              style="
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                padding-top: 12px;
+                margin-top: 14px;
+                font-size: 12px;
+                color: #52525b;
+                font-weight: 700;
+              "
+            >
+              Fokus: Integrasi media &amp; sistem apresiasi
+            </div>
+          </div>
+
+          <!-- Riset 2: Jurnal PBL (Lilac Soft) -->
+          <div
+            class="riset-card-dark card-soft-lilac"
+            style="padding: 28px; border-radius: 22px"
+          >
+            <div>
+              <span
+                class="riset-tag-year"
+                style="
+                  background: rgba(0, 0, 0, 0.08);
+                  color: #4c1d95;
+                  font-weight: 800;
+                "
+                >JURNAL 2023 // MODEL PBL</span
+              >
+              <h3
+                style="
+                  font-size: 19px;
+                  font-weight: 800;
+                  color: #09090b;
+                  margin: 10px 0;
+                "
+              >
+                Izzah &amp; Ekohariadi (2023) - Web Based PBL
+              </h3>
+              <p style="font-size: 13.5px; color: #27272a; line-height: 1.6">
+                Penelitian pengembangan media website interaktif berbasis
+                <em>Problem-Based Learning (PBL)</em> pada mata pelajaran
+                Informatika Kelas X membuktikan bahwa simulasi visual web mampu
+                membantu siswa memahami konsep algoritma abstrak secara konkret
+                serta meningkatkan hasil belajar (Pre-Test ke Post-Test) secara
+                signifikan.
+              </p>
+            </div>
+            <div
+              style="
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                padding-top: 12px;
+                margin-top: 14px;
+                font-size: 12px;
+                color: #52525b;
+                font-weight: 700;
+              "
+            >
+              Kajian: Visualisasi web algoritma konkret
+            </div>
+          </div>
+
+          <!-- Riset 3: Jurnal Gamifikasi (Mint Soft) -->
+          <div
+            class="riset-card-dark card-soft-mint"
+            style="padding: 28px; border-radius: 22px"
+          >
+            <div>
+              <span
+                class="riset-tag-year"
+                style="
+                  background: rgba(0, 0, 0, 0.08);
+                  color: #064e3b;
+                  font-weight: 800;
+                "
+                >JURNAL 2025 // GAMIFIKASI</span
+              >
+              <h3
+                style="
+                  font-size: 19px;
+                  font-weight: 800;
+                  color: #09090b;
+                  margin: 10px 0;
+                "
+              >
+                Mertayasa, Subawa, &amp; Pradnyana (2025)
+              </h3>
+              <p style="font-size: 13.5px; color: #27272a; line-height: 1.6">
+                Penerapan elemen gamifikasi pada Informatika Kelas X SMA
+                khususnya pemberian poin instan (*point system*), papan
+                peringkat (*leaderboard*), dan apresiasi langsung dari guru
+                terbukti mampu mengubah siswa yang pasif menjadi aktif,
+                menciptakan iklim kompetisi sehat, serta memicu keberanian
+                berpendapat.
+              </p>
+            </div>
+            <div
+              style="
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+                padding-top: 12px;
+                margin-top: 14px;
+                font-size: 12px;
+                color: #52525b;
+                font-weight: 700;
+              "
+            >
+              Kajian: Poin instan &amp; live leaderboard
+            </div>
+          </div>
+        </div>
+
+        <!-- Validasi Ahli Box (Soft Pink) -->
+        <div
+          class="riset-validasi-box card-soft-pink"
+          style="
+            border-radius: 20px;
+            padding: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 30px;
+          "
+        >
+          <div>
+            <span
+              style="
+                font-size: 11px;
+                font-weight: 800;
+                letter-spacing: 1px;
+                color: #9f1239;
+                text-transform: uppercase;
+              "
+              >LEMBAR VALIDASI AHLI</span
+            >
+            <h4
+              style="
+                font-size: 18px;
+                font-weight: 800;
+                color: #09090b;
+                margin-top: 4px;
+              "
+            >
+              Hasil Review Validator Materi &amp; Media Pembelajaran
+            </h4>
+            <p style="color: #27272a; font-size: 13.5px; margin-top: 4px">
+              Dinyatakan
+              <strong>"Sangat Layak Digunakan Tanpa Revisi Mayor"</strong> oleh
+              Validator Guru Pamong SMAN 4 Yogyakarta dan Dosen Pembimbing LPTK
+              UNY.
+            </p>
+          </div>
+          <span
+            style="
+              background: #15803d;
               color: #ffffff;
-              font-size: clamp(28px, 3.5vw, 38px);
-              font-weight: 900;
-              margin-top: 10px;
+              padding: 8px 18px;
+              border-radius: 30px;
+              font-weight: 800;
+              font-size: 13px;
+              box-shadow: 0 4px 12px rgba(21, 128, 61, 0.25);
             "
           >
-            Dampak Nyata Inovasi di SMA Negeri 4 Yogyakarta 📈
-          </h2>
-          <p style="color: #a1a1aa; max-width: 720px; margin: 10px auto 0">
-            Data capaian hasil uji coba produk dan modul ajar selama siklus
-            praktik pembelajaran Informatika PPG Prajabatan.
-          </p>
-        </div>
-
-        <div class="impact-grid-4">
-          <div class="impact-stat-box reveal-scale delay-100">
-            <span
-              class="impact-stat-num"
-              data-counter-target="250"
-              data-counter-prefix="+"
-              data-counter-suffix="%"
-              >+0%</span
-            >
-            <span class="impact-stat-label">Keaktifan Diskusi</span>
-            <p class="impact-stat-desc">
-              Peningkatan partisipasi aktif murid dalam kelompok kerja PjBL.
-            </p>
-          </div>
-
-          <div class="impact-stat-box reveal-scale delay-200">
-            <span
-              class="impact-stat-num"
-              data-counter-target="92"
-              data-counter-suffix="%"
-              >0%</span
-            >
-            <span class="impact-stat-label">Ketuntasan Praktikum</span>
-            <p class="impact-stat-desc">
-              Siswa berhasil menyelesaikan modul coding berbantuan Help Card.
-            </p>
-          </div>
-
-          <div class="impact-stat-box reveal-scale delay-300">
-            <span
-              class="impact-stat-num"
-              data-counter-target="98"
-              data-counter-suffix="%"
-              >0%</span
-            >
-            <span class="impact-stat-label">Kepuasan Murid</span>
-            <p class="impact-stat-desc">
-              Merespons positif integrasi kuis gawai dan suasana kelas aman.
-            </p>
-          </div>
-
-          <div class="impact-stat-box reveal-scale delay-400">
-            <span
-              class="impact-stat-num"
-              data-counter-target="100"
-              data-counter-suffix="%"
-              >0%</span
-            >
-            <span class="impact-stat-label">Kesesuaian Kurikulum</span>
-            <p class="impact-stat-desc">
-              Tervalidasi sesuai Capaian Pembelajaran Kurikulum Merdeka.
-            </p>
-          </div>
+            <i class="fa-solid fa-stamp"></i> Terverifikasi Valid
+          </span>
         </div>
       </div>
     </section>
 
-    <!-- 4. SECTION: APRESIASI & DISEMINASI KARYA (PUTIH) -->
-    <section class="dissemination-section" id="testimoni">
+    <!-- 9. SECTION 6: RANCANGAN FITUR PORTAL & 5 BAB MUATAN (DARK SECTION - HITAM) -->
+    <section class="section-rhythm-dark" id="rancangan-fitur">
       <div class="container">
-        <div
-          class="section-top-title-group reveal"
-          style="text-align: center; margin-bottom: 40px"
-        >
-          <span class="section-tag-badge">APRESIASI & KEBERLANJUTAN</span>
-          <h2
-            style="
-              color: #09090b;
-              font-size: clamp(28px, 3.5vw, 38px);
-              font-weight: 900;
-            "
+        <div class="section-center-head">
+          <span class="section-tag-pill-light"
+            >BAGIAN 06 • ARSITEKTUR TEKNOLOGI &amp; KURIKULUM</span
           >
-            Umpan Balik & Diseminasi Praktik Baik 💬
-          </h2>
-          <p style="color: #52525b; max-width: 720px; margin: 10px auto 0">
-            Evaluasi nyata dari Guru Pamong, Dosen Pembimbing, dan Siswa SMAN 4
-            Yogyakarta atas inovasi pembelajaran yang diterapkan.
+          <h2>Rancangan Fitur Portal &amp; 5 Bab Muatan KomputasiKita 💻</h2>
+          <p>
+            Struktur KomputasiKita dirancang sebagai aplikasi web responsif yang
+            terbagi ke dalam dua pilar: fitur fungsional portal (siswa &amp;
+            guru) serta muatan materi kurikuler Kurikulum Merdeka Fase E.
           </p>
         </div>
 
-        <div class="feedback-grid-3">
-          <!-- Testimoni 1: Guru Pamong -->
-          <div class="feedback-card reveal-scale delay-100">
-            <div class="feedback-top-row">
+        <!-- Dua Kolom: Portal Siswa vs Portal Guru (Soft Pastel Cards with Crisp Contrast) -->
+        <div class="fitur-modul-container">
+          <!-- Portal Siswa (Lilac Soft) -->
+          <div
+            class="fitur-portal-card card-soft-lilac"
+            style="
+              border-top: 5px solid #7c3aed;
+              padding: 30px;
+              border-radius: 22px;
+            "
+          >
+            <span
+              class="fitur-portal-badge"
+              style="background: rgba(0, 0, 0, 0.08); color: #4c1d95"
+            >
+              <i class="fa-solid fa-user-graduate"></i> FITUR PADA PORTAL SISWA
+            </span>
+            <h3>Ruang Belajar Interaktif Murid</h3>
+            <div class="fitur-list-items">
               <div
-                class="feedback-avatar-circle"
-                style="background: #ffd4e5; color: #09090b"
+                class="fitur-list-item"
+                style="
+                  background: rgba(255, 255, 255, 0.75);
+                  border: 1px solid rgba(0, 0, 0, 0.08);
+                  border-radius: 14px;
+                  padding: 16px;
+                "
               >
-                <i class="fa-solid fa-chalkboard-user"></i>
+                <div
+                  class="fitur-item-icon"
+                  style="color: #6d28d9; background: rgba(0, 0, 0, 0.06)"
+                >
+                  <i class="fa-solid fa-lock-open"></i>
+                </div>
+                <div class="fitur-item-content">
+                  <strong>Akses Materi Terbuka</strong>
+                  <p>
+                    Seluruh bab dan fitur dapat diakses langsung oleh murid
+                    tanpa sistem penguncian agar memudahkan eksplorasi mandiri
+                    sesuai kecepatan belajar masing-masing.
+                  </p>
+                </div>
               </div>
-              <div>
-                <h4 class="feedback-name">Guru Pamong SMAN 4 YK</h4>
-                <span class="feedback-role">Mitra PPL PPG Informatika</span>
+              <div
+                class="fitur-list-item"
+                style="
+                  background: rgba(255, 255, 255, 0.75);
+                  border: 1px solid rgba(0, 0, 0, 0.08);
+                  border-radius: 14px;
+                  padding: 16px;
+                "
+              >
+                <div
+                  class="fitur-item-icon"
+                  style="color: #6d28d9; background: rgba(0, 0, 0, 0.06)"
+                >
+                  <i class="fa-solid fa-route"></i>
+                </div>
+                <div class="fitur-item-content">
+                  <strong>Peta Alur Belajar 6 Tahap</strong>
+                  <p>
+                    Pembelajaran disusun berurutan: Pre-Test ➔ Materi Interaktif
+                    ➔ Simulasi Visual ➔ Game Edukasi ➔ LKPD Digital ➔ Post-Test
+                    &amp; Tes Tertulis.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="fitur-list-item"
+                style="
+                  background: rgba(255, 255, 255, 0.75);
+                  border: 1px solid rgba(0, 0, 0, 0.08);
+                  border-radius: 14px;
+                  padding: 16px;
+                "
+              >
+                <div
+                  class="fitur-item-icon"
+                  style="color: #6d28d9; background: rgba(0, 0, 0, 0.06)"
+                >
+                  <i class="fa-solid fa-ranking-star"></i>
+                </div>
+                <div class="fitur-item-content">
+                  <strong>Live Leaderboard Siswa</strong>
+                  <p>
+                    Menampilkan ringkasan statistik kelas, podium Top 3
+                    Peringkat Teratas, dan tabel klasemen perolehan poin
+                    keaktifan seluruh murid kelas X E5 secara real-time.
+                  </p>
+                </div>
               </div>
             </div>
-            <p class="feedback-quote">
-              "Modul PjBL dan strategi scaffolding Help Card yang dirancang
-              Agasta terbukti berhasil mengubah suasana kelas yang tadinya pasif
-              menjadi sangat aktif dan antusias."
-            </p>
-            <div class="feedback-stars">★★★★★</div>
           </div>
 
-          <!-- Testimoni 2: Dosen Pembimbing -->
-          <div class="feedback-card reveal-scale delay-200">
-            <div class="feedback-top-row">
+          <!-- Portal Guru (Mint Soft) -->
+          <div
+            class="fitur-portal-card card-soft-mint"
+            style="
+              border-top: 5px solid #059669;
+              padding: 30px;
+              border-radius: 22px;
+            "
+          >
+            <span
+              class="fitur-portal-badge"
+              style="background: rgba(0, 0, 0, 0.08); color: #064e3b"
+            >
+              <i class="fa-solid fa-chalkboard-user"></i> FITUR PADA PORTAL GURU
+            </span>
+            <h3>Pusat Kendali &amp; Manajemen Pembelajaran</h3>
+            <div class="fitur-list-items">
               <div
-                class="feedback-avatar-circle"
-                style="background: #d4ff32; color: #09090b"
+                class="fitur-list-item"
+                style="
+                  background: rgba(255, 255, 255, 0.75);
+                  border: 1px solid rgba(0, 0, 0, 0.08);
+                  border-radius: 14px;
+                  padding: 16px;
+                "
               >
-                <i class="fa-solid fa-graduation-cap"></i>
+                <div
+                  class="fitur-item-icon"
+                  style="color: #059669; background: rgba(0, 0, 0, 0.06)"
+                >
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div class="fitur-item-content">
+                  <strong>Dashboard Kelola Poin</strong>
+                  <p>
+                    Menampilkan statistik keaktifan kelas, visualisasi
+                    distribusi poin, serta tombol aksi cepat bagi guru untuk
+                    memberikan +1 poin keaktifan kepada murid yang berani
+                    menjawab.
+                  </p>
+                </div>
               </div>
-              <div>
-                <h4 class="feedback-name">Dosen Pembimbing UNY</h4>
-                <span class="feedback-role">LPTK PPG Prajabatan</span>
+              <div
+                class="fitur-list-item"
+                style="
+                  background: rgba(255, 255, 255, 0.75);
+                  border: 1px solid rgba(0, 0, 0, 0.08);
+                  border-radius: 14px;
+                  padding: 16px;
+                "
+              >
+                <div
+                  class="fitur-item-icon"
+                  style="color: #059669; background: rgba(0, 0, 0, 0.06)"
+                >
+                  <i class="fa-solid fa-dharmachakra"></i>
+                </div>
+                <div class="fitur-item-content">
+                  <strong>Spin Wheel Pengacak Nama</strong>
+                  <p>
+                    Fitur roda putar pengacak nama murid untuk menunjuk siswa
+                    menjawab pertanyaan (*cold-calling*) atau menentukan giliran
+                    presentasi kelompok secara adil dan seru.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="fitur-list-item"
+                style="
+                  background: rgba(255, 255, 255, 0.75);
+                  border: 1px solid rgba(0, 0, 0, 0.08);
+                  border-radius: 14px;
+                  padding: 16px;
+                "
+              >
+                <div
+                  class="fitur-item-icon"
+                  style="color: #059669; background: rgba(0, 0, 0, 0.06)"
+                >
+                  <i class="fa-solid fa-file-excel"></i>
+                </div>
+                <div class="fitur-item-content">
+                  <strong>Manajemen Kelas &amp; Integrasi GAS</strong>
+                  <p>
+                    Absensi kehadiran otomatis per tanggal pertemuan, pembagian
+                    kelompok, serta integrasi Google Apps Script (Code.gs) yang
+                    otomatis menyinkronkan nilai murid ke Google Spreadsheet.
+                  </p>
+                </div>
               </div>
             </div>
-            <p class="feedback-quote">
-              "Karya inovasi yang dihasilkan menunjukkan kematangan pedagogi
-              Abad 21 dan kemampuan merancang media komputasi kontekstual yang
-              menginspirasi."
-            </p>
-            <div class="feedback-stars">★★★★★</div>
           </div>
+        </div>
 
-          <!-- Testimoni 3: Siswa Kelas X4 -->
-          <div class="feedback-card reveal-scale delay-300">
-            <div class="feedback-top-row">
-              <div
-                class="feedback-avatar-circle"
-                style="background: #b8b5ff; color: #09090b"
-              >
-                <i class="fa-solid fa-user-graduate"></i>
-              </div>
-              <div>
-                <h4 class="feedback-name">Siswa Kelas X4</h4>
-                <span class="feedback-role">Peserta Didik SMAN 4 YK</span>
-              </div>
+        <!-- 5 Bab Muatan Materi & Simulasi Interaktif -->
+        <div style="margin-top: 50px">
+          <h3
+            class="bab-header-title"
+            style="
+              font-size: 22px;
+              font-weight: 800;
+              color: #ffffff;
+              text-align: center;
+              margin-bottom: 24px;
+            "
+          >
+            5 Bab Muatan Materi &amp; Simulasi Interaktif KomputasiKita
+          </h3>
+          <div class="bab-modul-grid">
+            <!-- Bab 1 -->
+            <div class="bab-card-soft card-soft-pink">
+              <span class="bab-num-badge">BAB 01 // BK</span>
+              <h4>Fondasi Berpikir Komputasional</h4>
+              <p>
+                Materi 4 pilar Computational Thinking (Dekomposisi, Pengenalan
+                Pola, Abstraksi, dan Algoritma), dilengkapi kuis diagnostik
+                &amp; evaluasi.
+              </p>
             </div>
-            <p class="feedback-quote">
-              "Belajar coding dan logika jadi seru banget, kami tidak takut
-              salah karena ada kuis gawai interaktif dan panduan modul yang
-              sangat jelas!"
-            </p>
-            <div class="feedback-stars">★★★★★</div>
+
+            <!-- Bab 2 -->
+            <div class="bab-card-soft card-soft-lilac">
+              <span class="bab-num-badge">BAB 02 // DSI</span>
+              <h4>Pengolahan &amp; Struktur Data</h4>
+              <p>
+                Pengolahan data jadi informasi, konsep List/Array, Queue (FIFO),
+                dan Stack (LIFO) dilengkapi simulasi interaktif struktur data.
+              </p>
+            </div>
+
+            <!-- Bab 3 -->
+            <div class="bab-card-soft card-soft-yellow">
+              <span class="bab-num-badge">BAB 03 // AP</span>
+              <h4>Algoritma Searching &amp; Sorting</h4>
+              <p>
+                Algoritma pencarian dan pengurutan data, dilengkapi simulator
+                visual untuk mengamati pergerakan dan pertukaran elemen data.
+              </p>
+            </div>
+
+            <!-- Bab 4 -->
+            <div class="bab-card-soft card-soft-mint">
+              <span class="bab-num-badge">BAB 04 // AP</span>
+              <h4>Flowchart &amp; Pseudocode</h4>
+              <p>
+                Penyusunan diagram alir melalui Flowchart Builder interaktif
+                serta permainan edukatif untuk melatih penelusuran kode semu.
+              </p>
+            </div>
+
+            <!-- Bab 5 -->
+            <div class="bab-card-soft card-soft-peach">
+              <span class="bab-num-badge">BAB 05 // SK</span>
+              <h4>Arsitektur Von Neumann &amp; SO</h4>
+              <p>
+                Komponen sistem komputer, arsitektur Von Neumann, lapisan OS,
+                dan siklus CPU (I-P-O) berbantuan simulator interaktif.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 5. FOOTER (HITAM) -->
+    <!-- 10. SECTION 7: PROSES IMPLEMENTASI KELAS (LIGHT SECTION - PUTIH BERSIH) -->
+    <section class="section-rhythm-light" id="implementasi">
+      <div class="container">
+        <div class="section-center-head">
+          <span class="section-tag-pill-dark"
+            >BAGIAN 07 • AKSI NYATA DI LABORATORIUM</span
+          >
+          <h2>
+            Proses Implementasi &amp; Penerapan di Kelas X E5 SMAN 4 Yogyakarta
+            📸
+          </h2>
+          <p>
+            Inovasi KomputasiKita telah diimplementasikan secara langsung dalam
+            kegiatan pembelajaran tatap muka di laboratorium komputer Kelas X E5
+            SMAN 4 Yogyakarta melalui 3 tahapan pembelajaran terstruktur.
+          </p>
+        </div>
+
+        <div class="soft-pastel-grid-3">
+          <!-- Tahap 1 (Lime Soft) -->
+          <div
+            class="soft-pastel-card card-soft-lime"
+            style="border-top: 5px solid #65a30d"
+          >
+            <div class="soft-card-top">
+              <span class="soft-step-pill">TAHAP 01</span>
+              <div class="soft-icon-circle">
+                <i class="fa-solid fa-compass"></i>
+              </div>
+            </div>
+            <h3 class="bento-card-title">
+              Kegiatan Awal (Presensi &amp; Pre-Test)
+            </h3>
+            <p class="bento-card-desc">
+              Guru melakukan pengecekan kehadiran melalui fitur Absensi di
+              Portal Guru. Murid mengakses website KomputasiKita melalui
+              perangkat laptop/smartphone masing-masing untuk mengerjakan
+              Pre-Test pemetaan awal. Pembelajaran dilanjutkan pertanyaan
+              pemantik kontekstual dengan reward +1 poin pertama yang langsung
+              terpampang di proyektor kelas.
+            </p>
+          </div>
+
+          <!-- Tahap 2 (Lilac Soft) -->
+          <div
+            class="soft-pastel-card card-soft-lilac"
+            style="border-top: 5px solid #7c3aed"
+          >
+            <div class="soft-card-top">
+              <span class="soft-step-pill">TAHAP 02</span>
+              <div class="soft-icon-circle">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+            </div>
+            <h3 class="bento-card-title">
+              Kegiatan Inti (Simulasi, LKPD &amp; Spin Wheel)
+            </h3>
+            <p class="bento-card-desc">
+              Guru menyajikan studi kasus kontekstual (analogi memasak mie
+              instan untuk Flowchart, memesan makanan di kantin untuk
+              Pseudocode, laptop lemot untuk Sistem Operasi), lalu memfasilitasi
+              murid mengeksplorasi simulasi visual dan LKPD digital. Dilanjutkan
+              presentasi kelompok menggunakan Spin Wheel, dan audiens yang aktif
+              bertanya/menanggapi mendapat tambahan poin keaktifan.
+            </p>
+          </div>
+
+          <!-- Tahap 3 (Peach Soft) -->
+          <div
+            class="soft-pastel-card card-soft-peach"
+            style="border-top: 5px solid #ea580c"
+          >
+            <div class="soft-card-top">
+              <span class="soft-step-pill">TAHAP 03</span>
+              <div class="soft-icon-circle">
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+            </div>
+            <h3 class="bento-card-title">
+              Kegiatan Akhir (Post-Test &amp; Refleksi)
+            </h3>
+            <p class="bento-card-desc">
+              Guru bersama murid menyimpulkan materi dan membahas pemahaman yang
+              perlu diperkuat. Murid mengerjakan Post-Test dan tes tertulis, di
+              mana nilai tersimpan otomatis ke Google Spreadsheet via Google
+              Apps Script (Code.gs). Website tetap dapat diakses di luar jam
+              pelajaran untuk belajar mandiri dan latihan lanjutan.
+            </p>
+          </div>
+        </div>
+
+        <!-- Galeri Dokumentasi Lapangan PPL -->
+        <div
+          class="dokumentasi-ppl-box"
+          style="
+            margin-top: 40px;
+            background: #f8fafc;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+          "
+        >
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              gap: 14px;
+              margin-bottom: 24px;
+            "
+          >
+            <div>
+              <span class="section-tag-pill-dark"
+                >DOKUMENTASI LAPANGAN PPL</span
+              >
+              <h3
+                style="
+                  font-size: 22px;
+                  font-weight: 800;
+                  color: #09090b;
+                  margin-top: 6px;
+                "
+              >
+                Aksi Pembelajaran Nyata di Kelas X E5 SMAN 4 Yogyakarta
+              </h3>
+            </div>
+            <span style="font-size: 13px; color: #64748b; font-weight: 700"
+              >Kelas X E5 • PPL PPG Prajabatan Informatika UNY</span
+            >
+          </div>
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+              gap: 20px;
+            "
+          >
+            <!-- Foto 1: Simulasi Visual -->
+            <div
+              class="dokumentasi-card-item"
+              style="
+                background: #ffffff;
+                border-radius: 16px;
+                overflow: hidden;
+                border: 1.5px solid #e2e8f0;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+              "
+            >
+              <img
+                src="simulasi.jpg"
+                alt="Eksplorasi Simulasi Visual KomputasiKita"
+                style="width: 100%; height: 210px; object-fit: cover"
+              />
+              <div style="padding: 16px">
+                <h4 style="font-size: 15px; font-weight: 800; color: #09090b">
+                  Eksplorasi Simulasi Visual Web
+                </h4>
+                <p
+                  style="
+                    font-size: 13px;
+                    color: #52525b;
+                    margin-top: 6px;
+                    line-height: 1.5;
+                  "
+                >
+                  Murid mengamati langsung pertukaran data algoritma dan
+                  menyusun logika Flowchart secara interaktif di layar komputer.
+                </p>
+              </div>
+            </div>
+
+            <!-- Foto 2: Live Leaderboard -->
+            <div
+              class="dokumentasi-card-item"
+              style="
+                background: #ffffff;
+                border-radius: 16px;
+                overflow: hidden;
+                border: 1.5px solid #e2e8f0;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+              "
+            >
+              <img
+                src="leaderboard.jpg"
+                alt="Live Leaderboard & Spin Wheel di Proyektor"
+                style="width: 100%; height: 210px; object-fit: cover"
+              />
+              <div style="padding: 16px">
+                <h4 style="font-size: 15px; font-weight: 800; color: #09090b">
+                  Live Leaderboard Proyektor
+                </h4>
+                <p
+                  style="
+                    font-size: 13px;
+                    color: #52525b;
+                    margin-top: 6px;
+                    line-height: 1.5;
+                  "
+                >
+                  Penayangan peringkat keaktifan live di proyektor kelas memicu
+                  antusiasme murid berebut menjawab pertanyaan pemantik.
+                </p>
+              </div>
+            </div>
+
+            <!-- Foto 3: Eksplorasi Materi Mandiri -->
+            <div
+              class="dokumentasi-card-item"
+              style="
+                background: #ffffff;
+                border-radius: 16px;
+                overflow: hidden;
+                border: 1.5px solid #e2e8f0;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+              "
+            >
+              <img
+                src="eksplorasi materi.jpg"
+                alt="Eksplorasi Materi & Praktikum Mandiri"
+                style="width: 100%; height: 210px; object-fit: cover"
+              />
+              <div style="padding: 16px">
+                <h4 style="font-size: 15px; font-weight: 800; color: #09090b">
+                  Eksplorasi Materi Mandiri
+                </h4>
+                <p
+                  style="
+                    font-size: 13px;
+                    color: #52525b;
+                    margin-top: 6px;
+                    line-height: 1.5;
+                  "
+                >
+                  Pemanfaatan gawai secara positif untuk mempelajari modul
+                  digital dan mengerjakan LKPD interaktif secara terarah.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. SECTION 8: EVALUASI KARYA & CATATAN PERBAIKAN (DARK SECTION - HITAM) -->
+    <section class="section-rhythm-dark" id="evaluasi">
+      <div class="container">
+        <div class="section-center-head">
+          <span class="section-tag-pill-light"
+            >BAGIAN 08 • REFLEKSI FORMATIF &amp; AKUNTABILITAS</span
+          >
+          <h2>
+            Evaluasi Keberhasilan &amp; Catatan Perbaikan Berkelanjutan 📈
+          </h2>
+          <p>
+            Menganalisis dampak nyata penerapan inovasi KomputasiKita di Kelas X
+            E5 SMAN 4 Yogyakarta berdasarkan evaluasi penggunaan simulasi
+            visual, gamifikasi leaderboard, serta perumusan rencana tindak
+            lanjut perbaikan.
+          </p>
+        </div>
+
+        <!-- 4 Stat Box Dampak (Soft Pastel Cards) -->
+        <div class="impact-grid-4">
+          <div class="impact-stat-box card-soft-lime">
+            <span class="impact-stat-num" style="color: #365314">+100%</span>
+            <span class="impact-stat-label" style="color: #1a2e05"
+              >Antusiasme Menjawab</span
+            >
+            <p class="impact-stat-desc" style="color: #365314">
+              Murid yang awalnya pasif berubah menjadi sangat antusias berebut
+              menjawab pertanyaan pemantik demi reward poin.
+            </p>
+          </div>
+
+          <div class="impact-stat-box card-soft-lilac">
+            <span class="impact-stat-num" style="color: #5b21b6"
+              >Signifikan</span
+            >
+            <span class="impact-stat-label" style="color: #2e1065"
+              >Kenaikan Skor Belajar</span
+            >
+            <p class="impact-stat-desc" style="color: #4c1d95">
+              Rekap nilai pada Portal Guru menunjukkan peningkatan skor
+              Post-Test yang signifikan dibandingkan Pre-Test.
+            </p>
+          </div>
+
+          <div class="impact-stat-box card-soft-pink">
+            <span class="impact-stat-num" style="color: #9f1239">Konkret</span>
+            <span class="impact-stat-label" style="color: #4c0519"
+              >Pemahaman Materi Abstrak</span
+            >
+            <p class="impact-stat-desc" style="color: #881337">
+              Kelancaran murid dalam menyelesaikan LKPD berkat bantuan simulator
+              visual Searching, Sorting, dan Flowchart.
+            </p>
+          </div>
+
+          <div class="impact-stat-box card-soft-peach">
+            <span class="impact-stat-num" style="color: #9a3412">Otomatis</span>
+            <span class="impact-stat-label" style="color: #431407"
+              >Efisiensi Manajemen Guru</span
+            >
+            <p class="impact-stat-desc" style="color: #7c2d12">
+              Data presensi dan penilaian tersinkronisasi langsung ke Google
+              Spreadsheet via Google Apps Script (Code.gs).
+            </p>
+          </div>
+        </div>
+
+        <!-- Dua Kotak Evaluasi Mendalam Sesuai LK 4 (Soft Pastel Bento) -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 24px;
+            margin-top: 36px;
+          "
+        >
+          <!-- Evaluasi 1: Simulasi Visual & Materi (Mint Soft) -->
+          <div
+            class="soft-pastel-card card-soft-mint"
+            style="border-top: 5px solid #059669; padding: 28px"
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 16px;
+              "
+            >
+              <div
+                style="
+                  width: 44px;
+                  height: 44px;
+                  border-radius: 12px;
+                  background: rgba(0, 0, 0, 0.08);
+                  color: #064e3b;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 20px;
+                "
+              >
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <div>
+                <span
+                  style="
+                    font-size: 11px;
+                    font-weight: 800;
+                    color: #065f46;
+                    text-transform: uppercase;
+                  "
+                  >EVALUASI BAGIAN 1</span
+                >
+                <h4 style="font-size: 18px; font-weight: 800; color: #09090b">
+                  Penggunaan Simulasi Visual &amp; Materi
+                </h4>
+              </div>
+            </div>
+            <div style="margin-bottom: 14px">
+              <strong
+                style="
+                  color: #065f46;
+                  font-size: 13.5px;
+                  display: block;
+                  margin-bottom: 4px;
+                "
+                >✓ Observasi Pemahaman &amp; Hasil Belajar:</strong
+              >
+              <p style="font-size: 13px; color: #18181b; line-height: 1.6">
+                Simulasi interaktif pada website (Searching/Sorting, Flowchart
+                Builder, Game Pseudocode, dan simulasi I-P-O) sangat membantu
+                murid mengeksplorasi konsep Informatika secara konkret. Murid
+                lancar mengerjakan LKPD dan skor Post-Test meningkat nyata
+                dibanding Pre-Test.
+              </p>
+            </div>
+            <div
+              class="card-inner-box-soft"
+              style="border-left: 4px solid #f59e0b"
+            >
+              <strong
+                style="
+                  color: #92400e;
+                  font-size: 13px;
+                  display: block;
+                  margin-bottom: 4px;
+                "
+                >⚠ Evaluasi Kelemahan &amp; Catatan Perbaikan:</strong
+              >
+              <p
+                style="
+                  font-size: 12.5px;
+                  color: #27272a;
+                  line-height: 1.5;
+                  margin: 0;
+                "
+              >
+                Penggunaan Flowchart Builder melalui smartphone masih terkendala
+                ukuran layar yang sempit. Selain itu, akses terbuka memungkinkan
+                murid membuka simulasi lain saat penjelasan.
+                <em>Tindak Lanjut:</em> Penyesuaian responsivitas antarmuka
+                smartphone dan instruksi disiplin positif yang lebih terarah.
+              </p>
+            </div>
+          </div>
+
+          <!-- Evaluasi 2: Gamifikasi Leaderboard & Portal Guru (Yellow Soft) -->
+          <div
+            class="soft-pastel-card card-soft-yellow"
+            style="border-top: 5px solid #d97706; padding: 28px"
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 16px;
+              "
+            >
+              <div
+                style="
+                  width: 44px;
+                  height: 44px;
+                  border-radius: 12px;
+                  background: rgba(0, 0, 0, 0.08);
+                  color: #713f12;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 20px;
+                "
+              >
+                <i class="fa-solid fa-trophy"></i>
+              </div>
+              <div>
+                <span
+                  style="
+                    font-size: 11px;
+                    font-weight: 800;
+                    color: #713f12;
+                    text-transform: uppercase;
+                  "
+                  >EVALUASI BAGIAN 2</span
+                >
+                <h4 style="font-size: 18px; font-weight: 800; color: #09090b">
+                  Penerapan Gamifikasi &amp; Portal Guru
+                </h4>
+              </div>
+            </div>
+            <div style="margin-bottom: 14px">
+              <strong
+                style="
+                  color: #713f12;
+                  font-size: 13.5px;
+                  display: block;
+                  margin-bottom: 4px;
+                "
+                >✓ Observasi Perubahan Sikap Murid:</strong
+              >
+              <p style="font-size: 13px; color: #18181b; line-height: 1.6">
+                Pemberian tambahan poin keaktifan real-time pada Leaderboard
+                mendorong murid sangat antusias menjawab pertanyaan dan
+                menanggapi kasus. Fitur Spin Wheel juga menciptakan proses
+                pemilihan partisipan dan presentasi yang adil dan seru.
+              </p>
+            </div>
+            <div
+              class="card-inner-box-soft"
+              style="border-left: 4px solid #f59e0b"
+            >
+              <strong
+                style="
+                  color: #92400e;
+                  font-size: 13px;
+                  display: block;
+                  margin-bottom: 4px;
+                "
+                >⚠ Evaluasi Kelemahan &amp; Catatan Perbaikan:</strong
+              >
+              <p
+                style="
+                  font-size: 12.5px;
+                  color: #27272a;
+                  line-height: 1.5;
+                  margin: 0;
+                "
+              >
+                Partisipasi masih sempat didominasi oleh beberapa murid yang
+                cepat mengacungkan tangan; pemberian poin manual melalui Portal
+                Guru cukup menyita waktu jika murid menjawab beruntun.
+                <em>Tindak Lanjut:</em> Memanfaatkan Spin Wheel secara intensif
+                untuk pemerataan giliran dan menyederhanakan tombol input poin.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. SECTION 9: PRATINJAU DOKUMEN KARYA INOVASI (LK 4) (LIGHT SECTION - PUTIH BERSIH) -->
+    <section class="section-rhythm-light" id="pratinjau-lk4">
+      <div class="container">
+        <div class="section-center-head">
+          <span class="section-tag-pill-dark"
+            >BAGIAN 09 • DOKUMEN RESMI SEMINAR PENDIDIKAN</span
+          >
+          <h2>Pratinjau Dokumen Karya Inovasi (Lembar Kerja 4) 📄</h2>
+          <p>
+            Bapak/Ibu Dosen Penguji dan Pembimbing dapat menelaah langsung
+            naskah resmi Lembar Kerja 4 (Penyusunan Desain Karya Inovatif)
+            format A4 utuh pada penampil dokumen ini atau mengunduh berkas PDF
+            aslinya.
+          </p>
+        </div>
+
+        <div
+          class="lk4-preview-container"
+          style="
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+            border: 1.5px solid #e2e8f0;
+            border-radius: 24px;
+            overflow: hidden;
+            background: #ffffff;
+          "
+        >
+          <div
+            class="lk4-tabs-bar"
+            style="
+              background: #18181c;
+              padding: 16px 24px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              flex-wrap: wrap;
+              gap: 16px;
+            "
+          >
+            <div class="lk4-tab-buttons">
+              <span
+                style="
+                  font-size: 13.5px;
+                  font-weight: 800;
+                  color: #ffffff;
+                  display: flex;
+                  align-items: center;
+                  gap: 8px;
+                "
+              >
+                <i class="fa-solid fa-file-shield text-lime"></i> Dokumen Resmi:
+                Lembar Kerja 4 (LK 4) Desain Karya Inovatif KomputasiKita
+              </span>
+            </div>
+
+            <div class="lk4-action-controls">
+              <button class="lk4-action-btn" onclick="toggleLk4Fullscreen()">
+                <i class="fa-solid fa-expand"></i> Layar Penuh
+              </button>
+              <a
+                id="lk4-download-btn"
+                href="pdf/inovasi/LEMBAR KERJA 4 (LK 4) KARYA INOVASI.pdf"
+                download="LEMBAR KERJA 4 (LK 4) KARYA INOVASI.pdf"
+                class="lk4-action-btn"
+                style="
+                  background: var(--neon-lime);
+                  color: #09090b;
+                  border-color: var(--neon-lime);
+                "
+              >
+                <i class="fa-solid fa-download"></i> Unduh PDF Asli
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="lk4-iframe-holder"
+            id="lk4-frame-wrapper"
+            style="height: 1050px; background: #202026"
+          >
+            <iframe
+              id="lk4-live-iframe"
+              src="pdf/inovasi/LEMBAR KERJA 4 (LK 4) KARYA INOVASI.pdf#view=FitH"
+              title="Pratinjau Dokumen Karya Inovatif LK 4"
+            >
+            </iframe>
+          </div>
+
+          <div
+            style="
+              background: #f8fafc;
+              padding: 14px 24px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-wrap: wrap;
+              gap: 12px;
+              font-size: 12px;
+              color: #64748b;
+              border-top: 1px solid #e2e8f0;
+            "
+          >
+            <div>
+              <strong style="color: #0f172a"
+                >Agasta Pratama Nugraha (NIM: 25105260369)</strong
+              >
+              • Kelas B/Informatika UNY • Mitra SMAN 4 Yogyakarta
+            </div>
+            <div>
+              Status:
+              <span style="color: #059669; font-weight: 800"
+                >✓ Dokumen Sah Terverifikasi Dosen Pembimbing &amp; Pamong</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. FOOTER (HITAM) -->
     <footer class="main-footer" id="kontak">
       <div class="container">
         <div class="footer-top-grid">
           <!-- Kolom Kiri -->
-          <div class="footer-left-headline reveal-left">
+          <div class="footer-left-headline">
             <div class="footer-cursive-text">
               Mari ciptakan<br />
               pembelajaran<br />
@@ -636,8 +2006,8 @@
             </p>
           </div>
 
-          <!-- Kolom Tengah: Social Media List -->
-          <div class="footer-center-socials reveal-scale delay-200">
+          <!-- Kolom Tengah: Hubungi Saya Social List -->
+          <div class="footer-center-socials">
             <h4 class="footer-col-heading">
               <i class="fa-solid fa-paper-plane"></i> HUBUNGI SAYA
             </h4>
@@ -657,9 +2027,7 @@
                     <span>@agasta_pratama</span>
                   </div>
                 </div>
-                <i
-                  class="fa-solid fa-arrow-up-right-from-square social-arrow-icon"
-                ></i>
+                <i class="fa-solid fa-arrow-up-right social-arrow-icon"></i>
               </a>
 
               <a
@@ -677,9 +2045,7 @@
                     <span>Agasta Pratama Nugraha</span>
                   </div>
                 </div>
-                <i
-                  class="fa-solid fa-arrow-up-right-from-square social-arrow-icon"
-                ></i>
+                <i class="fa-solid fa-arrow-up-right social-arrow-icon"></i>
               </a>
 
               <a
@@ -695,15 +2061,13 @@
                     <span>agasta.pratama@email.com</span>
                   </div>
                 </div>
-                <i
-                  class="fa-solid fa-arrow-up-right-from-square social-arrow-icon"
-                ></i>
+                <i class="fa-solid fa-arrow-up-right social-arrow-icon"></i>
               </a>
             </div>
           </div>
 
           <!-- Kolom Kanan: Google Maps LPTK UNY -->
-          <div class="footer-right-maps reveal-right delay-300">
+          <div class="footer-right-maps">
             <h4 class="footer-col-heading">
               <i class="fa-solid fa-location-dot"></i> LOKASI LPTK PPG UNY
             </h4>
@@ -770,24 +2134,65 @@
         });
       }
 
-      function filterInovasi(category, btn) {
-        document
-          .querySelectorAll(".filter-btn")
-          .forEach((b) => b.classList.remove("active"));
-        btn.classList.add("active");
-
-        const cards = document.querySelectorAll(".innovation-card");
-        cards.forEach((card) => {
-          const cardCat = card.getAttribute("data-category");
-          if (category === "all" || cardCat === category) {
-            card.style.display = "flex";
-            setTimeout(() => {
-              card.classList.add("is-revealed");
-            }, 50);
-          } else {
-            card.style.display = "none";
+      function toggleInovasiWebFullscreen() {
+        const iframe = document.getElementById("inovasi-live-web-iframe");
+        if (!iframe) return;
+        if (!document.fullscreenElement) {
+          if (iframe.requestFullscreen) {
+            iframe.requestFullscreen();
+          } else if (iframe.webkitRequestFullscreen) {
+            iframe.webkitRequestFullscreen();
+          } else if (iframe.msRequestFullscreen) {
+            iframe.msRequestFullscreen();
           }
-        });
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          }
+        }
+      }
+
+      function reloadInovasiWeb() {
+        const iframe = document.getElementById("inovasi-live-web-iframe");
+        if (iframe) {
+          iframe.src = iframe.src;
+        }
+      }
+
+      function toggleCanvaFullscreen() {
+        const iframe = document.getElementById("canva-slide-iframe");
+        if (!iframe) return;
+        if (!document.fullscreenElement) {
+          if (iframe.requestFullscreen) {
+            iframe.requestFullscreen();
+          } else if (iframe.webkitRequestFullscreen) {
+            iframe.webkitRequestFullscreen();
+          } else if (iframe.msRequestFullscreen) {
+            iframe.msRequestFullscreen();
+          }
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          }
+        }
+      }
+
+      function toggleLk4Fullscreen() {
+        const iframe = document.getElementById("lk4-live-iframe");
+        if (!iframe) return;
+        if (!document.fullscreenElement) {
+          if (iframe.requestFullscreen) {
+            iframe.requestFullscreen();
+          } else if (iframe.webkitRequestFullscreen) {
+            iframe.webkitRequestFullscreen();
+          } else if (iframe.msRequestFullscreen) {
+            iframe.msRequestFullscreen();
+          }
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          }
+        }
       }
     </script>
     <script src="js/interactions.js"></script>
